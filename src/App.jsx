@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Profil from './pages/Profil';
+ 
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -16,8 +17,9 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/profil" element={<Profil />} />
           <Route path="/program"  />
-          <Route path="/organisasi"  />
-          <Route path="/kontak" />
+          <Route path="/kontak"  />
+          <Route path="/organisasi/ramah"  />   {/* element={<Ramah />} */}
+          <Route path="/organisasi/takmir"  /> {/* element={<Takmir />} */}
         </Routes>
       </div>
       <Footer />

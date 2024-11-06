@@ -13,6 +13,10 @@ export default function Navbar() {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
+  const closeDropdown = () => {
+    setIsDropdownOpen(false);
+  };
+
   return (
     <nav className="bg-green-900 p-4">
       <div className="container mx-auto flex items-center justify-between">
@@ -42,10 +46,10 @@ export default function Navbar() {
             {isDropdownOpen && (
               <ul className="absolute top-full left-0 bg-green-800 text-white w-40 rounded shadow-lg">
                 <li className="hover:bg-slate-300 px-4 py-2">
-                  <Link to="/organisasi/ramah">Ramah</Link>
+                  <Link to="/organisasi/ramah" onClick={() => { toggleMenu(); closeDropdown(); }}>Ramah</Link>
                 </li>
                 <li className="hover:bg-slate-300 px-4 py-2">
-                  <Link to="/organisasi/takmir">Takmir</Link>
+                  <Link to="/organisasi/takmir" onClick={() => { toggleMenu(); closeDropdown(); }}>Takmir</Link>
                 </li>
               </ul>
             )}
@@ -94,10 +98,10 @@ export default function Navbar() {
               {isDropdownOpen && (
                 <ul className="mt-2 space-y-2 pl-6 text-black">
                   <li className="hover:text-blue-300">
-                    <Link to="/organisasi/ramah" onClick={toggleMenu}>Ramah</Link>
+                    <Link to="/organisasi/ramah" onClick={() => { toggleMenu(); closeDropdown(); }}>Ramah</Link>
                   </li>
                   <li className="hover:text-blue-300">
-                    <Link to="/organisasi/takmir" onClick={toggleMenu}>Takmir</Link>
+                    <Link to="/organisasi/takmir" onClick={() => { toggleMenu(); closeDropdown(); }}>Takmir</Link>
                   </li>
                 </ul>
               )}

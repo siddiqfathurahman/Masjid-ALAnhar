@@ -7,6 +7,10 @@ import Profil from './pages/Profil';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Program from './pages/Program';
+import Kontak from './pages/Kontak';
+import Ramah from './pages/Ramah';
+import Takmir from './pages/Takmir';
 
 export default function App() {
   return (
@@ -16,10 +20,10 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profil" element={<Profil />} />
-          <Route path="/program"  />
-          <Route path="/kontak"  />
-          <Route path="/organisasi/ramah"  />   {/* element={<Ramah />} */}
-          <Route path="/organisasi/takmir"  /> {/* element={<Takmir />} */}
+          <Route path="/program" element={<Program />}  />
+          <Route path="/kontak"  element={<Kontak />}/>
+          <Route path="/organisasi/ramah" element={<Ramah />} /> 
+          <Route path="/organisasi/takmir" element={<Takmir />}  />
         </Routes>
       </div>
       <Footer />

@@ -1,4 +1,4 @@
-const Utama = () => {
+const Hero = () => {
     return (
       <div className="w-full h-[400px]">
         <img 
@@ -11,5 +11,5 @@ const Utama = () => {
     );
   };
   
-  export default Utama;
+  export default Hero;
   

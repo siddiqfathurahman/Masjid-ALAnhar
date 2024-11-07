@@ -1,3 +1,5 @@
+// src/App.js
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -9,10 +11,12 @@ import Program from './pages/Program';
 import Kontak from './pages/Kontak';
 import Ramah from './pages/Ramah';
 import Takmir from './pages/Takmir';
+import RunningText from './components/ui/Running-text';
 
 export default function App() {
   return (
     <Router>
+      <RunningText text="Selamat datang di website Masjid Al-Anhar Alamat : Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
       <Navbar />
       <div className="content"> 
         <Routes>

@@ -3,8 +3,7 @@ const Layanan = () => {
       { id: 1, title: "Layanan 1", image: "/bg.JPG" },
       { id: 2, title: "Layanan 2", image: "/bg.JPG" },
       { id: 3, title: "Layanan 3", image: "/bg.JPG" },
-      { id: 4, title: "Layanan 4", image: "/bg.JPG" },
-      { id: 5, title: "Layanan 5", image: "/bg.JPG" },
+
     ];
   
     return (

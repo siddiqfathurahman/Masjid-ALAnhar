@@ -9,7 +9,7 @@ const Hero = () => {
     try {
       const response = await axios.get('https://api.aladhan.com/v1/timingsByCity', {
         params: {
-          city: 'Jakarta',
+          city: 'Yogyakarta',
           country: 'Indonesia',
           method: 8,
         },
@@ -79,18 +79,18 @@ const Hero = () => {
         {jadwalSholat ? (
           <div className="text-white px-4 py-3 flex flex-col md:flex-row items-start justify-between h-full">
             {/* Jadwal Shalat Selanjutnya */}
-            <div className="flex-1 mb-6 md:mb-0 text-center">
+            <div className="flex-1 mb-6 font-poppins md:mb-0 text-center">
               <div className="text-xl font-bold mb-2">Jadwal Shalat Selanjutnya</div>
 
               {/* Kotak Shalat Selanjutnya */}
-              <div className="bg-white text-black rounded-xl shadow-lg p-4 w-[440px] h-[140px]">
+              <div className="bg-white text-black font-poppins rounded-xl shadow-lg p-4 w-[440px] h-[140px]">
                 <div className="text-5xl font-semibold mb-2">Shalat {nextPrayer}</div>
                 <div className="text-4xl font-bold mt-2">{jadwalSholat[nextPrayer]}</div>
               </div>
             </div>
 
             {/* Jadwal Sholat Lainnya (Tidak Memasukkan Jadwal Selanjutnya) */}
-            <div className="flex-1 grid grid-cols-2 text-center gap-2 sm:grid-cols-2 lg:grid-cols-2">
+            <div className="flex-1 font-poppins grid grid-cols-2 text-center gap-2 sm:grid-cols-2 lg:grid-cols-2">
               {['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'].map((prayer) => {
                 if (prayer !== nextPrayer) {
                   return (

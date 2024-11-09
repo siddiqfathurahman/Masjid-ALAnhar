@@ -43,11 +43,13 @@ const Hero = () => {
         <h1 className="px-5 text-3xl md:text-4xl lg:text-5xl font-extrabold">
         <span className="text-black">Profil </span>
         <span 
-        ref={titleRef} 
-        className={`relative inline-block p-1 text-white ${isVisible ? 'animate-gradient-box' : ''}`}
-        >
-        MASJID AL-ANHAR
-      </span>
+  ref={titleRef} 
+  className={`relative inline-block p-1 text-white ${isVisible ? 'animate-gradient-box transform skew-y-3' : ''}`}
+>
+  MASJID AL-ANHAR
+</span>
+
+
       </h1>
       <p className=" px-5 text-lg md:text-xl max-w-2xl md:max-w-3xl lg:max-w-4xl mt-2 md:mt-3 mx-auto text-left md:text-center px-3 md:px-0">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eligendi neque esse cum fuga, 

@@ -16,7 +16,7 @@ const Layanan = () => {
       </p>
 
       {/* Grid untuk gambar di mobile, tablet, dan desktop */}
-      <div className="grid grid-cols-2 md:px-40 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 justify-items-center">
+      <div className="grid px-40 grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 justify-items-center">
         {layananData.map((layanan) => (
           <div key={layanan.id} className="relative">
             <div className="w-full h-[250px] bg-gray-300 rounded-lg overflow-hidden">
@@ -32,16 +32,8 @@ const Layanan = () => {
           </div>
         ))}
       </div>
-<<<<<<< HEAD
     </div>
   );
 };
 
 export default Layanan;
-=======
-    );
-  };
-  
-  export default Layanan;
-  
->>>>>>> faefc809ee5999b7ee5d1081b763d83afe3fcf07

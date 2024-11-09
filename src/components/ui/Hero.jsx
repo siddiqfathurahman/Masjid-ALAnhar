@@ -1,62 +1,113 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const Hero = () => {
-  const titleRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const [jadwalSholat, setJadwalSholat] = useState(null);
+  const [nextPrayer, setNextPrayer] = useState(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(entry.target);
-        }
-      },
-      { threshold: 0.5 } 
-    );
+  const fetchJadwalSholat = async () => {
+    try {
+      const response = await axios.get('https://api.aladhan.com/v1/timingsByCity', {
+        params: {
+          city: 'Jakarta',
+          country: 'Indonesia',
+          method: 8,
+        },
+      });
 
-    if (titleRef.current) {
-      observer.observe(titleRef.current);
+      const timings = response.data.data.timings;
+      setJadwalSholat(timings);
+      determineNextPrayer(timings);
+    } catch (error) {
+      console.error('Error fetching jadwal sholat:', error);
+    }
+  };
+
+  const convertTo24Hour = (time) => {
+    const [hours, minutes] = time.split(':');
+    const date = new Date();
+    date.setHours(hours);
+    date.setMinutes(minutes);
+    return date;
+  };
+
+  const determineNextPrayer = (timings) => {
+    const prayerTimes = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha']; // Filtered list of prayers
+    const currentTime = new Date();
+    const currentTimeWIB = new Date(currentTime.toLocaleString("en-US", { timeZone: "Asia/Jakarta" }));
+
+    let next = null;
+
+    // Iterate over prayer times and find the next prayer
+    for (let i = 0; i < prayerTimes.length; i++) {
+      const prayerTime = convertTo24Hour(timings[prayerTimes[i]]);
+      if (prayerTime > currentTimeWIB) {
+        next = prayerTimes[i];
+        break;
+      }
     }
 
-    return () => {
-      if (titleRef.current) observer.unobserve(titleRef.current);
-    };
+    if (!next) {
+      next = prayerTimes[0]; // If no upcoming prayer, set to the first prayer time of the day (if it's past Isha, it'll go back to Fajr)
+    }
+
+    setNextPrayer(next);
+  };
+
+  useEffect(() => {
+    fetchJadwalSholat();
+    const interval = setInterval(() => {
+      fetchJadwalSholat(); // Fetch again every minute to update the next prayer time
+    }, 60000);
+
+    return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className=" lg:px-0">
-      <div className="relative w-full h-[250px] md:h-[350px] lg:h-[400px]">
-        <img 
-          className="w-full h-full object-cover" 
-          style={{ objectPosition: 'center 70%' }} 
-          src="/masjid.jpg" 
-          alt="Masjid"
-        />
-        <div
-          className="absolute left-1/2 -translate-x-1/2 w-[90%] md:w-[80%] lg:w-[70%] h-[40%] md:h-[50%] bg-green-800 rounded-2xl"
-          style={{ bottom: '-20%' }}
-        ></div>
+    <div className="relative w-full h-[250px] md:h-[350px] lg:h-[400px]">
+      <img
+        className="w-full h-full object-cover"
+        style={{ objectPosition: 'center 70%' }}
+        src="/masjid.jpg"
+        alt="Masjid"
+      />
+
+      <div
+        className="absolute left-1/2 -translate-x-1/2 w-[90%] md:w-[80%] lg:w-[70%] h-[40%] md:h-[50%] bg-green-800 rounded-2xl"
+        style={{ bottom: '-20%' }}
+      >
+        {jadwalSholat ? (
+          <div className="text-white px-4 py-3 flex flex-col md:flex-row items-start justify-between h-full">
+            {/* Jadwal Shalat Selanjutnya */}
+            <div className="flex-1 mb-6 md:mb-0 text-center">
+              <div className="text-xl font-bold mb-2">Jadwal Shalat Selanjutnya</div>
+
+              {/* Kotak Shalat Selanjutnya */}
+              <div className="bg-white text-black rounded-xl shadow-lg p-4 w-[440px] h-[140px]">
+                <div className="text-5xl font-semibold mb-2">Shalat {nextPrayer}</div>
+                <div className="text-4xl font-bold mt-2">{jadwalSholat[nextPrayer]}</div>
+              </div>
+            </div>
+
+            {/* Jadwal Sholat Lainnya (Tidak Memasukkan Jadwal Selanjutnya) */}
+            <div className="flex-1 grid grid-cols-2 text-center gap-2 sm:grid-cols-2 lg:grid-cols-2">
+              {['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'].map((prayer) => {
+                if (prayer !== nextPrayer) {
+                  return (
+                    <div key={prayer} className="bg-white text-black rounded-xl shadow-lg p-4">
+                      <div className="text-lg font-medium">Shalat {prayer}</div>
+                      <div>{jadwalSholat[prayer]}</div>
+                    </div>
+                  );
+                }
+                return null;
+              })}
+            </div>
+          </div>
+        ) : (
+          <p className="text-white text-center">Loading jadwal sholat...</p>
+        )}
       </div>
-
-      <div className=" md:px-0 font-poppins mt-20 md:mt-28 lg:mt-36 text-left md:text-center">
-        <h1 className="px-5 text-3xl md:text-4xl lg:text-5xl font-extrabold">
-        <span className="text-black">Profil </span>
-        <span 
-  ref={titleRef} 
-  className={`relative inline-block p-1 text-white ${isVisible ? 'animate-gradient-box transform skew-y-3' : ''}`}
->
-  MASJID AL-ANHAR
-</span>
-
-
-      </h1>
-      <p className=" px-5 text-lg md:text-xl max-w-2xl md:max-w-3xl lg:max-w-4xl mt-2 md:mt-3 mx-auto text-left md:text-center px-3 md:px-0">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eligendi neque esse cum fuga, 
-        repudiandae repellat obcaecati quidem? Id ab iusto quod a illo eius itaque cupiditate beatae nisi aspernatur?
-      </p>
-      </div>
-
     </div>
   );
 };

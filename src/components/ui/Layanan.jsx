@@ -32,8 +32,16 @@ const Layanan = () => {
           </div>
         ))}
       </div>
+<<<<<<< HEAD
     </div>
   );
 };
 
 export default Layanan;
+=======
+    );
+  };
+  
+  export default Layanan;
+  
+>>>>>>> faefc809ee5999b7ee5d1081b763d83afe3fcf07

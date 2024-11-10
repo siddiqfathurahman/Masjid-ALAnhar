@@ -48,7 +48,7 @@ const Hero = () => {
     }
 
     if (!next) {
-      next = prayerTimes[0]; // If no upcoming prayer, set to the first prayer time of the day (if it's past Isha, it'll go back to Fajr)
+      next = prayerTimes[0]; 
     }
 
     setNextPrayer(next);
@@ -57,7 +57,7 @@ const Hero = () => {
   useEffect(() => {
     fetchJadwalSholat();
     const interval = setInterval(() => {
-      fetchJadwalSholat(); // Fetch again every minute to update the next prayer time
+      fetchJadwalSholat(); 
     }, 60000);
 
     return () => clearInterval(interval);
@@ -85,7 +85,7 @@ const Hero = () => {
               {/* Kotak Shalat Selanjutnya */}
               <div className="bg-white text-black font-poppins rounded-xl shadow-lg p-4 w-[440px] h-[140px]">
                 <div className="text-5xl font-semibold mb-2">Shalat {nextPrayer}</div>
-                <div className="text-4xl font-bold mt-2">{jadwalSholat[nextPrayer]}</div>
+                <div className="text-4xl font-bold mt-2">{jadwalSholat[nextPrayer]} WIB</div>
               </div>
             </div>
 
@@ -96,7 +96,7 @@ const Hero = () => {
                   return (
                     <div key={prayer} className="bg-white text-black rounded-xl shadow-lg p-4">
                       <div className="text-lg font-medium">Shalat {prayer}</div>
-                      <div>{jadwalSholat[prayer]}</div>
+                      <div>{jadwalSholat[prayer]} WIB</div>
                     </div>
                   );
                 }

@@ -32,13 +32,13 @@ const Hero = () => {
   };
 
   const determineNextPrayer = (timings) => {
-    const prayerTimes = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha']; // Filtered list of prayers
+    const prayerTimes = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha']; 
     const currentTime = new Date();
     const currentTimeWIB = new Date(currentTime.toLocaleString("en-US", { timeZone: "Asia/Jakarta" }));
 
     let next = null;
 
-    // Iterate over prayer times and find the next prayer
+
     for (let i = 0; i < prayerTimes.length; i++) {
       const prayerTime = convertTo24Hour(timings[prayerTimes[i]]);
       if (prayerTime > currentTimeWIB) {

@@ -15,7 +15,7 @@ const Layanan = () => {
         Masjid Al-Anhar menyediakan berbagai layanan untuk mendukung kebutuhan ibadah dan kegiatan sosial umat. Kami berkomitmen untuk menciptakan lingkungan yang nyaman dan aman bagi seluruh jamaah.
       </p>
 
-      {/* Grid untuk gambar di mobile, tablet, dan desktop */}
+    
       <div className="grid md:px-40 grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 justify-items-center">
         {layananData.map((layanan) => (
           <div key={layanan.id} className="relative">

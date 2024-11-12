@@ -33,7 +33,7 @@ const Programdakwah = () => {
               view === 'visi' ? 'bg-green-800 text-white' : 'bg-white text-black'
             }`}
             onClick={() => setView('visi')}
-          >
+          > 
             Visi
           </button>
         </div>

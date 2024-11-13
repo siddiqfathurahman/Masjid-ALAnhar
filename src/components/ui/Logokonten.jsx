@@ -7,7 +7,8 @@ const Logo = () => {
             <div className="flex justify-center gap-5 mt-5">
                 <img src="/muhammadiyah.png" alt="Muhammadiyah" className="w-40 h-40 object-contain hover:scale-110 transition-transform duration-200" />
                 <img src="/takmir.png" alt="Takmir" className="w-40 h-40 object-contain hover:scale-110 transition-transform duration-200" />
-
+                <img src="/ramah.png" alt="Ramah" className="w-40 h-40 object-contain hover:scale-110 transition-transform duration-200" />
+                <img src="/tpa.png" alt="TPA" className="w-40 h-40 object-contain hover:scale-110 transition-transform duration-200" />
             </div>
         </div>
     );

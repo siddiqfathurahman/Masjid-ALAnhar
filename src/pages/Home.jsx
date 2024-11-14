@@ -4,7 +4,7 @@ import Layanan from '../components/ui/Layanan';
 import Fil from '../components/ui/Fil';
 import Programdakwah from '../components/ui/Programdakwah';
 import Logo from '../components/ui/Logokonten';
-import InfaqDonasi from '../components/ui/Infaq';
+
 
 
 export default function Home() {

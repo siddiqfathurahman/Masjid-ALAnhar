@@ -21,7 +21,7 @@ export default function Navbar() {
     <nav className="bg-green-900 p-4">
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-white text-2xl font-bold">
-          <Link to="/">Logo</Link>
+          <Link to="/">logo</Link>
         </div>
         <ul className="hidden md:flex space-x-6 text-white">
           <li className="hover:text-slate-300 cursor-pointer">

@@ -1,3 +1,7 @@
+import { FaInstagram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <footer className="bg-green-900 font-poppins text-white px-8 py-5 flex flex-wrap justify-around">
@@ -36,7 +40,11 @@ const Footer = () => {
         </ul>
       </div>
       <div className="w-full sm:w-auto mb-4">
-
+        <div className="flex gap-3">
+          <FaInstagram className="text-4xl"/>
+          <FaYoutube className="text-4xl"/>
+          <FaWhatsapp className="text-4xl"/>
+        </div>
 
         <div className="mt-4">
           <iframe

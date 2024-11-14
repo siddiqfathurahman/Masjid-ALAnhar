@@ -15,7 +15,7 @@ const Hero = () => {
         },
       });
 
-      const timings = response.data.data.timings;
+      const timings = response.data.data.timings; 
       setJadwalSholat(timings);
       determineNextPrayer(timings);
     } catch (error) {

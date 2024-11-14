@@ -18,7 +18,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-green-900 p-4">
+    <nav className="bg-green-900 p-4 font-poppins font-bold">
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-white text-2xl font-bold">
           <Link to="/">logo</Link>

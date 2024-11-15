@@ -4,6 +4,7 @@ import axios from "axios";
 const Hero = () => {
   const [jadwalSholat, setJadwalSholat] = useState(null);
   const [nextPrayer, setNextPrayer] = useState(null);
+  const [timeRemaining, setTimeRemaining] = useState("");
 
   const fetchJadwalSholat = async () => {
     try {
@@ -37,20 +38,33 @@ const Hero = () => {
     const currentTimeWIB = new Date(currentTime.toLocaleString("en-US", { timeZone: "Asia/Jakarta" }));
 
     let next = null;
+    let nextPrayerTime = null;
 
     for (let i = 0; i < prayerTimes.length; i++) {
       const prayerTime = convertTo24Hour(timings[prayerTimes[i]]);
       if (prayerTime > currentTimeWIB) {
         next = prayerTimes[i];
+        nextPrayerTime = prayerTime;
         break;
       }
     }
 
     if (!next) {
       next = prayerTimes[0];
+      nextPrayerTime = convertTo24Hour(timings[next]);
     }
 
     setNextPrayer(next);
+    calculateTimeRemaining(nextPrayerTime);
+  };
+
+  const calculateTimeRemaining = (nextPrayerTime) => {
+    const currentTime = new Date();
+    const timeDiff = nextPrayerTime - currentTime;
+    const hoursRemaining = Math.floor(timeDiff / (1000 * 60 * 60));
+    const minutesRemaining = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+  
+    setTimeRemaining(`${hoursRemaining} jam dan ${minutesRemaining} menit`);
   };
 
   useEffect(() => {
@@ -77,10 +91,13 @@ const Hero = () => {
         {jadwalSholat ? (
           <div className="flex flex-col md:flex-row items-center md:items-start md:justify-between space-y-4 md:space-y-0">
             <div className="flex-1 text-center font-poppins">
-              <div className="text-lg sm:text-xl md:text-2xl font-bold mb-2">Jadwal Shalat Selanjutnya</div>
+              <div className="text-lg sm:text-xl font-medium mb-2">Jadwal Shalat Selanjutnya</div>
               <div className="bg-white text-black rounded-xl shadow-lg p-3 sm:p-4 w-full md:w-[400px] h-auto">
-                <div className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-2">Shalat {nextPrayer}</div>
+                <div className="text-3xl sm:text-4xl md:text-4xl font-semibold mb-2">Shalat {nextPrayer}</div>
                 <div className="text-2xl sm:text-3xl md:text-4xl font-bold mt-2">{jadwalSholat[nextPrayer]} WIB</div>
+                <div className="text-lg sm:text-x">
+                  {timeRemaining} lagi
+                </div>
               </div>
             </div>
 

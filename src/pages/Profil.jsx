@@ -1,42 +1,40 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import Fil from '../components/ui/Fil';
 
-export default function Profil() {
+const ProfilMasjid = () => {
+  
+
   return (
-    <div className="font-poppins md:px-10 mb-10 px-3 mt-10">
-      <h1 className="text-3xl font-bold">Profil Masjid AL-ANHAR</h1>
-      <p className="pt-5 text-justify indent-8">
-        Masjid Al-Anhar, terletak di Keparakan Kidul, menjadi pusat kegiatan keagamaan dan sosial masyarakat. Selain sebagai tempat ibadah, masjid ini berfungsi sebagai pusat pembinaan spiritual, pendidikan, dan berbagai program sosial. Dengan arsitektur sederhana namun nyaman, Masjid Al-Anhar mendukung ukhuwah Islamiyah dan gotong royong warga sekitar.
+    <div className="px-3 md:px-10 font-poppins mt-10 md:mt-14 pb-10 text-left">
+      <Fil />
+      <h2 className="mt-16 text-2xl font-semibold text-left">Asal Muasal Nama Masjid</h2>
+      <p className="px-5 pt-5 text-justify indent-8 text-left">
+      Nama <span className="font-bold">"Al-Anhar"</span>, yang berarti <span className="font-bold">"sungai-sungai"</span> dalam bahasa Arab, terinspirasi dari gambaran surga dalam Al-Qur'an. Nama ini mencerminkan harapan agar Masjid Al-Anhar menjadi sumber kedamaian dan keberkahan, layaknya sungai yang mengalir membawa kehidupan. Dengan semangat tersebut, masjid ini berkomitmen untuk terus mengalirkan kebaikan bagi umat dan masyarakat sekitar.
       </p>
 
-      <h1 className="text-2xl font-bold mt-8">Asal Muasal Nama Masjid</h1>
-      <p className="pt-5 text-justify indent-8">
-        Nama <span className="font-bold">"Al-Anhar"</span>, yang berarti <span className="font-bold">"sungai-sungai"</span> dalam bahasa Arab, terinspirasi dari gambaran surga dalam Al-Qur'an. Nama ini mencerminkan harapan agar Masjid Al-Anhar menjadi sumber kedamaian dan keberkahan, layaknya sungai yang mengalir membawa kehidupan. Selain itu, nama ini juga menggambarkan keinginan pendiri masjid untuk menjadikannya pusat spiritual, mengalirkan ilmu dan kebaikan bagi masyarakat.
-      </p>
 
-      <div className="mt-8">
-        <div className="mt-4 gap-8 flex flex-col md:flex-row">
-          <div className="flex-1">
-            <h2 className="text-2xl font-semibold">Visi</h2>
-            <p className="pt-2">
-              Menjadi pusat kegiatan keagamaan yang mendukung pembinaan umat, mempererat ukhuwah Islamiyah, serta mengembangkan kehidupan yang berlandaskan syariat Islam.
-            </p>
-          </div>
-          <div className="flex-1">
-            <h2 className="text-2xl font-semibold">Misi</h2>
-            <ol className="pt-2 list-decimal list-inside">
-              <li className='pt-2'>Menyediakan sarana dan prasarana yang nyaman untuk kegiatan ibadah.</li>
-              <li className='pt-2'>Mengadakan kajian rutin untuk memperkuat pemahaman Islam.</li>
-              <li className='pt-2'>Menyelenggarakan kegiatan sosial untuk memperkuat hubungan masyarakat.</li>
-            </ol>
-          </div>
+      <div className="mt-8 px-5 flex flex-col md:flex-row text-left">
+        <div className="flex-1 mb-4 md:mb-0">
+          <h2 className="text-2xl font-semibold">Visi</h2>
+          <p>
+            Menjadi pusat kegiatan keagamaan yang mendukung pembinaan umat, mempererat ukhuwah Islamiyah, serta mengembangkan kehidupan yang berlandaskan syariat Islam.
+          </p>
+        </div>
+        <div className="flex-1">
+          <h2 className="text-2xl font-semibold">Misi</h2>
+          <ol className="list-decimal list-inside">
+            <li className='pt-2'>Menyediakan sarana dan prasarana yang nyaman untuk kegiatan ibadah.</li>
+            <li className='pt-2'>Mengadakan kajian rutin untuk memperkuat pemahaman Islam.</li>
+            <li className='pt-2'>Menyelenggarakan kegiatan sosial untuk memperkuat hubungan masyarakat.</li>
+          </ol>
         </div>
       </div>
 
-      <h1 className="text-3xl font-bold mt-8">Program Masjid</h1>
-      <p className="pt-5">
+      <h2 className="mt-8 text-3xl font-bold text-left">Program Masjid</h2>
+      <p className="pt-5 text-left">
         Masjid Al-Anhar mengadakan berbagai program untuk mendukung kegiatan ibadah, pendidikan, dan sosial masyarakat. Berikut adalah 10 program utama Masjid Al-Anhar:
       </p>
-      <ol className="list-decimal list-inside pt-5 pl-6">
+      <ol className="list-decimal list-inside pl-3 text-left">
         <li className="pl-2 pt-2">Pelaksanaan shalat berjamaah lima waktu dengan imam tetap.</li>
         <li className="pl-2 pt-2">Kajian keislaman rutin dan ceramah tematik setiap minggu.</li>
         <li className="pl-2 pt-2">Taman Pendidikan Al-Qur'an (TPA) untuk anak-anak dan remaja.</li>
@@ -49,9 +47,7 @@ export default function Profil() {
         <li className="pl-2 pt-2">Renovasi fasilitas masjid dan pengadaan perpustakaan Islami.</li>
       </ol>
 
-      <h1 className="text-3xl font-bold mt-8">Pengurus Masjid</h1>
-
-      {/* Tabel Pengurus Masjid */}
+      <h2 className="mt-8 text-3xl font-bold text-left">Pengurus Masjid</h2>
       <table className="min-w-full mt-4 table-auto border-collapse border-2 border-gray-300">
         <thead>
           <tr className="bg-white">
@@ -72,4 +68,6 @@ export default function Profil() {
       </table>
     </div>
   );
-}
+};
+
+export default ProfilMasjid;

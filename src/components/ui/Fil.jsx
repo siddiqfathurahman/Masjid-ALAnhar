@@ -25,19 +25,20 @@ const Fil = () => {
   }, []);
 
   return (
-    <div className="lg:px-0 font-poppins mt-10 md:mt-16 lg:mt-36 text-left md:text-center">
+    <div className="lg:px-0 font-poppins mt-10  text-left md:text-center">
       <h1 className="px-5 text-3xl md:text-4xl lg:text-5xl font-extrabold">
         <span className="text-black">Profil </span>
         <span
           ref={titleRef}
-          className={`relative inline-block p-1 text-white ${isVisible ? 'animate-gradient-box transform skew-y-3' : ''}`}
+          className={`relative inline-block p-1 text-white ${isVisible ? 'animate-gradient-box transform skew-y-2' : ''}`}
         >
           MASJID AL-ANHAR
         </span>
       </h1>
-      <p className="px-5 text-lg md:text-xl max-w-2xl md:max-w-3xl lg:max-w-4xl mt-2 md:mt-3 mx-auto text-left md:text-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eligendi neque esse cum fuga, 
-        repudiandae repellat obcaecati quidem? Id ab iusto quod a illo eius itaque cupiditate beatae nisi aspernatur?
+      <p className="px-5 text-lg md:text-xl max-w-2xl md:max-w-3xl lg:max-w-4xl mt-2 md:mt-3 mx-auto">
+        Masjid Al-Anhar, terletak di Keparakan Kidul, menjadi pusat kegiatan keagamaan dan sosial masyarakat. 
+        Selain sebagai tempat ibadah, masjid ini berfungsi sebagai pusat pembinaan spiritual, pendidikan, dan berbagai program sosial.
+        Dengan arsitektur sederhana namun nyaman, Masjid Al-Anhar mendukung ukhuwah Islamiyah dan gotong royong warga sekitar.
       </p>
     </div>
   );

@@ -25,7 +25,7 @@ const Fil = () => {
   }, []);
 
   return (
-    <div className="lg:px-0 font-poppins mt-20 md:mt-28 lg:mt-36 text-left md:text-center">
+    <div className="lg:px-0 font-poppins mt-10 md:mt-16 lg:mt-36 text-left md:text-center">
       <h1 className="px-5 text-3xl md:text-4xl lg:text-5xl font-extrabold">
         <span className="text-black">Profil </span>
         <span

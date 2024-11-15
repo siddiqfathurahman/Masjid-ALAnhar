@@ -16,7 +16,7 @@ import RunningText from './components/ui/Running-text';
 export default function App() {
   return (
     <Router>
-      <RunningText text="Selamat datang di website Masjid Al-Anhar Alamat : Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
+      <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
       <Navbar />
       <div className="content"> 
         <Routes>

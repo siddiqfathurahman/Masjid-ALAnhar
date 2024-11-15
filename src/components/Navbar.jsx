@@ -31,7 +31,7 @@ export default function Navbar() {
             <Link to="/profil">Profil</Link>
           </li>
           <li className="hover:text-slate-300 cursor-pointer">
-            <Link to="/program">Program</Link>
+            <Link to="/program">Program Dakwah</Link>
           </li>
           <li className="relative cursor-pointer flex items-center" onClick={toggleDropdown}>
             <span className="hover:text-slate-300">Organisasi</span>

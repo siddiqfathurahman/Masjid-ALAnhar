@@ -60,10 +60,17 @@ const Hero = () => {
 
   const calculateTimeRemaining = (nextPrayerTime) => {
     const currentTime = new Date();
-    const timeDiff = nextPrayerTime - currentTime;
+    let timeDiff = nextPrayerTime - currentTime;
+
+    // Jika waktu doa berikutnya sudah lewat, tambahkan satu hari ke waktu doa berikutnya
+    if (timeDiff < 0) {
+      const oneDayInMilliseconds = 24 * 60 * 60 * 1000;
+      timeDiff += oneDayInMilliseconds;
+    }
+
     const hoursRemaining = Math.floor(timeDiff / (1000 * 60 * 60));
     const minutesRemaining = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
-  
+
     setTimeRemaining(`${hoursRemaining} jam dan ${minutesRemaining} menit`);
   };
 

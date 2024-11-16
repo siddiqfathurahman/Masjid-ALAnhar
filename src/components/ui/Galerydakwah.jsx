@@ -43,7 +43,7 @@ const Gallerydakwah = () => {
         {visibleImages.map((image, index) => (
           <div key={image.id} className="relative">
             <div
-              className="overflow-hidden rounded-lg cursor-pointer group"
+              className="overflow-hidden rounded-md cursor-pointer group"
               onClick={() => handleImageClick(index)}
             >
               <img

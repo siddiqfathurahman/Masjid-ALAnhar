@@ -5,7 +5,7 @@ import { GiPositionMarker } from "react-icons/gi";
 const Kontak = () => {
   return (
     <div className="font-poppins mb-10">
-      <div className="md:mt-20 md:ml-20 mt-10 ml-3">
+      <div className="md:mt-10 md:ml-10 mt-10 ml-3">
         <h1 className="font-extrabold text-3xl">Kontak</h1>
         <p>
           Kami siap membantu Anda! Jika Anda memiliki pertanyaan atau ingin

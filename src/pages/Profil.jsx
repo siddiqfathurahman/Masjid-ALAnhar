@@ -47,7 +47,7 @@ const ProfilMasjid = () => {
         <li className="pl-2 pt-2">Renovasi fasilitas masjid dan pengadaan perpustakaan Islami.</li>
       </ol>
 
-      <h2 className="mt-8 text-3xl font-bold text-left">Pengurus Masjid</h2>
+      <h2 className="mt-8 text-3xl font-bold text-left">Pengurus Harian</h2>
       <table className="min-w-full mt-4 table-auto border-collapse border-2 border-gray-300">
         <thead>
           <tr className="bg-white">

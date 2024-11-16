@@ -18,7 +18,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-green-900 p-4 font-poppins font-bold">
+    <nav className="bg-green-900 p-4 w-full z-10 font-poppins font-bold">
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-white text-2xl font-bold">
           <Link to="/">logo</Link>
@@ -44,7 +44,7 @@ export default function Navbar() {
               <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
             </svg>
             {isDropdownOpen && (
-              <ul className="absolute top-full left-0 bg-green-800 text-white w-40 rounded shadow-lg">
+              <ul className="absolute top-full left-0 bg-green-800 text-white w-40 rounded-lg pt-1 shadow-lg">
                 <li className="hover:bg-slate-300 px-4 py-2">
                   <Link to="/organisasi/ramah" onClick={() => { toggleMenu(); closeDropdown(); }}>Ramah</Link>
                 </li>

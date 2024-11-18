@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="order-1 md:order-1">
             <img src="/bg.JPG" alt="FAHost" className="h-16" />
             <p className="text-sm text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi qui tempore repellat ullam explicabo voluptatum, distinctio possimus maxime reiciendis expedita in quae, corrupti temporibus recusandae itaque quod porro non aperiam?
+            Mari bersama-sama memakmurkan Masjid Al-Anhar melalui doa, donasi, dan partisipasi aktif dalam program-program kami. Bergabunglah dalam perjalanan menuju keberkahan
             </p>
           </div>
 

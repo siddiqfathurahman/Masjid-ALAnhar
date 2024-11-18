@@ -37,7 +37,7 @@ export default function Navbar() {
             <Link to="/program">Program Dakwah</Link>
           </li>
           <li className="relative cursor-pointer flex items-center" onClick={toggleDropdown}>
-            <span className={`hover:text-slate-300 ${isActive('/organisasi')}`}>Organisasi</span>
+            <span className={`hover:text-slate-300 ${isActive('/organisasi')}`}>Lembaga </span>
             <svg
               className={`w-4 h-4 ml-1 transition-transform ${isDropdownOpen ? 'transform rotate-180' : ''}`}
               fill="currentColor"
@@ -94,7 +94,7 @@ export default function Navbar() {
             </li>
             <li className={`cursor-pointer`} onClick={toggleDropdown}>
               <div className="flex items-center">
-                <span className="hover:text-green-800 cursor-pointer">Organisasi</span>
+                <span className="hover:text-green-800 cursor-pointer">Lembaga</span>
                 <svg
                   className={`w-4 h-4 ml-1 transition-transform ${isDropdownOpen ? 'transform rotate-180' : ''}`}
                   fill="currentColor"

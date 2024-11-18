@@ -13,6 +13,7 @@ import Ramah from './pages/Ramah';
 import Takmir from './pages/Takmir';
 import RunningText from './components/ui/Running-text';
 import Tpa from './pages/Tpa';
+import Aisyiyah from './pages/Aisyiyah';
 
 export default function App() {
   return (

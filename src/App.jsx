@@ -12,6 +12,7 @@ import Kontak from './pages/Kontak';
 import Ramah from './pages/Ramah';
 import Takmir from './pages/Takmir';
 import RunningText from './components/ui/Running-text';
+import Tpa from './pages/Tpa';
 
 export default function App() {
   return (
@@ -26,6 +27,8 @@ export default function App() {
           <Route path="/kontak"  element={<Kontak />}/>
           <Route path="/organisasi/ramah" element={<Ramah />} /> 
           <Route path="/organisasi/takmir" element={<Takmir />}  />
+          <Route path="/organisasi/tpa" element={<Tpa />}  />
+          <Route path="/organisasi/aisyiyah" element={<Aisyiyah />}  />
         </Routes>
       </div>
       <Footer />

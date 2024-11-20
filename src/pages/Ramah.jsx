@@ -26,7 +26,6 @@ export default function Ramah() {
 
   return (
     <div className="bg-gray-50 min-h-screen py-10 px-5 font-poppins">
-      {/* Header */}
       <header className="text-center mb-10">
       <h2 className="text-3xl md:text-5xl font-extrabold">
           <span
@@ -38,8 +37,8 @@ export default function Ramah() {
             RAMAH Mergangsan
           </span>
         </h2>
-        <h1 className="text-3xl font-extrabold pt-2 text-black ">Remaja Masjid Al-Anhar</h1>
-        <p className="text-xl text-gray-700 italic mt-2">
+        <h1 className="md:text-3xl text-2xl font-extrabold pt-2 text-black ">Remaja Masjid Al-Anhar</h1>
+        <p className="text-lg text-gray-700 italic mt-2">
           "Bersama Menuju Generasi Islami yang Kreatif dan Berakhlak Mulia"
         </p>
       </header>

@@ -21,10 +21,10 @@ export default function Navbar() {
   const isActive = (path) => location.pathname === path ? 'border-b-2 border-white' : '';
 
   return (
-    <nav className="bg-green-900 p-4 w-full z-10 font-poppins font-bold">
+    <nav className="bg-green-900 p-1 w-full z-10 font-poppins font-bold">
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-white text-2xl font-bold">
-          <Link to="/">logo</Link>
+          <img src="/logo.png" alt="" className='w-52' />
         </div>
         <ul className="hidden md:flex space-x-6 text-white">
           <li className={`hover:text-slate-300 cursor-pointer ${isActive('/')}`}>

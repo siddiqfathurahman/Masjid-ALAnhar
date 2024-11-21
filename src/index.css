@@ -26,32 +26,23 @@
 }
 
 .perspective-1000 {
-  perspective: 1000px; /* Menambahkan perspektif untuk flip */
+  perspective: 1000px;
 }
 
 .transform-style-preserve-3d {
-  transform-style: preserve-3d; /* Memastikan sisi belakang tetap ada selama flip */
+  transform-style: preserve-3d; 
 }
 
 .rotate-y-180 {
-  transform: rotateY(180deg); /* Rotate 180 derajat pada sumbu Y */
+  transform: rotateY(180deg); 
 }
 
 .backface-hidden {
-  backface-visibility: hidden; /* Menyembunyikan sisi belakang saat tidak terlihat */
+  backface-visibility: hidden;
 }
 
 .transition-transform {
-  transition: transform 0.7s ease-in-out; /* Menambahkan transisi untuk flip */
-}
-
-
-.struktur-card:nth-child(odd) {
-
-}
-
-.struktur-card:nth-child(even) {
-
+  transition: transform 0.7s ease-in-out;
 }
 
 .struktur-card:nth-child(4) {
@@ -67,4 +58,12 @@
 }
 
 
-
+@media (max-width: 1023px) {
+  .struktur-card:nth-child(odd),
+  .struktur-card:nth-child(even),
+  .struktur-card:nth-child(4),
+  .struktur-card:nth-child(2),
+  .struktur-card:nth-child(3) {
+    transform: none; 
+  }
+}

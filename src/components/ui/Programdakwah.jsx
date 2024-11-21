@@ -17,7 +17,6 @@ const Programdakwah = () => {
 
   return (
     <div className="text-center p-5 font-poppins">
-     
       <div className="bg-slate-100 rounded-2xl w-56 p-2 py-2 mx-auto">
         <div className="flex justify-center rounded-xl shadow-2xl overflow-hidden">
           <button
@@ -39,7 +38,6 @@ const Programdakwah = () => {
         </div>
       </div>
 
-     
       <div className="flex justify-center flex-wrap gap-4 mt-4">
         {view === 'dakwah'
           ? (
@@ -57,8 +55,7 @@ const Programdakwah = () => {
             ))
           )
           : (
-            
-            <div className="grid grid-cols-2 gap-4 md:px-40">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:px-40">
               {Visi.map((visi) => (
                 <div
                   key={visi.id}

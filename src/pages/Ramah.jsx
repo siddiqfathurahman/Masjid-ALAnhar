@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import Struktur from '../components/ui/Strukturramah';
 
 export default function Ramah() {
   const titleRef = useRef(null);
@@ -51,6 +52,20 @@ export default function Ramah() {
         Kegiatan kami mencakup kajian tematik, pelatihan kepemimpinan, serta program-program sosial yang bertujuan memberikan manfaat langsung bagi masyarakat.
         </p>
       </div>
+      <div className='md:px-10 pt-10 px-3 '>
+        <h1 className='text-3xl font-extrabold mb-3'>Program Kerja</h1>
+        <ol className="list-decimal list-inside pl-3 text-left">
+          <li className="pl-2 pt-2">Bakti sosial dan santunan masyarakat.</li>
+          <li className="pl-2 pt-2">Bersih-bersih masjid dan lingkungan.</li>
+          <li className="pl-2 pt-2">Event Ramadhan: buka puasa bersama dan takjil gratis.</li>
+          <li className="pl-2 pt-2">Tadarus Al-Qur'an selama Ramadhan.</li>
+          <li className="pl-2 pt-2">Takbiran keliling Idul Fitri dan Idul Adha.</li>
+          <li className="pl-2 pt-2">Penyembelihan dan distribusi kurban.</li>
+          <li className="pl-2 pt-2">Kegiatan remaja masjid: diskusi dan pelatihan.</li>
+      </ol>
+        
+      </div>
+      <Struktur />
     </div>
   );
 }

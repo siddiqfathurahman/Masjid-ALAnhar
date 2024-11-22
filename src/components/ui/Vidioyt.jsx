@@ -8,10 +8,10 @@ const Vidio = () => {
   
     return (
       <div className="p-6">
-        {/* Judul */}
+
         <h1 className="text-2xl font-bold font-poppins font-extrabold mb-6">Vidio Terbaru</h1>
         
-        {/* Grid Container */}
+
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           {videoLinks.map((link, index) => (
             <iframe

@@ -71,6 +71,43 @@ export default function Ramah() {
       <Struktur />
       <Bidang />
       <Galleryramah />
+      <div className="pt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+  <a
+    href="https://drive.google.com/your-link-1443H"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-green-900 text-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 text-center"
+  >
+    DOKUMENTASI TAKBIRAN 1443H/2022
+  </a>
+  <a
+    href="https://drive.google.com/your-link-1444H"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-green-900 text-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 text-center"
+  >
+    DOKUMENTASI TAKBIRAN 1444H/2023
+  </a>
+  <a
+    href="https://drive.google.com/your-link-1445H"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-green-900 text-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 text-center"
+  >
+    DOKUMENTASI TAKBIRAN 1445H/2024
+  </a>
+  <a
+    href="https://drive.google.com/your-link-qurban-1445H"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-green-900 text-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 text-center"
+  >
+    DOKUMENTASI QURBAN 1445H/2024
+  </a>
+</div>
+
+
+
     </div>
   );
 }

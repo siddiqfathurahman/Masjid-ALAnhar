@@ -1,7 +1,6 @@
 const Bidang = () => {
     return (
       <div className="md:px-10 md:pt-20 pt-10 px-3">
-        <h1 className="text-2xl font-extrabold mb-3">Bidang-Bidang Remaja Masjid</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
           <div className="mb-6">

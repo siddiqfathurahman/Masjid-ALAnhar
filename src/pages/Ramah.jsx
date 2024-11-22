@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Struktur from '../components/ui/Strukturramah';
 import Galleryramah from '../components/ui/Galeryramah';
 import Bidang from '../components/ui/Bidang';
+import Vidio from '../components/ui/Vidioyt';
 
 export default function Ramah() {
   const titleRef = useRef(null);
@@ -71,37 +72,50 @@ export default function Ramah() {
       <Struktur />
       <Bidang />
       <Galleryramah />
-      <div className="pt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <Vidio />
+      <div className="pt-10 grid md:px-32 px-0 grid-cols-1 md:grid-cols-2 gap-6">
   <a
     href="https://drive.google.com/your-link-1443H"
     target="_blank"
     rel="noopener noreferrer"
-    className="bg-green-900 text-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 text-center"
+    className="bg-green-900 text-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 text-center relative"
   >
+    <div className="absolute top-1 right-1 bg-red-500 text-white px-2 py-1 rounded text-[10px] font-semibold">
+      video
+    </div>
     DOKUMENTASI TAKBIRAN 1443H/2022
   </a>
   <a
     href="https://drive.google.com/your-link-1444H"
     target="_blank"
     rel="noopener noreferrer"
-    className="bg-green-900 text-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 text-center"
+    className="bg-green-900 text-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 text-center relative"
   >
+    <div className="absolute top-1 right-1 bg-blue-500 text-white px-1 py-1 rounded text-xs font-semibold">
+      Foto
+    </div>
     DOKUMENTASI TAKBIRAN 1444H/2023
   </a>
   <a
     href="https://drive.google.com/your-link-1445H"
     target="_blank"
     rel="noopener noreferrer"
-    className="bg-green-900 text-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 text-center"
+    className="bg-green-900 text-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 text-center relative"
   >
+    <div className="absolute top-1 right-1 bg-red-500 text-white px-1 py-1 rounded text-[10px] font-semibold">
+      Video
+    </div>
     DOKUMENTASI TAKBIRAN 1445H/2024
   </a>
   <a
     href="https://drive.google.com/your-link-qurban-1445H"
     target="_blank"
     rel="noopener noreferrer"
-    className="bg-green-900 text-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 text-center"
+    className="bg-green-900 text-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 text-center relative"
   >
+    <div className="absolute top-1 right-1 bg-blue-500 text-white px-1 py-1 rounded text-xs font-semibold">
+      Foto
+    </div>
     DOKUMENTASI QURBAN 1445H/2024
   </a>
 </div>

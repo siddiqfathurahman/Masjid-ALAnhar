@@ -35,7 +35,7 @@ const ProfilMasjid = () => {
       <p className="pt-5 text-left">
         Masjid Al-Anhar mengadakan berbagai program untuk mendukung kegiatan ibadah, pendidikan, dan sosial masyarakat. Berikut adalah 10 program utama Masjid Al-Anhar:
       </p>
-      <ol className="list-decimal list-inside pl-3 text-left">
+      <ol className="list-decimal list-inside pl-1 text-left">
         <li className="pl-2 pt-2">Pelaksanaan shalat berjamaah lima waktu dengan imam tetap.</li>
         <li className="pl-2 pt-2">Kajian keislaman rutin dan ceramah tematik setiap minggu.</li>
         <li className="pl-2 pt-2">Taman Pendidikan Al-Qur'an (TPA) untuk anak-anak dan remaja.</li>

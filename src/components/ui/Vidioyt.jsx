@@ -2,23 +2,23 @@ const Vidio = () => {
     const videoData = [
       {
         link: "https://www.youtube.com/embed/9JxctSJK_Us",
-        title: "Kegiatan Takbiran 1443H",
-        date: "12 Mei 2023"
+        title: "Takbiran Masjid Al-Anhar 1444H / 2023",
+        date: "1 Tahun yang lalu"
       },
       {
         link: "https://www.youtube.com/embed/e8Ayrygig9k",
-        title: "Kajian Tematik",
-        date: "25 Juli 2023"
+        title: "GUNJING | Short Movie Inspirasi",
+        date: "4 Tahun yang lalu"
       },
       {
         link: "https://www.youtube.com/embed/_3hb1n-5fV8",
-        title: "Program Sosial",
-        date: "10 Oktober 2023"
+        title: "ROCKI - ALIA | Short Movie ",
+        date: "4 Tahun yang lalu"
       },
       {
         link: "https://www.youtube.com/embed/Ti01ozKhkeI",
-        title: "Pelatihan Kepemimpinan",
-        date: "5 November 2023"
+        title: "Dari Masjid Untuk semua | Berbagi takjil",
+        date: "4 Tahun yang lalu"
       }
     ];
   
@@ -37,8 +37,8 @@ const Vidio = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
-              <div className="text-center mt-2">
-                <h3 className="text-lg font-semibold">{video.title}</h3>
+              <div className=" mt-2">
+                <h3 className="text-lg font-medium">{video.title}</h3>
                 <p className="text-sm text-gray-500">{video.date}</p>
               </div>
             </div>

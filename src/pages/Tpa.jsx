@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
+import Gallerytpa from '../components/ui/Galerytpa';
 
 const Tpa = () => {
   const titleRef = useRef(null);
@@ -25,7 +26,7 @@ const Tpa = () => {
   }, []);
 
   return (
-    <div className="font-poppins text-center flex flex-col items-center mb-10 mt-10 px-7">
+    <div className="font-poppins text-center flex flex-col mb-10 mt-10 px-7">
       <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold">
         <span
           ref={titleRef}
@@ -54,26 +55,46 @@ const Tpa = () => {
                 <li className="pl-2 pt-2">Pembinaan remaja melalui diskusi Islami dan pelatihan keterampilan.</li>
             </ol>
     </div>
-      
-      <h2 className="mt-14 text-3xl font-bold text-left">Pengurus Takmir Periode 2022 - 2026</h2>
-      <table className="min-w-full mt-4 table-auto border-collapse border-2 border-gray-300">
-        <thead>
-          <tr className="bg-white">
-            <th className="px-4 py-2 text-center border-2">No</th>
-            <th className="px-4 py-2 text-center border-2">Nama</th>
-            <th className="px-4 py-2 text-center border-2">Jabatan</th>
-          </tr>
-        </thead>
-        <tbody>
-          {Array.from({ length: 10 }).map((_, index) => (
-            <tr key={index} className="border-b">
-              <td className="px-4 py-2 text-center border-2">{index + 1}</td>
-              <td className="px-4 py-2 text-center border-2">Lorem Ipsum</td>
-              <td className="px-4 py-2 text-center border-2">Jabatan {index + 1}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+
+    <div>
+  <h2 className="mt-8 text-3xl font-bold text-left">Pengajar & Pendamping</h2>
+  <ul className="list-decimal list-inside pl-1 text-left pt-4">
+    <li className="pl-2 pt-2">Ustaz Lorem</li>
+    <li className="pl-2 pt-2">Ustaz Lorem</li>
+    <li className="pl-2 pt-2">Ustaz Lorem</li>
+    <li className="pl-2 pt-2">Ustaz Lorem</li>
+  </ul>
+</div>
+    
+    <div className='pt-10'>
+  <h1 className='text-3xl font-bold text-center'>Jadwal Belajar</h1>
+  <div className='flex flex-col mx-auto md:flex-row justify-center gap-4 pt-6'>
+    <div className='bg-red-500 text-white rounded-lg w-52 h-52 text-center flex flex-col items-center justify-center'>
+      <h1 className='font-bold text-3xl'>RABU</h1>
+      <h2 className='text-2xl'>16.00 - 17.00</h2>
+    </div>
+    <div className='bg-yellow-500 text-white rounded-lg w-52 h-52 text-center flex flex-col items-center justify-center'>
+      <h1 className='font-bold text-3xl'>SABTU</h1>
+      <h2 className='text-2xl'>16.00 - 17.00</h2>
+    </div>
+  </div>
+</div>
+
+
+
+<div className="mt-8 flex justify-center">
+  <div className="border-2 border-gray-300 rounded-lg p-10 text-center max-w-lg bg-white shadow-lg">
+    <h3 className="text-2xl font-bold text-gray-800">GRATIS</h3>
+    <p className="text-gray-600 mt-3">
+      Ayo daftarkan buah hati Anda di TPA Masjid Al-Anhar! Bersama kami, si kecil akan belajar Al-Qur'an dan nilai-nilai Islami untuk menjadi generasi Qurani yang cerdas dan berakhlak mulia.
+    </p>
+    <button className='bg-green-500 text-white px-4 py-2 rounded-lg mt-4'>Info Pendaftaran</button>
+  </div>
+</div>
+
+<Gallerytpa />
+
+
     </div>
   );
 };

@@ -2,7 +2,7 @@ const Logo = () => {
     return (
         <div className="py-10">
             <h1 className="font-poppins text-3xl font-extrabold text-center text-gray-800">
-                Organisasi
+                Lembaga Masjid Al-Anhar
             </h1>
             <div className="flex justify-center flex-wrap gap-5 mt-5">
                 <img

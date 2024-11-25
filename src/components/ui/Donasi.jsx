@@ -9,9 +9,8 @@ const DonasiInfaq = () => {
 
 
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
-
             <div className="col-span-1 text-center mb-4">
-              <img src="/bg.JPG" alt="Bank BSI" className="w-full h-auto" />
+              <img src="/bsi.png" alt="Bank BSI" className="w-full rounded-lg h-auto" />
             </div>
 
             <div className="col-span-1 sm:col-span-3 text-left">

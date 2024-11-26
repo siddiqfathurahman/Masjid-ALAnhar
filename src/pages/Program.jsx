@@ -64,7 +64,6 @@ const Program = () => {
       </div>
     </div>
     <Gallerydakwah />
-
     </>
     
   );

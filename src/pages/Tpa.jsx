@@ -54,7 +54,7 @@ const Tpa = () => {
             'Hafalan surat pendek dan doa-doa harian.',
             'Kajian akhlak dan nilai-nilai Islami untuk anak-anak.',
             'Lomba-lomba Islami, seperti adzan dan cerdas cermat Al-Qur\'an.',
-            'Kegiatan bersama, seperti buka puasa sunnah dan perayaan hari besar Islam.',
+
             'Kelas Tahsin untuk memperbaiki bacaan Al-Qur\'an.',
             'Pembinaan remaja melalui diskusi Islami dan pelatihan keterampilan.',
           ].map((item, index) => (

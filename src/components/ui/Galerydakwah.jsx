@@ -7,9 +7,9 @@ const Gallerydakwah = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
-    { id: 1, src: '/bg.JPG', title: 'galery1' },
-    { id: 2, src: '/bg.JPG', title: 'galery2' },
-    { id: 3, src: '/bg.JPG', title: 'galery3' },
+    { id: 1, src: '/dakwah1.jpeg', title: 'galery1' },
+    { id: 2, src: '/dakwah2.jpeg', title: 'galery2' },
+    { id: 3, src: '/dakwah3.jpeg', title: 'galery3' },
     { id: 4, src: '/bg.JPG', title: 'galery4' },
     { id: 5, src: '/bg.JPG', title: 'galery5' },
     { id: 6, src: '/bg.JPG', title: 'galery6' }
@@ -74,38 +74,39 @@ const Gallerydakwah = () => {
 
 
       {selectedImage && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="relative">
-            <button
-              className="absolute top-0 right-0 text-white text-3xl font-bold p-2"
-              onClick={closeModal}
-            >
-              ×
-            </button>
-            <div className="flex flex-col items-center">
-              <img
-                src={selectedImage}
-                alt="Enlarged"
-                className="max-w-full max-h-full object-contain"
-              />
-              <div className="flex justify-between w-full max-w-sm mt-4">
-                <button
-                  onClick={goToPreviousImage}
-                  className="text-white text-3xl p-4"
-                >
-                  <FiChevronLeft />
-                </button>
-                <button
-                  onClick={goToNextImage}
-                  className="text-white text-3xl p-4"
-                >
-                  <FiChevronRight />
-                </button>
-              </div>
-            </div>
-          </div>
+      <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+      <div className="relative bg-white rounded-lg p-4">
+      <button
+        className="absolute top-2 right-2 text-black text-2xl font-bold p-2"
+        onClick={closeModal}
+      >
+        ×
+      </button>
+      <div className="flex flex-col items-center">
+        <img
+          src={selectedImage}
+          alt="Enlarged"
+          className="w-auto max-w-[90vw] max-h-[80vh] object-contain"
+        />
+        <div className="flex justify-between w-full max-w-sm mt-4">
+          <button
+            onClick={goToPreviousImage}
+            className="text-black text-2xl p-4"
+          >
+            <FiChevronLeft />
+          </button>
+          <button
+            onClick={goToNextImage}
+            className="text-black text-2xl p-4"
+          >
+            <FiChevronRight />
+          </button>
         </div>
-      )}
+      </div>
+    </div>
+  </div>
+)}
+
     </div>
   );
 };

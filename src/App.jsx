@@ -1,5 +1,3 @@
-// src/App.js
-
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -14,6 +12,7 @@ import Takmir from './pages/Takmir';
 import RunningText from './components/ui/Running-text';
 import Tpa from './pages/Tpa';
 import Aisyiyah from './pages/Aisyiyah';
+import ScrollToTop from './components/ScrollToTop'; 
 
 export default function App() {
   return (
@@ -32,6 +31,7 @@ export default function App() {
           <Route path="/organisasi/aisyiyah" element={<Aisyiyah />}  />
         </Routes>
       </div>
+      <ScrollToTop /> 
       <Footer />
     </Router>
   );

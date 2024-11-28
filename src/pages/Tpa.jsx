@@ -59,7 +59,7 @@ const Tpa = () => {
             'Pembinaan remaja melalui diskusi Islami dan pelatihan keterampilan.',
           ].map((item, index) => (
             <li key={index} className="pl-2 pt-2">
-              {item}
+              {item} 
             </li>
           ))}
         </ol>

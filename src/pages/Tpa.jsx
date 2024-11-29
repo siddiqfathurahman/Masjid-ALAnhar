@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import Gallerytpa from '../components/ui/Galerytpa';
+import Gallery from '../components/ui/Gallery';
 
 const Tpa = () => {
   const titleRef = useRef(null);
@@ -24,6 +24,15 @@ const Tpa = () => {
       if (titleRef.current) observer.unobserve(titleRef.current);
     };
   }, []);
+
+  const images = [
+    { id: 1, src: "/bg.JPG", title: "tpa al-anhar" },
+    { id: 2, src: "/bg.JPG", title: "tpa al-anhar" },
+    { id: 3, src: "/bg.JPG", title: "tpa al-anhar" },
+    { id: 4, src: "/bg.JPG", title: "tpa al-anhar" },
+    { id: 5, src: "/bg.JPG", title: "tpa al-anhar" },
+    { id: 6, src: "/bg.JPG", title: "tpa al-anhar" },
+  ];
 
   return (
     <div className="font-poppins text-center flex flex-col mb-10 mt-10 px-7">
@@ -106,7 +115,11 @@ const Tpa = () => {
         </div>
       </div>
 
-      <Gallerytpa />
+      <Gallery
+        title="Galeri Kegiatan Masjid"
+        images={images}
+        imageStyle="rounded-lg shadow-lg"
+      />
     </div>
   );
 };

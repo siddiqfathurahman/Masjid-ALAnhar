@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Struktur from '../components/ui/Strukturramah';
-import Galleryramah from '../components/ui/Galeryramah';
 import Bidang from '../components/ui/Bidang';
 import Vidio from '../components/ui/Vidioyt';
+import Gallery from '../components/ui/Gallery';
 
 export default function Ramah() {
   const titleRef = useRef(null);
@@ -27,6 +27,15 @@ export default function Ramah() {
       if (titleRef.current) observer.unobserve(titleRef.current);
     };
   }, []);
+
+  const images = [
+    { id: 1, src: "/bg.JPG", title: "ramah mergangsan" },
+    { id: 2, src: "/bg.JPG", title: "ramah mergangsan" },
+    { id: 3, src: "/bg.JPG", title: "ramah mergangsan" },
+    { id: 4, src: "/bg.JPG", title: "ramah mergangsan" },
+    { id: 5, src: "/bg.JPG", title: "ramah mergangsan" },
+    { id: 6, src: "/bg.JPG", title: "ramah mergangsan" },
+  ];
 
   return (
     <div className="bg-gray-50 min-h-screen py-10 px-5 font-poppins">
@@ -74,7 +83,11 @@ export default function Ramah() {
 
       <Struktur />
       <Bidang />
-      <Galleryramah />
+      <Gallery
+        title="Galeri Kegiatan Masjid"
+        images={images}
+        imageStyle="rounded-lg shadow-lg"
+      />
       <Vidio />
 
       <div className="pt-10 grid md:px-32 px-0 grid-cols-1 md:grid-cols-2 gap-6">

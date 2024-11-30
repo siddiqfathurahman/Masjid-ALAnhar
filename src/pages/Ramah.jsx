@@ -1,32 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react';
 import Struktur from '../components/ui/Strukturramah';
 import Bidang from '../components/ui/Bidang';
 import Vidio from '../components/ui/Vidioyt';
 import Gallery from '../components/ui/Gallery';
+import AnimatedText from '../components/ui/AnimatedText';
 
 export default function Ramah() {
-  const titleRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(entry.target);
-        }
-      },
-      { threshold: 0.5 }
-    );
-
-    if (titleRef.current) {
-      observer.observe(titleRef.current);
-    }
-
-    return () => {
-      if (titleRef.current) observer.unobserve(titleRef.current);
-    };
-  }, []);
 
   const images = [
     { id: 1, src: "/bg.JPG", title: "ramah mergangsan" },
@@ -41,14 +19,7 @@ export default function Ramah() {
     <div className="bg-gray-50 min-h-screen py-10 px-5 font-poppins">
       <header className="text-center mb-10">
         <h2 className="text-3xl md:text-5xl font-extrabold">
-          <span
-            ref={titleRef}
-            className={`relative inline-block mt-2 p-2 text-white ${
-              isVisible ? 'animate-gradient-box transform' : ''
-            }`}
-          >
-            RAMAH Mergangsan
-          </span>
+        <AnimatedText>RAMAH MERGANGSAN</AnimatedText>
         </h2>
         <h1 className="md:text-3xl text-2xl font-extrabold pt-2 text-black">
           Remaja Masjid Al-Anhar

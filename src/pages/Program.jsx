@@ -1,29 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
+
 import Gallery from "../components/ui/Gallery";
+import AnimatedText from "../components/ui/AnimatedText";
 
 const Program = () => {
-  const titleRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(entry.target);
-        }
-      },
-      { threshold: 0.5 }
-    );
-
-    if (titleRef.current) {
-      observer.observe(titleRef.current);
-    }
-
-    return () => {
-      if (titleRef.current) observer.unobserve(titleRef.current);
-    };
-  }, []);
 
   const images = [
     { id: 1, src: "/dakwah1.jpeg", title: "kajian rabu" },
@@ -39,14 +18,7 @@ const Program = () => {
       <div className="font-poppins text-center flex flex-col items-center mb-10 mt-10 px-5">
         <h1 className="text-3xl font-extrabold">Program Dakwah</h1>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold">
-          <span
-            ref={titleRef}
-            className={`relative inline-block mt-2 p-1 text-white ${
-              isVisible ? "animate-gradient-box transform " : ""
-            }`}
-          >
-            MASJID AL-ANHAR
-          </span>
+        <AnimatedText>MASJID AL-ANHAR</AnimatedText>
         </h2>
         <div className="flex flex-col md:flex-row gap-10 md:gap-32 mt-12 items-center">
           <div className="flex flex-col items-center">

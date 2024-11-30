@@ -1,29 +1,7 @@
-import React, { useRef, useState, useEffect } from 'react';
 import Gallery from '../components/ui/Gallery';
+import AnimatedText from '../components/ui/AnimatedText';
 
 const Tpa = () => {
-  const titleRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(entry.target);
-        }
-      },
-      { threshold: 0.5 }
-    );
-
-    if (titleRef.current) {
-      observer.observe(titleRef.current);
-    }
-
-    return () => {
-      if (titleRef.current) observer.unobserve(titleRef.current);
-    };
-  }, []);
 
   const images = [
     { id: 1, src: "/bg.JPG", title: "tpa al-anhar" },
@@ -37,14 +15,7 @@ const Tpa = () => {
   return (
     <div className="font-poppins text-center flex flex-col mb-10 mt-10 px-7">
       <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold">
-        <span
-          ref={titleRef}
-          className={`relative inline-block mt-2 p-1 text-white transition-transform duration-700 ${
-            isVisible ? 'animate-gradient-box scale-105' : 'opacity-0'
-          }`}
-        >
-          TAMAN PENDIDIKAN AL QUR'AN
-        </span>
+      <AnimatedText>TAMAN PENDIDIKAN AL QUR'AN</AnimatedText>
       </h2>
       <p className="px-5 text-lg md:text-xl max-w-4xl md:max-w-3xl lg:max-w-4xl mt-2 md:mt-3 mx-auto">
         TPA Masjid Al-Anhar adalah program pendidikan Al-Quran yang bertujuan untuk membina anak-anak usia dini hingga

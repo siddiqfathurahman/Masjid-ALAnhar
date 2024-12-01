@@ -48,7 +48,7 @@ const Program = () => {
       </div>
 
       <Gallery
-        title="Galeri Kegiatan Masjid"
+        title="Galeri"
         images={images}
         imageStyle="rounded-lg shadow-lg"
       />

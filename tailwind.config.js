@@ -12,6 +12,10 @@ export default {
       animation: {
         marquee: 'marquee 20s linear infinite',
       },
+      colors: {
+        primary: "#1E40AF", 
+        secondary: "#9333EA", 
+        },
       keyframes: {
         marquee: {
           '0%': { transform: 'translateX(100%)' },

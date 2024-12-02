@@ -21,7 +21,7 @@ export default function Navbar() {
   const isActive = (path) => location.pathname === path ? 'border-b-2 border-white' : '';
 
   return (
-    <nav className="bg-green-900 px-2 w-full z-10 font-poppins font-bold">
+    <nav className="bg-green-800 px-2 w-full z-10 font-poppins font-bold">
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-white text-2xl font-bold">
           <img src="/logo.png" alt="" className='md:w-52 w-36' />

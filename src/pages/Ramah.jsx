@@ -48,7 +48,7 @@ export default function Ramah() {
           <li className="pl-2 pt-2">Tadarus Al-Qur'an selama Ramadhan.</li>
           <li className="pl-2 pt-2">Takbiran keliling Idul Fitri.</li>
           <li className="pl-2 pt-2">Panitia Penyembelihan dan distribusi kurban.</li>
-
+          <li className="pl-2 pt-2">Berperan Aktif dalam Kegiatan Sosial Masyarakat.</li>
         </ol>
       </div>
 

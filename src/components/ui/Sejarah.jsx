@@ -31,7 +31,7 @@ const Sejarah = () => {
   `;
 
   return (
-    <div className="px-3 md:px-10 font-poppins mt-10 md:mt-14 pb-10 text-left">
+    <div className="px-3 md:px-7 font-poppins mt-10 md:mt-14 pb-10 text-left">
       <h2 className="mt-16 text-2xl font-semibold text-left">Sejarah MASJID AL-ANHAR</h2>
 
 

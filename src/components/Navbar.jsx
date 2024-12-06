@@ -28,18 +28,18 @@ export default function Navbar() {
           <img src="/logo.png" alt="Logo" className="md:w-44 w-36" />
         </div>
         <ul className="hidden md:flex text-[20px] space-x-6 text-white">
-          <li className={`hover:text-slate-300 cursor-pointer ${isActive('/')}`}>
+          <li className={`hover:text-yellow-300 cursor-pointer ${isActive('/')}`}>
             <Link to="/">Home</Link>
           </li>
-          <li className={`hover:text-slate-300 cursor-pointer ${isActive('/profil')}`}>
+          <li className={`hover:text-yellow-300 cursor-pointer ${isActive('/profil')}`}>
             <Link to="/profil">Profil Masjid</Link>
           </li>
-          <li className={`hover:text-slate-300 cursor-pointer ${isActive('/program')}`}>
+          <li className={`hover:text-yellow-300 cursor-pointer ${isActive('/program')}`}>
             <Link to="/program">Program Dakwah</Link>
           </li>
           <li className="relative flex items-center">
             <button
-              className={`hover:text-slate-300 ${isActive('/organisasi')} flex items-center`}
+              className={`hover:text-yellow-300 ${isActive('/organisasi')} flex items-center`}
               onClick={toggleDropdown}
             >
               <span>Lembaga </span>

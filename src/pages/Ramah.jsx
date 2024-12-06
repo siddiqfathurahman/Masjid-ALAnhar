@@ -3,6 +3,7 @@ import Bidang from '../components/ui/Bidang';
 import Vidio from '../components/ui/Vidioyt';
 import Gallery from '../components/ui/Gallery';
 import AnimatedText from '../components/ui/AnimatedText';
+import Strukturdestop from '../components/ui/Strukturdestop';
 
 export default function Ramah() {
 
@@ -41,18 +42,27 @@ export default function Ramah() {
 
       <div className="md:px-10 pt-10 px-3">
         <h1 className="text-3xl font-extrabold mb-3">Program Kerja</h1>
-        <ol className="list-decimal list-inside pl-3 text-left">
-          <li className="pl-2 pt-2">Bakti sosial dan santunan masyarakat.</li>
-          <li className="pl-2 pt-2">Menjadikan Masjid sebagai Pusat Aktivitas Remaja.</li>
-          <li className="pl-2 pt-2">Event Ramadhan: buka puasa bersama dan takjil gratis.</li>
-          <li className="pl-2 pt-2">Tadarus Al-Qur'an selama Ramadhan.</li>
-          <li className="pl-2 pt-2">Takbiran keliling Idul Fitri.</li>
-          <li className="pl-2 pt-2">Panitia Penyembelihan dan distribusi kurban.</li>
-          <li className="pl-2 pt-2">Berperan Aktif dalam Kegiatan Sosial Masyarakat.</li>
+        <ol className="list-decimal list-inside pl-1 text-left">
+          <li className="pt-2">Bakti sosial dan santunan masyarakat.</li>
+          <li className="pt-2">Menjadikan Masjid sebagai Pusat Aktivitas Remaja.</li>
+          <li className="pt-2">Event Ramadhan: buka puasa bersama dan takjil gratis.</li>
+          <li className="pt-2">Tadarus Al-Qur'an selama Ramadhan.</li>
+          <li className="pt-2">Takbiran keliling Idul Fitri.</li>
+          <li className="pt-2">Panitia Penyembelihan dan distribusi kurban.</li>
+          <li className="pt-2">Berperan Aktif dalam Kegiatan Sosial Masyarakat.</li>
         </ol>
       </div>
 
-      <Struktur />
+      <div>
+      <div className="block md:hidden">
+        <Struktur />
+      </div>
+
+
+      <div className="hidden md:block">
+        <Strukturdestop />
+      </div>
+    </div>
       <Bidang />
       <Gallery
         title="Galeri"

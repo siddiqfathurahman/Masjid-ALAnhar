@@ -36,7 +36,7 @@ const Struktur = () => {
               anggota.jabatan === "Ketua" ? "order-first sm:order-none" : ""
             }`}
             onClick={() => handleFlip(index)}
-            data-aos="fade-up" 
+            data-aos="zoom-in" 
           >
             <div
               className={`relative w-full h-full transform-style-preserve-3d transition-transform duration-500 ${
@@ -53,7 +53,7 @@ const Struktur = () => {
                 <p>{anggota.motto}</p>
               </div>
             </div>
-            <h1 className="md:mt-4 mb-14 text-center text-xl font-medium">{anggota.jabatan}</h1>
+            <h1 className="md:mt-4 mb-16 text-center text-xl font-medium">{anggota.jabatan}</h1>
           </div>
         ))}
       </div>

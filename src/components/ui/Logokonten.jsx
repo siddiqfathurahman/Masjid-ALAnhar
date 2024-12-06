@@ -16,9 +16,9 @@ const Logo = () => {
                     className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain hover:scale-110 transition-transform duration-200"
                 />
                 <img
-                    src="/ramah.png"
+                    src="/rmh.png"
                     alt="Ramah"
-                    className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain hover:scale-110 transition-transform duration-200"
+                    className="w-24 h-auto sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain hover:scale-110 transition-transform duration-200"
                 />
                 <img
                     src="/tpa.png"

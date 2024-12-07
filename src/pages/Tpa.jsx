@@ -4,12 +4,10 @@ import AnimatedText from '../components/ui/AnimatedText';
 const Tpa = () => {
 
   const images = [
-    { id: 1, src: "/bg.JPG", title: "tpa al-anhar" },
-    { id: 2, src: "/bg.JPG", title: "tpa al-anhar" },
-    { id: 3, src: "/bg.JPG", title: "tpa al-anhar" },
-    { id: 4, src: "/bg.JPG", title: "tpa al-anhar" },
-    { id: 5, src: "/bg.JPG", title: "tpa al-anhar" },
-    { id: 6, src: "/bg.JPG", title: "tpa al-anhar" },
+    { id: 1, src: "/tpa1.jpeg", title: "tpa al-anhar" },
+    { id: 2, src: "/tpa2.jpeg", title: "tpa al-anhar" },
+    { id: 3, src: "/tpa3.jpeg", title: "tpa al-anhar" },
+    { id: 4, src: "/tpa4.jpeg", title: "tpa al-anhar" },
   ];
 
   return (
@@ -23,7 +21,7 @@ const Tpa = () => {
       </p>
 
       <div>
-        <h2 className="mt-8 text-3xl font-bold text-left">Program & Kegiatan</h2>
+        <h2 className="mt-8 text-3xl font-bold text-left">Program dan Kegiatan</h2>
         <p className="pt-5 text-left">
           Taman Pendidikan Al-Qur'an (TPA) Masjid Al-Anhar menyelenggarakan berbagai program untuk mendukung
           pembelajaran Al-Qur'an dan penanaman nilai-nilai Islami. Berikut adalah 7 program utama yang diadakan:
@@ -47,10 +45,10 @@ const Tpa = () => {
 
 
       <div>
-        <h2 className="mt-8 text-3xl font-bold text-left">Pengajar & Pendamping</h2>
+        <h2 className="mt-8 md:text-3xl text-2xl font-bold text-left">Pengajar dan Pendamping</h2>
         <ul className="list-decimal list-inside pl-1 text-left pt-4">
-          {['Ustaz Lorem', 'Ustaz Lorem', 'Ustaz Lorem', 'Ustaz Lorem'].map((name, index) => (
-            <li key={index} className="pl-2 pt-2">
+          {['Sodara Hamzah', 'Sodara Yudha', 'Sodari Tika', 'Ustaz Ummi Ibrohim', 'Ibu Bambang', 'Sodari Ria', 'Sodari Gina', 'Sodari Khan', 'Ibu Yanton'].map((name, index) => (
+            <li key={index} className="pl-1 pt-2">
               {name}
             </li>
           ))}
@@ -76,8 +74,8 @@ const Tpa = () => {
       </div>
 
       <div className="mt-8 flex justify-center">
-        <div className="border-2 border-gray-300 rounded-lg p-10 text-center max-w-lg bg-white shadow-lg">
-          <h3 className="text-2xl font-bold text-gray-800">GRATIS</h3>
+        <div className="border-2 border-gray-300 rounded-lg p-10 text-center max-w-xl bg-white shadow-lg">
+          <h3 className="text-3xl font-bold text-gray-800">GRATIS</h3>
           <p className="text-gray-600 mt-3">
             Ayo daftarkan buah hati Anda di TPA Masjid Al-Anhar! Bersama kami, si kecil akan belajar Al-Qur'an dan
             nilai-nilai Islami untuk menjadi generasi Qurani yang cerdas dan berakhlak mulia.
@@ -87,7 +85,7 @@ const Tpa = () => {
       </div>
 
       <Gallery
-        title="Galeri"
+        title="Galeri Tpa"
         images={images}
         imageStyle="rounded-lg shadow-lg"
       />

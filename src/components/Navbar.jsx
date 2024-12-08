@@ -44,7 +44,7 @@ export default function Navbar() {
             >
               <span>Lembaga </span>
               <svg
-                className={`w-4 h-4 ml-1 transition-transform ${
+                className={`w-6 h-6 ml-1 transition-transform ${
                   isDropdownOpen ? 'transform rotate-180' : ''
                 }`}
                 fill="currentColor"
@@ -133,7 +133,7 @@ export default function Navbar() {
               className={`hover:text-green-800 cursor-pointer ${isActive('/program')}`}
               onClick={toggleMenu}
             >
-              <Link to="/program">Program</Link>
+              <Link to="/program">Program Dakwah</Link>
             </li>
             <li className="cursor-pointer">
               <button
@@ -159,7 +159,7 @@ export default function Navbar() {
               {isDropdownOpen && (
                 <ul className="mt-2 space-y-2 pl-6">
                   <li
-                    className="hover:text-blue-300 cursor-pointer"
+                    className="hover:text-green-800 cursor-pointer"
                     onClick={toggleMenu}
                   >
                     <Link to="/organisasi/takmir" onClick={closeDropdown}>
@@ -167,7 +167,7 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li
-                    className="hover:text-blue-300 cursor-pointer"
+                    className="hover:text-green-800 cursor-pointer"
                     onClick={toggleMenu}
                   >
                     <Link to="/organisasi/ramah" onClick={closeDropdown}>
@@ -175,7 +175,7 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li
-                    className="hover:text-blue-300 cursor-pointer"
+                    className="hover:text-green-800 cursor-pointer"
                     onClick={toggleMenu}
                   >
                     <Link to="/organisasi/tpa" onClick={closeDropdown}>
@@ -183,7 +183,7 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li
-                    className="hover:text-blue-300 cursor-pointer"
+                    className="hover:text-green-800 cursor-pointer"
                     onClick={toggleMenu}
                   >
                     <Link to="/organisasi/aisyiyah" onClick={closeDropdown}>
@@ -194,7 +194,7 @@ export default function Navbar() {
               )}
             </li>
             <li
-              className={`hover:text-blue-300 cursor-pointer ${isActive('/kontak')}`}
+              className={`hover:text-green-800 cursor-pointer ${isActive('/kontak')}`}
               onClick={toggleMenu}
             >
               <Link to="/kontak">Kontak</Link>

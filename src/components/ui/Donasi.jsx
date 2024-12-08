@@ -41,7 +41,7 @@ const DonasiInfaq = () => {
 
               <div className="md:pt-3 flex pt-2">
                 <button
-                  className="md:text-1xl text-sm p-2 font-semibold rounded-lg bg-red-600 text-white"
+                  className="md:text-2xl text-sm py-1 px-2 font-semibold rounded-lg bg-red-600 text-white"
                   onClick={handleDownloadImage}
                 >
                   QRIS All Payment
@@ -50,7 +50,7 @@ const DonasiInfaq = () => {
                   href={`https://wa.me/${whatsappNumber}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="md:text-1xl text-sm p-2 font-semibold rounded-lg ml-3 bg-green-600 text-white flex items-center"
+                  className="md:text-2xl text-sm py-1 px-2 font-semibold rounded-lg ml-3 bg-green-600 text-white flex items-center"
                 >
                   <AiOutlineWhatsApp className="mr-2" />
                   Konfirmasi

@@ -25,7 +25,7 @@ export default function Ramah() {
         <h1 className="md:text-3xl text-2xl font-extrabold pt-2 text-black">
           Remaja Masjid Al-Anhar
         </h1>
-        <p className="text-lg text-gray-700 italic mt-2">
+        <p className="md:text-lg text-xs text-gray-700 italic mt-2">
           "Bersama Menuju Generasi Islami yang Kreatif dan Berakhlak Mulia"
         </p>
       </header>

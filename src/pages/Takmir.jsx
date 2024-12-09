@@ -9,16 +9,15 @@ const Takmir = () => {
       <AnimatedText>TAKMIR AL-ANHAR</AnimatedText>
       </h2>
       <p className="px-5 text-lg md:text-xl max-w-4xl md:max-w-3xl lg:max-w-4xl mt-2 md:mt-3 mx-auto">
-        Takmir masjid adalah organisasi atau kelompok yang bertugas mengelola dan mengembangkan kegiatan di masjid, baik yang bersifat keagamaan, sosial, maupun pendidikan. 
-        Takmir bertanggung jawab untuk memastikan masjid berfungsi secara optimal sebagai pusat ibadah, pembinaan umat, dan pemberdayaan masyarakat sekitar. 
-        Melalui takmir, kegiatan seperti pengajian, bimbingan Al-Quran, serta program sosial dapat terlaksana dengan baik, mendukung kemakmuran masjid dan kehidupan umat Islam.
+
+      Takmir masjid adalah organisasi yang bertugas mengelola dan mengembangkan kegiatan masjid, mencakup ibadah, sosial, dan pendidikan. Takmir memastikan masjid berfungsi optimal sebagai pusat ibadah, pembinaan umat, dan pemberdayaan masyarakat melalui program seperti pengajian, bimbingan Al-Quran, serta kegiatan sosial yang mendukung kemakmuran masjid dan kesejahteraan umat Islam.
       </p>
 
       <div className="mt-8 px-5 flex flex-col md:flex-row text-left">
         <div className="flex-1 mb-4 md:mb-0">
           <h2 className="text-2xl font-semibold">Visi</h2>
           <p>
-            Menjadi pusat kegiatan keagamaan yang mendukung pembinaan umat, mempererat ukhuwah Islamiyah, serta mengembangkan kehidupan yang berlandaskan syariat Islam.
+          Takmir masjid adalah organisasi yang mengelola dan mengembangkan kegiatan masjid, mencakup ibadah, sosial, dan pendidikan. Takmir memastikan masjid berfungsi optimal sebagai pusat ibadah, pembinaan umat, dan pemberdayaan masyarakat melalui program seperti pengajian, bimbingan Al-Quran, dan kegiatan sosial.
           </p>
         </div>
         <div className="flex-1">

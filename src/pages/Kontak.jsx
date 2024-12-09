@@ -30,6 +30,11 @@ const Kontak = () => {
           <FaInstagram />
           <span>@ramahmergangsan</span>
         </button>
+
+        <button className="bg-green-600 flex items-center space-x-2 text-2xl font-bold text-white rounded-lg text-center p-2 mb-4 md:mb-0">
+          <FaWhatsapp />
+          <span>Pendaftaran TPA</span>
+        </button>
       </div>
 
       <div className="flex justify-center space-x-4 mt-5 flex-wrap">

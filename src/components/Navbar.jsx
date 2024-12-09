@@ -83,7 +83,7 @@ export default function Navbar() {
               </ul>
             )}
           </li>
-          <li className={`hover:text-blue-300 cursor-pointer ${isActive('/kontak')}`}>
+          <li className={`hover:text-yellow-300 cursor-pointer ${isActive('/kontak')}`}>
             <Link to="/kontak">Kontak</Link>
           </li>
         </ul>

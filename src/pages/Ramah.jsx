@@ -8,12 +8,12 @@ import Strukturdestop from '../components/ui/Strukturdestop';
 export default function Ramah() {
 
   const images = [
-    { id: 1, src: "/bg.JPG", title: "ramah mergangsan" },
-    { id: 2, src: "/bg.JPG", title: "ramah mergangsan" },
-    { id: 3, src: "/bg.JPG", title: "ramah mergangsan" },
-    { id: 4, src: "/bg.JPG", title: "ramah mergangsan" },
-    { id: 5, src: "/bg.JPG", title: "ramah mergangsan" },
-    { id: 6, src: "/bg.JPG", title: "ramah mergangsan" },
+    { id: 1, src: "/ramah1.jpeg", title: "ramah mergangsan" },
+    { id: 2, src: "/ramah2.jpeg", title: "ramah mergangsan" },
+    { id: 3, src: "/ramah3.jpeg", title: "ramah mergangsan" },
+    { id: 4, src: "/ramah4.jpeg", title: "ramah mergangsan" },
+    { id: 5, src: "/ramah5.jpeg", title: "ramah mergangsan" },
+    { id: 6, src: "/ramah6.jpeg", title: "ramah mergangsan" },
   ];
 
   return (

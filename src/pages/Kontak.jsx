@@ -14,46 +14,81 @@ const Kontak = () => {
       </div>
 
       <div className="flex justify-center mt-10">
-        <button className="bg-green-800 flex items-center space-x-2 text-2xl font-bold text-white rounded-lg text-center p-2">
+        <a
+          href="https://wa.me/1234567890" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-green-800 flex items-center space-x-2 text-2xl font-bold text-white rounded-lg text-center p-2"
+        >
           <FaWhatsapp />
           <span>Admin Masjid</span>
-        </button>
+        </a>
       </div>
 
       <div className="flex justify-center space-x-4 mt-5 flex-wrap">
-        <button className="bg-green-600 flex items-center space-x-2 text-2xl font-bold text-white rounded-lg text-center p-2 mb-4 md:mb-0">
+        <a
+          href="https://wa.me/0987654321"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-green-600 flex items-center space-x-2 text-2xl font-bold text-white rounded-lg text-center p-2 mb-4 md:mb-0"
+        >
           <FaWhatsapp />
           <span>Infaq & Donasi</span>
-        </button>
+        </a>
 
-        <button className="bg-pink-500 flex items-center space-x-2 text-2xl font-bold text-white rounded-lg text-center p-2 mb-4 md:mb-0">
+        <a
+          href="https://www.instagram.com/ramahmergangsan"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-pink-500 flex items-center space-x-2 text-2xl font-bold text-white rounded-lg text-center p-2 mb-4 md:mb-0"
+        >
           <FaInstagram />
           <span>@ramahmergangsan</span>
-        </button>
+        </a>
 
-        <button className="bg-green-600 flex items-center space-x-2 text-2xl font-bold text-white rounded-lg text-center p-2 mb-4 md:mb-0">
+        <a
+          href="https://wa.me/1122334455" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-green-600 flex items-center space-x-2 text-2xl font-bold text-white rounded-lg text-center p-2 mb-4 md:mb-0"
+        >
           <FaWhatsapp />
           <span>Pendaftaran TPA</span>
-        </button>
+        </a>
       </div>
 
       <div className="flex justify-center space-x-4 mt-5 flex-wrap">
-        <button className="bg-yellow-400 flex items-center space-x-2 text-2xl font-bold text-white rounded-lg text-center p-2 mb-4 md:mb-0">
+        <a
+          href="mailto:ramahofficialyk@example.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-yellow-400 flex items-center space-x-2 text-2xl font-bold text-white rounded-lg text-center p-2 mb-4 md:mb-0"
+        >
           <MdEmail />
           <span>ramahofficialyk</span>
-        </button>
+        </a>
 
-        <button className="bg-red-600 flex items-center space-x-2 text-2xl font-bold text-white rounded-lg text-center p-2 mb-4 md:mb-0">
+        <a
+          href="https://www.youtube.com/channel/ramahofficialyk" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-red-600 flex items-center space-x-2 text-2xl font-bold text-white rounded-lg text-center p-2 mb-4 md:mb-0"
+        >
           <FaYoutube />
           <span>Ramah Official YK</span>
-        </button>
+        </a>
       </div>
 
       <div className="flex justify-center space-x-4 mt-5 flex-wrap">
-        <button className="bg-green-500 flex items-center space-x-2 text-2xl font-bold text-white rounded-lg text-center p-2 mb-4 md:mb-0">
+        <a
+          href="https://goo.gl/maps/example" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-green-500 flex items-center space-x-2 text-2xl font-bold text-white rounded-lg text-center p-2 mb-4 md:mb-0"
+        >
           <GiPositionMarker />
           <span>Google Maps</span>
-        </button>
+        </a>
       </div>
     </div>
   );

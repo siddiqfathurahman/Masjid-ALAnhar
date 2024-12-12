@@ -13,8 +13,8 @@ export default {
         marquee: 'marquee 20s linear infinite',
       },
       colors: {
-        hijau: "#ECD5A9", 
-        cream: "#ECD5A9",
+        hijau: "#06623B", 
+        lemon: "#F6F578",
         },
       keyframes: {
         marquee: {

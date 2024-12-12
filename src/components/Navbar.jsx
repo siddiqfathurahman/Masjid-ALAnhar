@@ -22,24 +22,24 @@ export default function Navbar() {
     location.pathname === path ? 'border-b-2 border-white' : '';
 
   return (
-    <nav className="bg-green-800 px-2 w-full z-10 font-poppins font-medium">
+    <nav className="bg-hijau px-2 w-full z-10 font-poppins font-medium">
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-white text-2xl font-bold">
           <img src="/logo.png" alt="Logo" className="md:w-44 w-36" />
         </div>
         <ul className="hidden md:flex text-[20px] space-x-6 text-white">
-          <li className={`hover:text-yellow-300 cursor-pointer ${isActive('/')}`}>
+          <li className={`hover:text-lemon cursor-pointer ${isActive('/')}`}>
             <Link to="/">Home</Link>
           </li>
-          <li className={`hover:text-yellow-300 cursor-pointer ${isActive('/profil')}`}>
+          <li className={`hover:text-lemon cursor-pointer ${isActive('/profil')}`}>
             <Link to="/profil">Profil Masjid</Link>
           </li>
-          <li className={`hover:text-yellow-300 cursor-pointer ${isActive('/program')}`}>
+          <li className={`hover:text-lemon cursor-pointer ${isActive('/program')}`}>
             <Link to="/program">Program Dakwah</Link>
           </li>
           <li className="relative flex items-center">
             <button
-              className={`hover:text-yellow-300 ${isActive('/organisasi')} flex items-center`}
+              className={`hover:text-lemon ${isActive('/organisasi')} flex items-center`}
               onClick={toggleDropdown}
             >
               <span>Lembaga </span>
@@ -60,22 +60,22 @@ export default function Navbar() {
             </button>
             {isDropdownOpen && (
               <ul className="absolute top-16 left-[-120px] bg-green-800 text-white w-[330px] rounded-sm pt-1 shadow-lg z-10">
-                <li className="hover:text-yellow-300 px-4 py-2" onClick={toggleMenu}>
+                <li className="hover:text-lemon px-4 py-2" onClick={toggleMenu}>
                   <Link to="/organisasi/takmir" onClick={closeDropdown}>
                     Takmir
                   </Link>
                 </li>
-                <li className="hover:text-yellow-300 px-4 py-2" onClick={toggleMenu}>
+                <li className="hover:text-lemon px-4 py-2" onClick={toggleMenu}>
                   <Link to="/organisasi/ramah" onClick={closeDropdown}>
                     Remaja Masjid (ramah)
                   </Link>
                 </li>
-                <li className="hover:text-yellow-300 px-4 py-2" onClick={toggleMenu}>
+                <li className="hover:text-lemon px-4 py-2" onClick={toggleMenu}>
                   <Link to="/organisasi/tpa" onClick={closeDropdown}>
                     Taman Pendidikan Al-Qur'an (TPA)
                   </Link>
                 </li>
-                <li className="hover:text-yellow-300 px-4 py-2" onClick={toggleMenu}>
+                <li className="hover:text-lemon px-4 py-2" onClick={toggleMenu}>
                   <Link to="/organisasi/aisyiyah" onClick={closeDropdown}>
                     Aisyiyah
                   </Link>
@@ -83,7 +83,7 @@ export default function Navbar() {
               </ul>
             )}
           </li>
-          <li className={`hover:text-yellow-300 cursor-pointer ${isActive('/kontak')}`}>
+          <li className={`hover:text-lemon cursor-pointer ${isActive('/kontak')}`}>
             <Link to="/kontak">Kontak</Link>
           </li>
         </ul>

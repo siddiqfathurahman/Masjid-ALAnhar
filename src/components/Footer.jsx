@@ -3,14 +3,13 @@ import { FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-green-800 to-green-900 py-10 font-poppins relative">
+    <footer className="bg-hijau py-10 font-poppins relative">
 
       <div className="container mx-auto px-5 relative z-20">
         
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
-          
           <div className="order-1 md:order-1">
-            <img src="/logo.png" alt="FAHost" className="h-20" />
+            <img src="/logo.png" alt="logo" className="h-20" />
             <p className="text-sm text-white">
             Mari bersama-sama memakmurkan Masjid Al-Anhar melalui doa, donasi, dan partisipasi aktif dalam program-program kami. Bergabunglah dalam perjalanan menuju keberkahan
             </p>
@@ -23,7 +22,7 @@ const Footer = () => {
                 {['Home', 'Profil', 'Program', 'Organisasi', 'Kontak'].map((item, index) => (
                   <li 
                     key={index}
-                    className="hover:text-green-200 hover:underline hover:underline-offset-4 transition duration-200"
+                    className="hover:text-lemon hover:underline hover:underline-offset-4 transition duration-200"
                   >
                     {item}
                   </li>
@@ -36,7 +35,7 @@ const Footer = () => {
                 {['Ramah', 'Takmir', 'TPA', 'Aisyiyah'].map((item, index) => (
                   <li 
                     key={index}
-                    className="hover:text-green-200 hover:underline hover:underline-offset-4 transition duration-200"
+                    className="hover:text-lemon hover:underline hover:underline-offset-4 transition duration-200"
                   >
                     {item}
                   </li>
@@ -51,7 +50,7 @@ const Footer = () => {
               {['Kajian Tafsir Al-Qur\'an', 'Pengajian Rutin', 'Song-Song Ramadhan', 'Song-Song Idul Adha'].map((item, index) => (
                 <li 
                   key={index}
-                  className="hover:text-green-200 hover:underline hover:underline-offset-4 transition duration-200"
+                  className="hover:text-lemon hover:underline hover:underline-offset-4 transition duration-200"
                 >
                   {item}
                 </li>

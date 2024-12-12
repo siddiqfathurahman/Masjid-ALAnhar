@@ -14,7 +14,7 @@ const DonasiInfaq = () => {
   return (
     <div className="p-8 font-poppins">
       <div className="max-w-4xl md:mx-auto -mx-4">
-        <div className="bg-green-800 p-6 rounded-lg shadow-lg mb-6">
+        <div className="bg-hijau p-6 rounded-lg shadow-lg mb-6">
           <h1 className="md:text-3xl text-2xl font-bold text-white text-center mb-6">
             Support Program Dakwah Masjid
           </h1>

@@ -59,7 +59,7 @@ export default function Navbar() {
               </svg>
             </button>
             {isDropdownOpen && (
-              <ul className="absolute top-16 left-[-120px] bg-green-800 text-white w-[330px] rounded-sm pt-1 shadow-lg z-10">
+              <ul className="absolute top-16 left-[-120px] bg-hijau text-white w-[330px] rounded-sm pt-1 shadow-lg z-10">
                 <li className="hover:text-lemon px-4 py-2" onClick={toggleMenu}>
                   <Link to="/organisasi/takmir" onClick={closeDropdown}>
                     Takmir

@@ -61,13 +61,13 @@ const Footer = () => {
           <div className="flex flex-col items-start gap-6 order-4 md:order-4">
           <div className="flex gap-6">
             <a href="https://example.com/link1" target="_blank" rel="noopener noreferrer">
-              <img src="image1.jpg" alt="Image 1" className="w-16 rounded-xl" />
+              <img src="/wa.jpeg" alt="admin" className="md:w-14 w-10 rounded-xl" />
             </a>
             <a href="https://example.com/link2" target="_blank" rel="noopener noreferrer">
-              <img src="image2.jpg" alt="Image 2" className="w-16 rounded-xl" />
+              <img src="/ig.jpeg" alt="ig" className="md:w-14 w-10 rounded-xl" />
             </a>
             <a href="https://example.com/link3" target="_blank" rel="noopener noreferrer">
-              <img src="image3.jpg" alt="Image 3" className="w-16 rounded-xl" />
+              <img src="/yt.jpeg" alt="yt" className="md:w-14 w-10 rounded-xl" />
             </a>
           </div>
 

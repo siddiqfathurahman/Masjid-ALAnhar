@@ -58,6 +58,8 @@
 }
 
 
+
+
 @media (max-width: 1023px) {
   .struktur-card:nth-child(odd),
   .struktur-card:nth-child(even),
@@ -67,3 +69,7 @@
     transform: none; 
   }
 }
+
+
+
+

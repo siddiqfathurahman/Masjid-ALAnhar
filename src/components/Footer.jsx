@@ -59,11 +59,18 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col items-start gap-6 order-4 md:order-4">
-            <div className="flex gap-6">
-              <FaInstagram className="text-4xl text-white" />
-              <FaYoutube className="text-4xl text-white" />
-              <FaWhatsapp className="text-4xl text-white" />
-            </div>
+          <div className="flex gap-6">
+            <a href="https://example.com/link1" target="_blank" rel="noopener noreferrer">
+              <img src="image1.jpg" alt="Image 1" className="w-16 rounded-xl" />
+            </a>
+            <a href="https://example.com/link2" target="_blank" rel="noopener noreferrer">
+              <img src="image2.jpg" alt="Image 2" className="w-16 rounded-xl" />
+            </a>
+            <a href="https://example.com/link3" target="_blank" rel="noopener noreferrer">
+              <img src="image3.jpg" alt="Image 3" className="w-16 rounded-xl" />
+            </a>
+          </div>
+
             <div className="w-full flex justify-center sm:justify-start">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.7714640029835!2d110.37169497412104!3d-7.813999377588248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a579ed87d4a77%3A0x75276a25a1d74088!2sMasjid%20Al%20Anhar!5e0!3m2!1sid!2sid!4v1731558857405!5m2!1sid!2sid"

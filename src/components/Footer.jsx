@@ -63,7 +63,7 @@ const Footer = () => {
             <a href="https://wa.me/1122334455" target="_blank" rel="noopener noreferrer">
               <img src="/wa.jpeg" alt="admin" className="md:w-14 w-10 rounded-xl" />
             </a>
-            <a href="https://example.com/link2" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/ramahmergangsan?igsh=MTFkcmpkYnJocmZocA==" target="_blank" rel="noopener noreferrer">
               <img src="/ig.jpeg" alt="ig" className="md:w-14 w-10 rounded-xl" />
             </a>
             <a href="https://youtube.com/@ramahofficialyk5950?si=uQNYevlfyXnOfjr4" target="_blank" rel="noopener noreferrer">

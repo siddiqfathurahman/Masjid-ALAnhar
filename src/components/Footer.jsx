@@ -60,7 +60,7 @@ const Footer = () => {
 
           <div className="flex flex-col items-start gap-6 order-4 md:order-4">
           <div className="flex gap-6">
-            <a href="https://wa.me/1122334455" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/6285743702115" target="_blank" rel="noopener noreferrer">
               <img src="/wa.jpeg" alt="admin" className="md:w-14 w-10 rounded-xl" />
             </a>
             <a href="https://www.instagram.com/ramahmergangsan?igsh=MTFkcmpkYnJocmZocA==" target="_blank" rel="noopener noreferrer">

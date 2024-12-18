@@ -20,7 +20,7 @@ export default function App() {
 
   useEffect(() => {
     // Set loading to false after 3 seconds
-    const timer = setTimeout(() => setIsLoading(false), 3000);
+    const timer = setTimeout(() => setIsLoading(false), 5000);
     return () => clearTimeout(timer);
   }, []);
 

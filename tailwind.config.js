@@ -5,6 +5,10 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    animation: {
+      dropDown: 'dropDown 1s ease-out',
+      fadeOut: 'fadeOut 1s ease-in 4s forwards', 
+    },
     extend: {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
@@ -22,6 +26,7 @@ export default {
           '100%': { transform: 'translateX(-100%)' },
         },
       },
+
     },
   },
   plugins: [],

@@ -27,6 +27,8 @@ export default function Navbar() {
         <div className="text-white text-2xl font-bold">
           <img src="/logo.png" alt="Logo" className="md:w-44 w-36" />
         </div>
+
+        {/* Desktop Menu */}
         <ul className="hidden md:flex text-[20px] space-x-6 text-white">
           <li className={`hover:text-lemon cursor-pointer ${isActive('/')}`}>
             <Link to="/">Home</Link>
@@ -87,6 +89,8 @@ export default function Navbar() {
             <Link to="/kontak">Kontak</Link>
           </li>
         </ul>
+
+        {/* Hamburger Button for Mobile and Tablet */}
         <button
           onClick={toggleMenu}
           className="md:hidden text-white focus:outline-none"
@@ -106,101 +110,103 @@ export default function Navbar() {
             />
           </svg>
         </button>
-        <div
-          className={`fixed top-0 right-0 h-full w-4/5 bg-slate-100 transform transition-transform duration-300 z-20 md:hidden ${
-            isOpen ? 'translate-x-0' : 'translate-x-full'
-          }`}
-        >
-          <div className="p-4 flex justify-end">
-            <button onClick={toggleMenu} className="text-black text-xl">
-              &times;
-            </button>
-          </div>
-          <ul className="flex flex-col space-y-6 p-6 text-black">
-            <li
-              className={`hover:text-green-800 cursor-pointer ${isActive('/')}`}
-              onClick={toggleMenu}
-            >
-              <Link to="/">Home</Link>
-            </li>
-            <li
-              className={`hover:text-green-800 cursor-pointer ${isActive('/profil')}`}
-              onClick={toggleMenu}
-            >
-              <Link to="/profil">Profil Masjid</Link>
-            </li>
-            <li
-              className={`hover:text-green-800 cursor-pointer ${isActive('/program')}`}
-              onClick={toggleMenu}
-            >
-              <Link to="/program">Program Dakwah</Link>
-            </li>
-            <li className="cursor-pointer">
-              <button
-                className="flex items-center w-full hover:text-green-800"
-                onClick={toggleDropdown}
-              >
-                <span>Lembaga</span>
-                <svg
-                  className={`w-4 h-4 ml-1 transition-transform ${
-                    isDropdownOpen ? 'transform rotate-180' : ''
-                  }`}
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </button>
-              {isDropdownOpen && (
-                <ul className="mt-2 space-y-2 pl-6">
-                  <li
-                    className="hover:text-green-800 cursor-pointer"
-                    onClick={toggleMenu}
-                  >
-                    <Link to="/organisasi/takmir" onClick={closeDropdown}>
-                      Takmir
-                    </Link>
-                  </li>
-                  <li
-                    className="hover:text-green-800 cursor-pointer"
-                    onClick={toggleMenu}
-                  >
-                    <Link to="/organisasi/ramah" onClick={closeDropdown}>
-                      Remaja Masjid (ramah)
-                    </Link>
-                  </li>
-                  <li
-                    className="hover:text-green-800 cursor-pointer"
-                    onClick={toggleMenu}
-                  >
-                    <Link to="/organisasi/tpa" onClick={closeDropdown}>
-                      Taman Pendidikan Al-Qur'an (TPA)
-                    </Link>
-                  </li>
-                  <li
-                    className="hover:text-green-800 cursor-pointer"
-                    onClick={toggleMenu}
-                  >
-                    <Link to="/organisasi/aisyiyah" onClick={closeDropdown}>
-                      Aisyiyah
-                    </Link>
-                  </li>
-                </ul>
-              )}
-            </li>
-            <li
-              className={`hover:text-green-800 cursor-pointer ${isActive('/kontak')}`}
-              onClick={toggleMenu}
-            >
-              <Link to="/kontak">Kontak</Link>
-            </li>
-          </ul>
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={`fixed top-0 right-0 h-full w-4/5 bg-slate-100 transform transition-transform duration-300 z-20 md:hidden ${
+          isOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <div className="p-4 flex justify-end">
+          <button onClick={toggleMenu} className="text-black text-xl">
+            &times;
+          </button>
         </div>
+        <ul className="flex flex-col space-y-6 p-6 text-black">
+          <li
+            className={`hover:text-green-800 cursor-pointer ${isActive('/')}`}
+            onClick={toggleMenu}
+          >
+            <Link to="/">Home</Link>
+          </li>
+          <li
+            className={`hover:text-green-800 cursor-pointer ${isActive('/profil')}`}
+            onClick={toggleMenu}
+          >
+            <Link to="/profil">Profil Masjid</Link>
+          </li>
+          <li
+            className={`hover:text-green-800 cursor-pointer ${isActive('/program')}`}
+            onClick={toggleMenu}
+          >
+            <Link to="/program">Program Dakwah</Link>
+          </li>
+          <li className="cursor-pointer">
+            <button
+              className="flex items-center w-full hover:text-green-800"
+              onClick={toggleDropdown}
+            >
+              <span>Lembaga</span>
+              <svg
+                className={`w-4 h-4 ml-1 transition-transform ${
+                  isDropdownOpen ? 'transform rotate-180' : ''
+                }`}
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
+            {isDropdownOpen && (
+              <ul className="mt-2 space-y-2 pl-6">
+                <li
+                  className="hover:text-green-800 cursor-pointer"
+                  onClick={toggleMenu}
+                >
+                  <Link to="/organisasi/takmir" onClick={closeDropdown}>
+                    Takmir
+                  </Link>
+                </li>
+                <li
+                  className="hover:text-green-800 cursor-pointer"
+                  onClick={toggleMenu}
+                >
+                  <Link to="/organisasi/ramah" onClick={closeDropdown}>
+                    Remaja Masjid (ramah)
+                  </Link>
+                </li>
+                <li
+                  className="hover:text-green-800 cursor-pointer"
+                  onClick={toggleMenu}
+                >
+                  <Link to="/organisasi/tpa" onClick={closeDropdown}>
+                    Taman Pendidikan Al-Qur'an (TPA)
+                  </Link>
+                </li>
+                <li
+                  className="hover:text-green-800 cursor-pointer"
+                  onClick={toggleMenu}
+                >
+                  <Link to="/organisasi/aisyiyah" onClick={closeDropdown}>
+                    Aisyiyah
+                  </Link>
+                </li>
+              </ul>
+            )}
+          </li>
+          <li
+            className={`hover:text-green-800 cursor-pointer ${isActive('/kontak')}`}
+            onClick={toggleMenu}
+          >
+            <Link to="/kontak">Kontak</Link>
+          </li>
+        </ul>
       </div>
     </nav>
   );

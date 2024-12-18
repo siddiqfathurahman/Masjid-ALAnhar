@@ -4,14 +4,12 @@ import { FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-hijau py-10 font-poppins relative">
-
       <div className="container mx-auto px-5 relative z-20">
-        
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
           <div className="order-1 md:order-1">
             <img src="/logo.png" alt="logo" className="h-20" />
             <p className="text-sm text-white">
-            Mari bersama-sama memakmurkan Masjid Al-Anhar melalui doa, donasi, dan partisipasi aktif dalam program-program kami. Bergabunglah dalam perjalanan menuju keberkahan
+              Mari bersama-sama memakmurkan Masjid Al-Anhar melalui doa, donasi, dan partisipasi aktif dalam program-program kami. Bergabunglah dalam perjalanan menuju keberkahan
             </p>
           </div>
 
@@ -59,17 +57,17 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col items-start gap-6 order-4 md:order-4">
-          <div className="flex gap-6">
-            <a href="https://wa.me/6285743702115" target="_blank" rel="noopener noreferrer">
-              <img src="/wa.jpeg" alt="admin" className="md:w-14 w-10 rounded-xl" />
-            </a>
-            <a href="https://www.instagram.com/ramahmergangsan?igsh=MTFkcmpkYnJocmZocA==" target="_blank" rel="noopener noreferrer">
-              <img src="/ig.jpeg" alt="ig" className="md:w-14 w-10 rounded-xl" />
-            </a>
-            <a href="https://youtube.com/@ramahofficialyk5950?si=uQNYevlfyXnOfjr4" target="_blank" rel="noopener noreferrer">
-              <img src="/yt.jpeg" alt="yt" className="md:w-14 w-10 rounded-xl" />
-            </a>
-          </div>
+            <div className="flex gap-6">
+              <a href="https://wa.me/6285743702115" target="_blank" rel="noopener noreferrer">
+                <img src="/wa.jpeg" alt="admin" className="md:w-14 w-10 rounded-xl" />
+              </a>
+              <a href="https://www.instagram.com/ramahmergangsan?igsh=MTFkcmpkYnJocmZocA==" target="_blank" rel="noopener noreferrer">
+                <img src="/ig.jpeg" alt="ig" className="md:w-14 w-10 rounded-xl" />
+              </a>
+              <a href="https://youtube.com/@ramahofficialyk5950?si=uQNYevlfyXnOfjr4" target="_blank" rel="noopener noreferrer">
+                <img src="/yt.jpeg" alt="yt" className="md:w-14 w-10 rounded-xl" />
+              </a>
+            </div>
 
             <div className="w-full flex justify-center sm:justify-start">
               <iframe

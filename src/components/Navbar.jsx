@@ -28,7 +28,7 @@ export default function Navbar() {
           <img src="/logo.png" alt="Logo" className="md:w-44 w-36" />
         </div>
 
-        {/* Desktop Menu */}
+
         <ul className="hidden md:flex text-[20px] space-x-6 text-white">
           <li className={`hover:text-lemon cursor-pointer ${isActive('/')}`}>
             <Link to="/">Home</Link>
@@ -90,7 +90,7 @@ export default function Navbar() {
           </li>
         </ul>
 
-        {/* Hamburger Button for Mobile and Tablet */}
+      
         <button
           onClick={toggleMenu}
           className="md:hidden text-white focus:outline-none"
@@ -112,9 +112,9 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+    
       <div
-        className={`fixed top-0 right-0 h-full w-4/5 bg-slate-100 transform transition-transform duration-300 z-20 md:hidden ${
+        className={`fixed top-0 right-0 h-full w-4/5 bg-white transform transition-transform duration-300 z-20 md:hidden ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -127,7 +127,7 @@ export default function Navbar() {
           <li
             className={`hover:text-green-800 cursor-pointer ${isActive('/')}`}
             onClick={toggleMenu}
-          >
+          > 
             <Link to="/">Home</Link>
           </li>
           <li

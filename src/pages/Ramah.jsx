@@ -63,6 +63,7 @@ export default function Ramah() {
         <Strukturdestop />
       </div>
     </div>
+    
       <Bidang />
       <Gallery
         title="Galeri"

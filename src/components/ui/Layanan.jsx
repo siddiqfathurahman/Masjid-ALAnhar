@@ -65,7 +65,6 @@ const Layanan = () => {
           </Slider>
         </div>
 
-
         <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 mx-20 justify-items-center">
           {layananData.map((layanan) => (
             <div key={layanan.id} className="relative group">

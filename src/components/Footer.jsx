@@ -1,5 +1,5 @@
-import React from 'react';
-import { FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa";
+import React from "react";
+import { Link } from "react-router-dom"; // Pastikan react-router-dom sudah terinstal
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="order-1 md:order-1">
             <img src="/logo.png" alt="logo" className="h-20" />
             <p className="text-sm text-white">
-              Mari bersama-sama memakmurkan Masjid Al-Anhar melalui doa, donasi, dan partisipasi aktif dalam program-program kami. Bergabunglah dalam perjalanan menuju keberkahan
+              Mari bersama-sama memakmurkan Masjid Al-Anhar melalui doa, donasi, dan partisipasi aktif dalam program-program kami. Bergabunglah dalam perjalanan menuju keberkahan.
             </p>
           </div>
 
@@ -17,12 +17,20 @@ const Footer = () => {
             <div>
               <h4 className="font-semibold text-white mb-2">Menu</h4>
               <ul className="text-sm text-slate-100 space-y-2">
-                {['Home', 'Profil', 'Program', 'Organisasi', 'Kontak'].map((item, index) => (
-                  <li 
-                    key={index}
-                    className="hover:text-lemon hover:underline hover:underline-offset-4 transition duration-200"
-                  >
-                    {item}
+                {[
+                  { name: "Home", link: "/" },
+                  { name: "Profil", link: "/profil" },
+                  { name: "Program", link: "/program" },
+                  { name: "Organisasi", link: "/organisasi" },
+                  { name: "Kontak", link: "/kontak" },
+                ].map((item, index) => (
+                  <li key={index}>
+                    <Link
+                      to={item.link}
+                      className="hover:text-lemon hover:underline hover:underline-offset-4 transition duration-200"
+                    >
+                      {item.name}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -30,12 +38,19 @@ const Footer = () => {
             <div>
               <h4 className="font-semibold text-white mb-2">Organisasi</h4>
               <ul className="text-sm text-slate-100 space-y-2">
-                {['Ramah', 'Takmir', 'TPA', 'Aisyiyah'].map((item, index) => (
-                  <li 
-                    key={index}
-                    className="hover:text-lemon hover:underline hover:underline-offset-4 transition duration-200"
-                  >
-                    {item}
+                {[
+                  { name: "Ramah", link: "/organisasi/ramah" },
+                  { name: "Takmir", link: "/organisasi/takmir" },
+                  { name: "TPA", link: "/organisasi/tpa" },
+                  { name: "Aisyiyah", link: "/organisasi/aisyiyah" },
+                ].map((item, index) => (
+                  <li key={index}>
+                    <Link
+                      to={item.link}
+                      className="hover:text-lemon hover:underline hover:underline-offset-4 transition duration-200"
+                    >
+                      {item.name}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -45,12 +60,19 @@ const Footer = () => {
           <div className="order-3 md:order-3">
             <h4 className="font-semibold text-white mb-2">Pengajian</h4>
             <ul className="text-sm text-slate-100 space-y-2">
-              {['Kajian Tafsir Al-Qur\'an', 'Pengajian Rutin', 'Song-Song Ramadhan', 'Song-Song Idul Adha'].map((item, index) => (
-                <li 
-                  key={index}
-                  className="hover:text-lemon hover:underline hover:underline-offset-4 transition duration-200"
-                >
-                  {item}
+              {[
+                { name: "Kajian Tafsir Al-Qur'an", link: "/pengajian/tafsir" },
+                { name: "Pengajian Rutin", link: "/pengajian/rutin" },
+                { name: "Song-Song Ramadhan", link: "/pengajian/ramadhan" },
+                { name: "Song-Song Idul Adha", link: "/pengajian/idul-adha" },
+              ].map((item, index) => (
+                <li key={index}>
+                  <Link
+                    to={item.link}
+                    className="hover:text-lemon hover:underline hover:underline-offset-4 transition duration-200"
+                  >
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -61,10 +83,18 @@ const Footer = () => {
               <a href="https://wa.me/6285743702115" target="_blank" rel="noopener noreferrer">
                 <img src="/wa.jpeg" alt="admin" className="md:w-14 w-10 rounded-xl" />
               </a>
-              <a href="https://www.instagram.com/ramahmergangsan?igsh=MTFkcmpkYnJocmZocA==" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.instagram.com/ramahmergangsan?igsh=MTFkcmpkYnJocmZocA=="
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src="/ig.jpeg" alt="ig" className="md:w-14 w-10 rounded-xl" />
               </a>
-              <a href="https://youtube.com/@ramahofficialyk5950?si=uQNYevlfyXnOfjr4" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://youtube.com/@ramahofficialyk5950?si=uQNYevlfyXnOfjr4"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src="/yt.jpeg" alt="yt" className="md:w-14 w-10 rounded-xl" />
               </a>
             </div>

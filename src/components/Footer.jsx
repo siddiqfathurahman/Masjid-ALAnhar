@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Pastikan react-router-dom sudah terinstal
+import { Link } from "react-router-dom"; 
 
 const Footer = () => {
   return (
@@ -61,10 +61,10 @@ const Footer = () => {
             <h4 className="font-semibold text-white mb-2">Pengajian</h4>
             <ul className="text-sm text-slate-100 space-y-2">
               {[
-                { name: "Kajian Tafsir Al-Qur'an", link: "/pengajian/tafsir" },
-                { name: "Pengajian Rutin", link: "/pengajian/rutin" },
-                { name: "Song-Song Ramadhan", link: "/pengajian/ramadhan" },
-                { name: "Song-Song Idul Adha", link: "/pengajian/idul-adha" },
+                { name: "Kajian Tafsir Al-Qur'an", link: "/program" },
+                { name: "Pengajian Rutin", link: "/program" },
+                { name: "Song-Song Ramadhan", link: "/program" },
+                { name: "Song-Song Idul Adha", link: "/program" },
               ].map((item, index) => (
                 <li key={index}>
                   <Link

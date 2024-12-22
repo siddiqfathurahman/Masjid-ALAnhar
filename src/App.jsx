@@ -21,7 +21,6 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Set loading to false after 3 seconds
     const timer = setTimeout(() => setIsLoading(false), 5000);
     return () => clearTimeout(timer);
   }, []);
@@ -45,7 +44,7 @@ export default function App() {
           <Route path="/organisasi/tpa" element={<Tpa />} />
           <Route path="/organisasi/aisyiyah" element={<Aisyiyah />} />
           <Route path="/al-quran" element={<HeroQuran />} /> 
-          <Route path="/surah/:id" element={<SurahDetail />} /> 
+          <Route path="/al-quran/surah/:id" element={<SurahDetail />} /> 
         </Routes>
       </div>
       <ScrollToTop />

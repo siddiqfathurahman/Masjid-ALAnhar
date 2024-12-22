@@ -5,6 +5,7 @@ const JadwalSholat = () => {
   const [jadwalSholat, setJadwalSholat] = useState(null);
   const [nextPrayer, setNextPrayer] = useState(null);
   const [timeRemaining, setTimeRemaining] = useState("");
+  const [loading, setLoading] = useState(true);
 
   const fetchJadwalSholat = async () => {
     try {
@@ -19,6 +20,7 @@ const JadwalSholat = () => {
       const timings = response.data.data.timings;
       setJadwalSholat(timings);
       determineNextPrayer(timings);
+      setLoading(false);
     } catch (error) {
       console.error("Error fetching jadwal sholat:", error);
     }
@@ -81,6 +83,14 @@ const JadwalSholat = () => {
 
     return () => clearInterval(interval);
   }, []);
+
+  if (loading) {
+    return (
+      <div>
+        <img src="/load.gif" className="mx-auto w-20 bg-none" alt="Loading..." />
+      </div>
+    );
+  }
 
   return (
     <div className="w-[90%] sm:w-[85%] md:w-[80%] lg:w-[70%] mx-auto mt-4 bg-green-800 rounded-2xl p-4 sm:p-6 md:p-8 text-white">

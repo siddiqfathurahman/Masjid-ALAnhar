@@ -29,7 +29,7 @@ function SurahDetail() {
   if (loading) {
     return (
       <div>
-        <img src="/load.gif" className="mx-auto w-20 bg-none" alt="Loading..." />
+        <img src="/load.gif" className="mx-auto w-10 my-40 bg-none" alt="Loading..." />
       </div>
     );
   }
@@ -38,15 +38,15 @@ function SurahDetail() {
     <div className="flex justify-center items-center bg-gray-100 font-poppins min-h-screen">
       <div className="w-full max-w-3xl">
         <div className="flex-col w-full p-5 rounded-md shadow-lg bg-white text-black">
-        <div className="flex items-center justify-between gap-6">
+        <div className="flex items-center justify-between gap-2">
             <IoIosArrowBack 
-              className="md:text-4xl mb-2 text-2xl cursor-pointer" 
+              className="md:text-3xl mb-2 text-1xl cursor-pointer" 
               onClick={handleGoBack} 
             />
-            <div className="flex-grow text-center">
+            <div className="flex-grow">
               <h1 className="md:text-4xl text-2xl mb-2 font-semibold">{surah.name.transliteration.id}</h1>
             </div>
-            <p className="md:text-xl mb-2 text-lg">{surah.numberOfVerses} Ayat</p>
+            <p className="md:text-xl mb-2 text-sm">{surah.numberOfVerses} Ayat</p>
           </div>
           <hr className='opacity-50'/>
           <h1 className='text-3xl text-center justify-center mb-10 mt-14'>بِسْــــــــمِ اللهِ الرَّحْمَنِ الرَّحِيْمِ</h1>

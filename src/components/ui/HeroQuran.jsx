@@ -49,7 +49,7 @@ function HeroQuran() {
                         placeholder="Cari Surah"
                     />
                     {loading ? (
-                        <img src="/load.gif" className="mx-auto w-20 mt-5" alt="Loading..." />
+                        <img src="/load.gif" className="mx-auto w-10 my-20 mt-5" alt="Loading..." />
                     ) : (
                         filteredSurahs.length > 0 ? (
                             filteredSurahs.map((surah, i) => (

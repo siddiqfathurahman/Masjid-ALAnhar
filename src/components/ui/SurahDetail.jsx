@@ -49,7 +49,7 @@ function SurahDetail() {
             <p className="md:text-xl text-lg">{surah.numberOfVerses} Ayat</p>
           </div>
           <hr className='opacity-50'/>
-          <h1 className='text-4xl text-center justify-center mb-10 mt-14'>بِسْــــــــــمِ اللهِ الرَّحْمَنِ الرَّحِيْمِ</h1>
+          <h1 className='text-3xl text-center justify-center mb-10 mt-14'>بِسْــــــــمِ اللهِ الرَّحْمَنِ الرَّحِيْمِ</h1>
           <div className="mt-5">
             {surah.verses.map((verse, i) => (
               <div key={i} className="mb-4">

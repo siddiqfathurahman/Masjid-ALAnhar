@@ -13,7 +13,9 @@ import RunningText from './components/ui/Running-text';
 import Tpa from './pages/Tpa';
 import Aisyiyah from './pages/Aisyiyah';
 import ScrollToTop from './components/ScrollToTop';
-import LoadingScreen from './components/LoadingScreen'; // Import LoadingScreen
+import LoadingScreen from './components/LoadingScreen'; 
+import HeroQuran from './components/ui/HeroQuran';
+import SurahDetail from './components/ui/SurahDetail';
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -42,6 +44,8 @@ export default function App() {
           <Route path="/organisasi/takmir" element={<Takmir />} />
           <Route path="/organisasi/tpa" element={<Tpa />} />
           <Route path="/organisasi/aisyiyah" element={<Aisyiyah />} />
+          <Route path="/al-quran" element={<HeroQuran />} /> 
+          <Route path="/surah/:id" element={<SurahDetail />} /> 
         </Routes>
       </div>
       <ScrollToTop />

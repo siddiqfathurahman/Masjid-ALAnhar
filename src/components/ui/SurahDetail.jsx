@@ -38,7 +38,7 @@ function SurahDetail() {
     <div className="flex justify-center items-center bg-gray-100 font-poppins min-h-screen">
       <div className="w-full max-w-3xl">
         <div className="flex-col w-full p-5 rounded-md shadow-lg bg-white text-black">
-        <div className="flex items-center justify-between gap-2">
+        <div className="flex items-center justify-between gap-2 ">
             <IoIosArrowBack 
               className="md:text-3xl mb-2 text-1xl cursor-pointer" 
               onClick={handleGoBack} 
@@ -48,7 +48,7 @@ function SurahDetail() {
             </div>
             <p className="md:text-xl mb-2 text-sm">{surah.numberOfVerses} Ayat</p>
           </div>
-          <hr className='opacity-50'/>
+          <hr className='opacity-90 mt-2'/>
           <h1 className='text-3xl text-center justify-center mb-10 mt-14'>بِسْــــــــمِ اللهِ الرَّحْمَنِ الرَّحِيْمِ</h1>
           <div className="mt-5">
             {surah.verses.map((verse, i) => (

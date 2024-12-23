@@ -40,7 +40,7 @@ function SurahDetail() {
         <div className="flex-col w-full p-5 rounded-md shadow-lg bg-white text-black">
         <div className="flex items-center justify-between gap-2 ">
             <IoIosArrowBack 
-              className="md:text-3xl mb-2 text-1xl cursor-pointer" 
+              className="md:text-2xl mb-2 text-1xl cursor-pointer" 
               onClick={handleGoBack} 
             />
             <div className="flex-grow">

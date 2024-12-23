@@ -87,7 +87,7 @@ const JadwalSholat = () => {
   if (loading) {
     return (
       <div>
-        <img src="/load.gif" className="mx-auto w-20 bg-none" alt="Loading..." />
+        <img src="/load.gif" className="mx-auto w-14 my-20 bg-none" alt="Loading..." />
       </div>
     );
   }

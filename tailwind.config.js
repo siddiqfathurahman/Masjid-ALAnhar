@@ -12,6 +12,7 @@ export default {
     extend: {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+        amiri: ['amiri', 'sans-serif'],
       },
       animation: {
         marquee: 'marquee 20s linear infinite',

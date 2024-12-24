@@ -105,7 +105,7 @@ const JadwalSholat = () => {
             </div>
           </div>
 
-  
+
           <div className="flex-1 font-poppins grid grid-cols-2 gap-2 text-center mt-4 md:mt-0">
             {["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"].map((prayer) => {
               if (prayer !== nextPrayer) {

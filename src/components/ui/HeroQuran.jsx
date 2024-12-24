@@ -38,8 +38,7 @@ function HeroQuran() {
             <div className="w-full max-w-5xl">
                 <div className="flex-col w-full p-5 bg-white shadow-lg rounded-lg">
                     <div className="flex justify-between items-center mb-5">
-                        <h2 className="md:text-3xl text-xl font-medium">Daftar Surah</h2>
-                        <div className="text-xl">Al-Qur'an</div>
+                        <h2 className="md:text-3xl text-xl font-medium">Qur'an Digital</h2>
                     </div>
                     <input
                         type="text"

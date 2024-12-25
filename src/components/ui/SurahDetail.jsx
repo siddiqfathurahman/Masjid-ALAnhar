@@ -28,6 +28,16 @@ function SurahDetail() {
     getSurahDetail();
   }, [id]);
 
+  const convertToArabicNumerals = (number) => {
+    const arabicDigits = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
+    return number
+      .toString()
+      .split('')
+      .map((digit) => arabicDigits[digit])
+      .join('');
+  };
+  
+
   const handleGoBack = () => {
     navigate('/al-quran');
   };
@@ -90,7 +100,8 @@ function SurahDetail() {
                   </p>
                 </div>
                 <p className="text-right font-amiri leading-[60px] mb-3" style={{ fontSize: `${arabicSize}px` }}>
-                  {verse.text.arab}
+                  {verse.text.arab} 
+                  <span className="" > ({convertToArabicNumerals(i + 1)})</span>
                 </p>
                 {showLatin && (
                   <p className="text-right text-hijau" style={{ fontSize: `${latinSize}px` }}>

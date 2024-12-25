@@ -5,7 +5,7 @@ function SettingsModal({ modalOpen, toggleModal, arabicSize, setArabicSize, lati
   if (!modalOpen) return null;
 
   return (
-    <div className="fixed z-50 inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+    <div className="fixed z-50 inset-0 bg-black bg-opacity-20 flex justify-center items-center">
       <div className="bg-white p-6 rounded-lg w-80 relative">
         <button 
           className="absolute top-2 right-2 text-lg"

@@ -81,7 +81,7 @@ function SurahDetail() {
               <div key={i} className="mb-4">
                 <div className="flex justify-between mb-4 items-center">
                   <p
-                    className="relative text-white text-sm  w-14 h-14 bg-no-repeat bg-center bg-cover flex items-center justify-center"
+                    className="relative text-white  text-sm  w-14 h-14 bg-no-repeat bg-center bg-cover flex items-center justify-center"
                     style={{
                       backgroundImage: `url('/ayat.png')`,
                     }}

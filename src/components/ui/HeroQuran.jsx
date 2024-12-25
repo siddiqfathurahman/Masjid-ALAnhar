@@ -58,7 +58,7 @@ function HeroQuran() {
                                         <div className="flex w-full justify-between items-center">
                                             <div className="flex flex-col">
                                                 <p className="font-medium text-lg">{surah.name.transliteration.id}</p>
-                                                <p className="text-gray-500">{surah.name.translation.id}</p>
+                                                <p className="text-gray-500">{surah.name.translation.id} | {surah.numberOfVerses} Ayat</p>
                                             </div>
                                             <span className="text-2xl font-serif text-hijau">{surah.name.short}</span>
                                         </div>

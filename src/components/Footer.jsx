@@ -63,8 +63,6 @@ const Footer = () => {
               {[
                 { name: "Kajian Tafsir Al-Qur'an", link: "/program" },
                 { name: "Pengajian Rutin", link: "/program" },
-                { name: "Song-Song Ramadhan", link: "/program" },
-                { name: "Song-Song Idul Adha", link: "/program" },
               ].map((item, index) => (
                 <li key={index}>
                   <Link
@@ -74,8 +72,17 @@ const Footer = () => {
                     {item.name}
                   </Link>
                 </li>
+                
               ))}
             </ul>
+            <div className="pt-5">
+              <h1 className="text-white font-bold mb-2 ">Qur'an Digital</h1>
+              <Link to="/al-quran">
+              <button className="bg-lemon text-hijau py-1 px-2 rounded">
+              Al-Qur'an
+              </button>
+              </Link>
+            </div>
           </div>
 
           <div className="flex flex-col items-start gap-6 order-4 md:order-4">

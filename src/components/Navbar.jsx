@@ -49,17 +49,17 @@ export default function Navbar() {
               </svg>
             </button>
             {isDropdownOpen && (
-              <ul className="absolute top-16 left-[-120px] bg-hijau text-white w-[330px] rounded-sm pt-1 shadow-lg z-10">
-                <li className="hover:text-lemon px-4 py-2" onClick={toggleMenu}>
+              <ul className="absolute top-16 left-[-120px] bg-white text-hijau w-[330px] font-semibold rounded-lg border-2 border-slate-500 pt-1 shadow-xl z-10">
+                <li className="hover:text-green-600 px-4 py-2" onClick={toggleMenu}>
                   <Link to="/organisasi/takmir" onClick={closeDropdown}>Takmir</Link>
                 </li>
-                <li className="hover:text-lemon px-4 py-2" onClick={toggleMenu}>
+                <li className="hover:text-green-600 px-4 py-2" onClick={toggleMenu}>
                   <Link to="/organisasi/ramah" onClick={closeDropdown}>Remaja Masjid</Link>
                 </li>
-                <li className="hover:text-lemon px-4 py-2" onClick={toggleMenu}>
+                <li className="hover:text-green-600 px-4 py-2" onClick={toggleMenu}>
                   <Link to="/organisasi/tpa" onClick={closeDropdown}>TPA</Link>
                 </li>
-                <li className="hover:text-lemon px-4 py-2" onClick={toggleMenu}>
+                <li className="hover:text-green-600 px-4 py-2" onClick={toggleMenu}>
                   <Link to="/organisasi/aisyiyah" onClick={closeDropdown}>Aisyiyah</Link>
                 </li>
               </ul>

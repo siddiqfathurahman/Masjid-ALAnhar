@@ -4,8 +4,8 @@ const Programdakwah = () => {
   const [view, setView] = useState('dakwah');
 
   const Dakwah = [
-    { id: 1, title: "Dakwah 1", image: "/bg.JPG" },
-    { id: 2, title: "Dakwah 2", image: "/bg.JPG" },
+    { id: 1, title: "Dakwah 1", image: "/kajian.jpg" },
+    { id: 2, title: "Dakwah 2", image: "/kajian.jpg" },
   ];
 
   return (

@@ -36,7 +36,7 @@ const Struktur = () => {
               anggota.jabatan === "Ketua" ? "order-first sm:order-none" : ""
             }`}
             onClick={() => handleFlip(index)}
-            data-aos="zoom-in" 
+            data-aos="fade-in" 
           >
             <div
               className={`relative w-full h-full transform-style-preserve-3d transition-transform duration-500 ${

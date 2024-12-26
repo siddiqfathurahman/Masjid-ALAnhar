@@ -22,14 +22,14 @@ const Program = () => {
         </h2>
         <div className="flex flex-col md:flex-row gap-10 md:gap-32 mt-12 items-center">
           <div className="flex flex-col items-center">
-            <img src="/bg.JPG" alt="pengajian" className="w-full max-w-md h-auto rounded-2xl" />
+            <img src="/kajian.jpg" alt="pengajian" className="w-96 max-w-md h-auto rounded-2xl" />
             <p className="md:max-w-md pt-3 text-left">
               Kegiatan pengajian rutin diadakan setiap akhir bulan pada hari Selasa. Acara ini bertujuan untuk
               mempererat ukhuwah Islamiyah dan meningkatkan pemahaman keagamaan bagi seluruh jamaah.
             </p>
           </div>
           <div className="flex flex-col items-center">
-            <img src="/bg.JPG" alt="pengajian" className="w-full max-w-md h-auto rounded-2xl" />
+            <img src="/kajian.jpg" alt="pengajian" className="w-96 max-w-md h-auto rounded-2xl" />
             <p className="md:max-w-md pt-3 text-left">
               Kajian tafsir Al-Qur'an diadakan setiap dua minggu sekali, pada hari Rabu. Program ini bertujuan untuk
               mendalami isi Al-Qur'an dan mengaplikasikan nilai-nilainya dalam kehidupan sehari-hari.

@@ -45,12 +45,11 @@ const Layanan = () => {
       </p>
 
       <div className="mt-10">
-
-        <div className="block md:hidden">
+        <div className="block md:hidden mx-14">
           <Slider {...settings}>
             {layananData.map((layanan) => (
               <div key={layanan.id} className="relative group">
-                <div className="md:w-[200px] md:h-[250px] w-full h-[250px] bg-gray-300 rounded-lg overflow-hidden">
+                <div className="md:w-[200px] md:h-[250px] w-full h-[250px]  bg-gray-300 rounded-lg overflow-hidden">
                   <img
                     src={layanan.image}
                     alt={layanan.title}

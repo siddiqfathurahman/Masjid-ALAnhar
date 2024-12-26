@@ -93,37 +93,38 @@ const JadwalSholat = () => {
   }
 
   return (
-    <div className="w-[90%] sm:w-[85%] md:w-[80%] lg:w-[70%] mx-auto mt-4 bg-green-800 rounded-2xl p-4 sm:p-6 md:p-8 text-white">
-      {jadwalSholat ? (
-        <div className="flex flex-col md:flex-row items-center md:items-start md:justify-between space-y-4 md:space-y-0">
-          <div className="flex-1 text-center font-poppins">
-            <div className="text-lg sm:text-xl font-medium mb-2">Jadwal Shalat Selanjutnya</div>
-            <div className="bg-white text-black rounded-xl shadow-lg p-3 sm:p-4 w-full md:w-[400px] h-auto">
-              <div className="text-3xl sm:text-4xl md:text-4xl font-semibold mb-2">Shalat {nextPrayer}</div>
-              <div className="text-2xl sm:text-3xl md:text-4xl font-bold mt-2">{jadwalSholat[nextPrayer]} WIB</div>
-              <div className="text-lg sm:text-base">{timeRemaining} lagi</div>
-            </div>
-          </div>
-
-
-          <div className="flex-1 font-poppins grid grid-cols-2 gap-2 text-center mt-4 md:mt-0">
-            {["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"].map((prayer) => {
-              if (prayer !== nextPrayer) {
-                return (
-                  <div key={prayer} className="bg-white text-black rounded-xl shadow-lg p-3 sm:p-4">
-                    <div className="text-base sm:text-lg font-medium">Shalat {prayer}</div>
-                    <div className="text-sm sm:text-base">{jadwalSholat[prayer]} WIB</div>
-                  </div>
-                );
-              }
-              return null;
-            })}
-          </div>
+<div className="w-[90%] sm:w-[85%] md:w-[80%] lg:w-[70%] mx-auto mt-4 bg-green-800 rounded-2xl p-4 sm:p-6 md:p-8 text-white">
+  {jadwalSholat ? (
+    <div className="flex flex-col items-center space-y-4 md:space-y-8">
+      <div className="flex-1 text-center font-poppins">
+        <div className="text-lg sm:text-xl font-medium mb-2">Jadwal Shalat Selanjutnya</div>
+        <div className="bg-white text-black rounded-xl shadow-lg sm:p-4 w-full  h-auto">
+          <div className="text-2xl sm:text-4xl md:text-6xl px-5 font-medium mb-0 md:mb-2">Shalat {nextPrayer}</div>
+          <div className="text-2xl sm:text-3xl md:text-6xl md:mb-2 font-bold mb:mt-2">{jadwalSholat[nextPrayer]} WIB</div>
+          <div className="text-sm sm:text-base">{timeRemaining} lagi</div>
         </div>
-      ) : (
-        <p className="text-white text-center h-screen">Loading jadwal sholat...</p>
-      )}
+      </div>
+
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full">
+        {["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"].map((prayer) => {
+          if (prayer !== nextPrayer) {
+            return (
+              <div key={prayer} className="bg-white text-black rounded-xl shadow-lg p-3 sm:p-4">
+                <div className="text-base sm:text-lg font-medium">Shalat {prayer}</div>
+                <div className="text-sm sm:text-base">{jadwalSholat[prayer]} WIB</div>
+              </div>
+            );
+          }
+          return null;
+        })}
+      </div>
     </div>
+  ) : (
+    <p className="text-white text-center h-screen">Loading jadwal sholat...</p>
+  )}
+</div>
+
   );
 };
 

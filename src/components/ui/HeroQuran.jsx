@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import Fuse from 'fuse.js';
 
 function HeroQuran() {
     const [surahs, setSurah] = useState([]);
@@ -22,15 +23,21 @@ function HeroQuran() {
         getData();
     }, []);
 
+
+    const fuse = new Fuse(surahs, {
+        keys: ['name.transliteration.id', 'name.translation.id', 'number'],
+        threshold: 0.3,
+    });
+
     const handleSearch = (event) => {
         const text = event.target.value;
         setSearchText(text);
-        const filtered = surahs.filter(surah =>
-            surah.name.transliteration.id.toLowerCase().includes(text.toLowerCase()) ||
-            surah.name.translation.id.toLowerCase().includes(text.toLowerCase()) ||
-            surah.number.toString().includes(text)
-        );
-        setFilteredSurahs(filtered);
+        if (text.trim() === '') {
+            setFilteredSurahs(surahs);
+        } else {
+            const result = fuse.search(text).map(({ item }) => item);
+            setFilteredSurahs(result);
+        }
     };
 
     return (

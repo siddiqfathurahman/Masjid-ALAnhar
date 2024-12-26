@@ -101,15 +101,16 @@ function SurahDetail() {
                 </div>
                 <p className="text-right font-amiri leading-[60px] mb-3" style={{ fontSize: `${arabicSize}px` }}>
                   {verse.text.arab} 
+                  
                   <span className="" > ({convertToArabicNumerals(i + 1)})</span>
                 </p>
                 {showLatin && (
-                  <p className="text-right text-hijau" style={{ fontSize: `${latinSize}px` }}>
+                  <p className="text-left text-hijau" style={{ fontSize: `${latinSize}px` }}>
                     {verse.text.transliteration.en}
                   </p>
                 )}
                 {showTranslation && (
-                  <p className="text-right mt-2 opacity-80">
+                  <p className="text-left mt-2 opacity-80">
                     {verse.translation.id}
                   </p>
                 )}

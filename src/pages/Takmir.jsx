@@ -52,23 +52,35 @@ const Takmir = () => {
       
       <h2 className="mt-14 text-3xl font-bold text-left">Pengurus Takmir Periode 2022 - 2026</h2>
       <table className="min-w-full mt-4 table-auto border-collapse border-2 border-gray-300">
-        <thead>
-          <tr className="bg-white">
-            <th className="px-4 py-2 text-center border-2">No</th>
-            <th className="px-4 py-2 text-center border-2">Nama</th>
-            <th className="px-4 py-2 text-center border-2">Jabatan</th>
-          </tr>
-        </thead>
-        <tbody>
-          {Array.from({ length: 10 }).map((_, index) => (
-            <tr key={index} className="border-b">
-              <td className="px-4 py-2 text-center border-2">{index + 1}</td>
-              <td className="px-4 py-2 text-center border-2">Lorem Ipsum</td>
-              <td className="px-4 py-2 text-center border-2">Jabatan {index + 1}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+  <thead>
+    <tr className="bg-white">
+      <th className="px-4 py-2 text-center border-2">No</th>
+      <th className="px-4 py-2 text-center border-2">Nama</th>
+      <th className="px-4 py-2 text-center border-2">Jabatan</th>
+    </tr>
+  </thead>
+  <tbody>
+    {[
+      { nama: "Fatur Rahman", jabatan: "Ketua" },
+      { nama: "Ahmad Zaki", jabatan: "Wakil Ketua" },
+      { nama: "Siti Aisyah", jabatan: "Sekretaris" },
+      { nama: "Rudi Hartono", jabatan: "Bendahara" },
+      { nama: "Nurul Huda", jabatan: "Anggota 1" },
+      { nama: "Farida Amalia", jabatan: "Anggota 2" },
+      { nama: "Arif Setiawan", jabatan: "Koordinator Program" },
+      { nama: "Budi Santoso", jabatan: "Koordinator Logistik" },
+      { nama: "Citra Lestari", jabatan: "Koordinator Acara" },
+      { nama: "Rina Permata", jabatan: "Koordinator Humas" },
+    ].map((item, index) => (
+      <tr key={index} className="border-b">
+        <td className="px-4 py-2 text-center border-2">{index + 1}</td>
+        <td className="px-4 py-2 text-center border-2">{item.nama}</td>
+        <td className="px-4 py-2 text-center border-2">{item.jabatan}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+
     </div>
   );
 };

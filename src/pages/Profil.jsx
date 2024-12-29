@@ -15,7 +15,6 @@ const ProfilMasjid = () => {
       </p>
       <Sejarah />
 
-
       <h2 className="mt-8 text-3xl font-bold text-left">Pengurus Harian</h2>
       <table className="min-w-full mt-4 table-auto border-collapse border-2 border-gray-300">
   <thead>

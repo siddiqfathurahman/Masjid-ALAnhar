@@ -1,38 +1,29 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 const LoadingScreen = ({ onLoaded }) => {
-  const [dots, setDots] = useState(0);
-
   useEffect(() => {
-    const interval = setInterval(() => {
-      setDots((prev) => (prev + 1) % 6); 
-    }, 1000);
-
     const timeout = setTimeout(() => {
       onLoaded();
-    }, 5000);
+    }, 3000); // 
 
-    return () => {
-      clearInterval(interval);
-      clearTimeout(timeout);
-    };
+    return () => clearTimeout(timeout);
   }, [onLoaded]);
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-hijau animate-fadeOut">
-      <div className="text-center animate-dropDown">
-
-        <div className="">
+    <div className="flex items-center justify-center min-h-screen bg-hijau">
+      <div className="text-center">
+        <div>
           <img
             src="/logopolos.png"
             alt="Logo"
             className="w-40 mx-auto"
           />
         </div>
-
-
-        <div className="text-5xl font-bold text-white">
-          {Array.from({ length: dots }, (_, i) => ".").join("")}
+        <div className="flex space-x-2 justify-center mt-8">
+          <div className="h-3 w-3 bg-white rounded-full animate-bounceDots [animation-delay:-0.3s]"></div>
+          <div className="h-3 w-3 bg-white rounded-full animate-bounceDots [animation-delay:-0.2s]"></div>
+          <div className="h-3 w-3 bg-white rounded-full animate-bounceDots [animation-delay:-0.1s]"></div>
+          <div className="h-3 w-3 bg-white rounded-full animate-bounceDots"></div>
         </div>
       </div>
     </div>

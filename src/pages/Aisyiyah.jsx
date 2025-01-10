@@ -24,15 +24,28 @@ const Aisyiyah = () => {
         perempuan, pendidikan, kesehatan, dan kesejahteraan masyarakat berbasis nilai-nilai Islam.
       </p>  
 
-      <div className="mt-8">
-        <h2 className="text-3xl font-bold text-left">Sejarah Singkat Aisyiyah</h2>
-        <p className="pt-5 text-left">
-        Aisyiyah didirikan pada tahun 1917 sebagai bagian dari Muhammadiyah, 
-        dengan tujuan memberdayakan perempuan dan mendidik generasi muda dengan nilai-nilai Islam. 
-        Sejak saat itu, Aisyiyah telah berkembang menjadi organisasi yang memainkan peran penting 
-        dalam bidang pendidikan, kesehatan, dan sosial di Indonesia.
-        </p>
+
+
+        <div className="mt-8  flex flex-col gap-5 md:flex-row text-left">
+        <div className="flex-1 mb-4 md:mb-0">
+          <h2 className="text-2xl font-semibold">Visi</h2>
+          <p>
+          Islam membawa rahmat bagi seluruh umat manusia dengan menciptakan masyarakat yang bahagia, 
+          sejahtera, dan berkeadilan. Masyarakat ideal ini terbentuk melalui pembinaan warga, baik pria maupun wanita, 
+          yang memiliki potensi dan fungsi penuh dalam kehidupan bermasyarakat. Masyarakat yang utama dibangun dengan menegakkan ajaran 
+          Islam secara istiqamah serta aktif dalam dakwah amar makruf nahi mungkar.
+          </p>
         </div>
+        <div className="flex-1">
+          <h2 className="text-2xl font-semibold">Misi</h2>
+          <ol className="list-decimal list-inside">
+            <li className='pt-2'>Menegakkan dan menyebarkan ajaran islam yang didasarkan kepada keyakinan Tauhid yang murni menurut ajaran Al-Qur'an dan Assunah Rasul secara benar,.</li>
+            <li className='pt-2'>Mewujudkan kehidupan yang islami dalam din pribadi, keluarga dan masyarakat yang luas.</li>
+            <li className='pt-2'>Menggalakkan pemahaman terhadap landasan hidup keagamaan yang menggunakan akal sehat dan dijiwal oleh ruh berfikir yang islami dalam menjawab tuntutan dan menyelesaikan persoalan kehidupan dalam masyarakat luas.</li>
+            <li className='pt-2'>Menciptakan semangat beramal dengan beramar makruf nahi mungkar dan dengan menempatkan potensi segenap warga masyarakat baik yang pria maupun yang wanita dalam mencapai tujuan organisasi</li>
+          </ol>
+        </div>
+      </div>
 
 
       <div>

@@ -83,6 +83,14 @@ const Footer = () => {
               </button>
               </Link>
             </div>
+            <div className="pt-5">
+              <h1 className="text-white font-bold mb-2 ">Dokumentasi Kegiatan</h1>
+              <Link to="/dokumentasi">
+              <button className="bg-lemon text-hijau py-1 px-2 rounded">
+              Dokumentasi
+              </button>
+              </Link>
+            </div>
           </div>
 
           <div className="flex flex-col items-start gap-6 order-4 md:order-4">

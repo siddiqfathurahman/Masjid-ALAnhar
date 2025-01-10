@@ -17,6 +17,7 @@ import LoadingScreen from "./components/LoadingScreen";
 import HeroQuran from "./components/ui/HeroQuran";
 import SurahDetail from "./components/ui/SurahDetail";
 import ErrorPage from "./components/ErrorPage";
+import Dokumentasi from "./components/ui/Dokumentasi";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -143,6 +144,19 @@ export default function App() {
               <Footer />
             </>
           }
+          
+        />
+        <Route 
+          path="/dokumentasi"
+          element={
+            <>
+              <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
+              <Navbar />
+              <Dokumentasi />
+              <Footer />
+            </>
+          }
+        
         />
 
 

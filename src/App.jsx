@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Profil from "./pages/Profil";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Program from "./pages/Program";
+import Program from "./pages/Berita";
 import Kontak from "./pages/Kontak";
 import Ramah from "./pages/Ramah";
 import Takmir from "./pages/Takmir";
@@ -18,6 +18,7 @@ import HeroQuran from "./components/ui/HeroQuran";
 import SurahDetail from "./components/ui/SurahDetail";
 import ErrorPage from "./components/ErrorPage";
 import Dokumentasi from "./components/ui/Dokumentasi";
+import Berita from "./pages/Berita";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -58,12 +59,12 @@ export default function App() {
           }
         />
         <Route
-          path="/program"
+          path="/berita"
           element={
             <>
               <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
               <Navbar />
-              <Program />
+              <Berita />
               <Footer />
             </>
           }

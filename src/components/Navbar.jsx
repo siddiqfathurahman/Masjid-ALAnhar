@@ -26,8 +26,8 @@ export default function Navbar() {
           <li className={`hover:text-lemon cursor-pointer ${isActive('/profil')}`}>
             <Link to="/profil">Profil Masjid</Link>
           </li>
-          <li className={`hover:text-lemon cursor-pointer ${isActive('/program')}`}>
-            <Link to="/program">Program Dakwah</Link>
+          <li className={`hover:text-lemon cursor-pointer ${isActive('/berita')}`}>
+            <Link to="/berita">Berita</Link>
           </li>
           <li className="relative flex items-center">
             <button
@@ -109,8 +109,8 @@ export default function Navbar() {
           <li className={`hover:text-green-800 cursor-pointer ${isActive('/profil')}`} onClick={toggleMenu}>
             <Link to="/profil">Profil Masjid</Link>
           </li>
-          <li className={`hover:text-green-800 cursor-pointer ${isActive('/program')}`} onClick={toggleMenu}>
-            <Link to="/program">Program Dakwah</Link>
+          <li className={`hover:text-green-800 cursor-pointer ${isActive('/berita')}`} onClick={toggleMenu}>
+            <Link to="/berita">Berita</Link>
           </li>
           <li className="cursor-pointer">
             <button

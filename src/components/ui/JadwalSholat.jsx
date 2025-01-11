@@ -7,6 +7,14 @@ const JadwalSholat = () => {
   const [timeRemaining, setTimeRemaining] = useState("");
   const [loading, setLoading] = useState(true);
 
+  const prayerNames = {
+    Fajr: "Subuh",
+    Dhuhr: "Dzuhur",
+    Asr: "Asar",
+    Maghrib: "Maghrib",
+    Isha: "Isya",
+  };
+
   const fetchJadwalSholat = async () => {
     try {
       const response = await axios.get("https://api.aladhan.com/v1/timingsByCity", {
@@ -93,37 +101,40 @@ const JadwalSholat = () => {
   }
 
   return (
-<div className="w-[90%] sm:w-[85%] md:w-[80%] lg:w-[70%] mx-auto mt-4 bg-green-800 rounded-2xl p-4 sm:p-6 md:p-8 text-white">
-  {jadwalSholat ? (
-    <div className="flex flex-col items-center space-y-4 md:space-y-8">
-      <div className="flex-1 text-center font-poppins">
-        <div className="text-lg sm:text-xl font-medium mb-2">Jadwal Shalat Selanjutnya</div>
-        <div className="bg-white text-black rounded-xl shadow-lg sm:p-4 w-full h-auto">
-          <div className="text-2xl sm:text-4xl md:text-6xl pt-2 font-medium mb-0 mt:mt-4 md:mb-2">Shalat {nextPrayer}</div>
-          <div className="text-3xl sm:text-3xl md:text-8xl px-16 md:mb-2 font-bold mb:mt-2">{jadwalSholat[nextPrayer]} WIB</div>
-          <div className="text-sm sm:text-lg pb-2 md:mb-2">{timeRemaining} lagi</div>
-        </div>
-      </div>
-
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full">
-        {["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"].map((prayer) => {
-          if (prayer !== nextPrayer) {
-            return (
-              <div key={prayer} className="bg-white text-black rounded-xl shadow-lg p-3 sm:p-4">
-                <div className="text-base sm:text-lg font-medium">Shalat {prayer}</div>
-                <div className="text-sm sm:text-base">{jadwalSholat[prayer]} WIB</div>
+    <div className="w-[90%] sm:w-[85%] font-poppins md:w-[80%] lg:w-[70%] mx-auto mt-4 bg-green-800 rounded-2xl p-4 sm:p-6 md:p-8 text-white">
+      {jadwalSholat ? (
+        <div className="flex flex-col items-center space-y-4 md:space-y-8">
+          <div className="flex-1 text-center font-poppins">
+            <div className="text-lg sm:text-xl font-medium mb-2">Jadwal Shalat Selanjutnya</div>
+            <div className="bg-white text-black rounded-xl shadow-lg sm:p-4 w-full h-auto">
+              <div className="text-2xl sm:text-4xl md:text-6xl pt-2 font-medium mb-0 mt:mt-4 md:mb-2">
+                Shalat {prayerNames[nextPrayer]}
               </div>
-            );
-          }
-          return null;
-        })}
-      </div>
-    </div>
-  ) : (
-    <p className="text-white text-center h-screen">Loading jadwal sholat...</p>
-  )}
-</div>
+              <div className="text-3xl sm:text-3xl md:text-8xl px-16 md:mb-2 font-bold mb:mt-2">
+                {jadwalSholat[nextPrayer]} WIB
+              </div>
+              <div className="text-sm sm:text-lg pb-2 md:mb-2">{timeRemaining} lagi</div>
+            </div>
+          </div>
 
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full">
+            {["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"].map((prayer) => {
+              if (prayer !== nextPrayer) {
+                return (
+                  <div key={prayer} className="bg-white text-black rounded-xl shadow-lg p-3 sm:p-4">
+                    <div className="text-base sm:text-lg font-medium">Shalat {prayerNames[prayer]}</div>
+                    <div className="text-sm sm:text-base">{jadwalSholat[prayer]} WIB</div>
+                  </div>
+                );
+              }
+              return null;
+            })}
+          </div>
+        </div>
+      ) : (
+        <p className="text-white text-center h-screen">Loading jadwal sholat...</p>
+      )}
+    </div>
   );
 };
 

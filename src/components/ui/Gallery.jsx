@@ -40,7 +40,7 @@ const Gallery = ({ title, images, imageStyle }) => {
               <img
                 src={image.src}
                 alt={image.title}
-                className={`w-full h-60 object-cover transform group-hover:scale-110 transition duration-500 ease-in-out ${imageStyle}`}
+                className={`w-full md:h-60 h-44 object-cover transform group-hover:scale-110 transition duration-500 ease-in-out ${imageStyle}`}
               />
             </div>
           </div>

@@ -14,7 +14,6 @@ const ProfilMasjid = () => {
       Nama <span className="font-bold">"Al-Anhar"</span>, yang berarti <span className="font-bold">"sungai-sungai"</span> dalam bahasa Arab, terinspirasi dari gambaran surga dalam Al-Qur'an. Nama ini mencerminkan harapan agar Masjid Al-Anhar menjadi sumber kedamaian dan keberkahan, layaknya sungai yang mengalir membawa kehidupan. Dengan semangat tersebut, masjid ini berkomitmen untuk terus mengalirkan kebaikan bagi umat dan masyarakat sekitar.
       </p>
       <Sejarah />
-
       <h2 className="mt-8 text-3xl font-bold text-left">Pengurus Harian</h2>
       <table className="min-w-full mt-4 table-auto border-collapse border-2 border-gray-300">
   <thead>

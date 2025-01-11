@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import Gallery from '../components/ui/Gallery';
 import AnimatedText from '../components/ui/AnimatedText';
+import BidangAisyiyah from '../components/ui/BidangAisyiyah';
 
 
 const Aisyiyah = () => {
@@ -19,7 +20,7 @@ const Aisyiyah = () => {
       <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold">
        <AnimatedText>AISYIYAH</AnimatedText>
       </h2>
-      <p className="px-5 text-lg md:text-xl max-w-4xl md:max-w-3xl lg:max-w-4xl mt-2 md:mt-3 mx-auto">
+      <p className="px-5 text-lg md:text-xl max-w-8xl md:max-w-3xl lg:max-w-4xl mt-2 md:mt-3 mx-auto">
         Aisyiyah adalah organisasi perempuan yang berafiliasi dengan Muhammadiyah dan berfokus pada pemberdayaan
         perempuan, pendidikan, kesehatan, dan kesejahteraan masyarakat berbasis nilai-nilai Islam.
       </p>  
@@ -70,6 +71,8 @@ const Aisyiyah = () => {
           ))}
         </ol>
       </div>
+
+      <BidangAisyiyah />
 
       <Gallery
         title="Galeri"

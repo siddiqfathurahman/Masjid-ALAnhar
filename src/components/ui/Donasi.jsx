@@ -16,7 +16,7 @@ const DonasiInfaq = () => {
       <div className="max-w-4xl md:mx-auto -mx-4">
         <div className="bg-hijau p-6 rounded-lg shadow-lg mb-6">
           <h1 className="md:text-3xl text-2xl font-bold text-white text-center mb-6">
-            Support Program Dakwah Masjid
+            Support Kegiatan Dakwah Masjid
           </h1>
 
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">

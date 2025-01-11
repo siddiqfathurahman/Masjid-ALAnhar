@@ -1,5 +1,5 @@
 import Struktur from '../components/ui/Strukturramah';
-import Bidang from '../components/ui/Bidang';
+import Bidang from '../components/ui/BidangRemaja';
 import Vidio from '../components/ui/Vidioyt';
 import Gallery from '../components/ui/Gallery';
 import AnimatedText from '../components/ui/AnimatedText';
@@ -53,16 +53,7 @@ export default function Ramah() {
         </ol>
       </div>
 
-      <div>
-      <div className="block md:hidden">
-        <Struktur />
-      </div>
-
-
-      <div className="hidden md:block">
-        <Strukturdestop />
-      </div>
-    </div>
+    
     
       <Bidang />
       <Gallery

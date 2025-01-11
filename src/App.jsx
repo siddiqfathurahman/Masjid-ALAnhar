@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import Profil from "./pages/Profil";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Program from "./pages/Berita";
 import Kontak from "./pages/Kontak";
 import Ramah from "./pages/Ramah";
 import Takmir from "./pages/Takmir";
@@ -19,6 +18,9 @@ import SurahDetail from "./components/ui/SurahDetail";
 import ErrorPage from "./components/ErrorPage";
 import Dokumentasi from "./components/ui/Dokumentasi";
 import Berita from "./pages/Berita";
+import Berita1 from "./News/Berita1";
+import Berita2 from "./News/Berita2";
+import Berita3 from "./News/Berita3";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -69,6 +71,7 @@ export default function App() {
             </>
           }
         />
+
         <Route
           path="/kontak"
           element={
@@ -147,6 +150,7 @@ export default function App() {
           }
           
         />
+
         <Route 
           path="/dokumentasi"
           element={
@@ -157,8 +161,45 @@ export default function App() {
               <Footer />
             </>
           }
-        
         />
+
+        <Route 
+          path="/berita1"
+          element={
+            <>
+              <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
+              <Navbar />
+              <Berita1 />
+              <Footer />
+            </>
+          }
+        />
+
+        <Route 
+          path="/berita2"
+          element={
+            <>
+              <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
+              <Navbar />
+              <Berita2 />
+              <Footer />
+            </>
+          }
+        />
+
+        <Route 
+          path="/berita3"
+          element={
+            <>
+              <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
+              <Navbar />
+              <Berita3 />
+              <Footer />
+            </>
+          }
+        />
+
+
 
 
         <Route path="*" element={<ErrorPage />} />

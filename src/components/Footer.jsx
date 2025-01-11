@@ -129,8 +129,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="items-center justify-center text-center pt-10 text-slate-100">
-          <h1>@Dikelola oleh Remaja masjid Al-Anhar</h1>
+        <div className="items-center justify-center text-center pt-3 text-slate-100">
+          <h1>Website ini Dikelola team IT Masjid Alanhar</h1>
         </div>
       </div>
     </footer>

@@ -1,9 +1,9 @@
-import Struktur from '../components/ui/Strukturramah';
+
 import Bidang from '../components/ui/BidangRemaja';
 import Vidio from '../components/ui/Vidioyt';
 import Gallery from '../components/ui/Gallery';
 import AnimatedText from '../components/ui/AnimatedText';
-import Strukturdestop from '../components/ui/Strukturdestop';
+
 
 export default function Ramah() {
 

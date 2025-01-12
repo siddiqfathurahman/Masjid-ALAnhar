@@ -1,6 +1,9 @@
+import ListBerita from "./ListBerita";
+
 const Berita1 = () => {
     return (
-      <div className="flex justify-center items-center bg-gray-100 font-poppins px-2 py-10">
+      <>
+      <div className="flex justify-center items-center bg-gray-100 font-poppins px-2 pt-10">
         <div className="w-full max-w-7xl">
           <div className="flex-col w-full md:p-8 p-3 bg-white shadow-lg rounded-lg">
             <h1 className="md:text-4xl max-w-5xl text-hijau text-lg font-extrabold mb-2">
@@ -25,6 +28,8 @@ const Berita1 = () => {
           </div>
         </div>
       </div>
+      <ListBerita />
+      </>
     );
   };
   

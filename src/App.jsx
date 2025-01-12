@@ -21,6 +21,7 @@ import Berita from "./pages/Berita";
 import Berita1 from "./News/Berita1";
 import Berita2 from "./News/Berita2";
 import Berita3 from "./News/Berita3";
+import Berita4 from "./News/Berita4";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -199,6 +200,17 @@ export default function App() {
           }
         />
 
+        <Route 
+          path="/berita4"
+          element={
+            <>
+              <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
+              <Navbar />
+              <Berita4 />
+              <Footer />
+            </>
+          }
+        />
 
 
 

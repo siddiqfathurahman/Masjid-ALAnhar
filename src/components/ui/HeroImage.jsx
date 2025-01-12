@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { images } from '../../data/databerita';
 
 const HeroImage = () => {
   const settings = {
@@ -13,31 +14,7 @@ const HeroImage = () => {
     arrows: false,
   };
 
-  const images = [
-    {
-      src: "/ramah3.jpeg",
-      alt: "Masjid 1",
-      berita:
-        "Masjid Al-Anhar Mendapatkan juara 1 Kategori Lampion dan juara 2 Kostum pada takbir keliling yang diselenggarakan oleh PHBI MERGANGSAN.",
-      tanggal: "Kamis, 19 Desember 2024.",
-      path: "/berita1",
-    },
-    {
-      src: "/dakwah1.jpeg",
-      alt: "Masjid 2",
-      berita:
-        "Kegiatan Rutin Pengajian Kajian Al-Quran surat pendek setiap 2 Minggu sekali pada hari Rabu & Senin Ba'da Isya.",
-      tanggal: "Kamis, 19 Desember 2024",
-      path: "/berita2",
-    },
-    {
-      src: "/dakwah2.jpeg",
-      alt: "Masjid 3",
-      berita: "Pengajian bulanan diadakan setiap Selasa pada pekan pertama setiap bulan dan pada malam Jumat Kliwon setelah salat Isya",
-      tanggal: "Kamis, 19 Desember 2024",
-      path: "/berita3",
-    },
-  ];
+
 
   return (
     <div className="relative w-full font-poppins">

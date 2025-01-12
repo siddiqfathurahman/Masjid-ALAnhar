@@ -1,37 +1,17 @@
-import { Link } from "react-router-dom"; // Pastikan Link diimpor
+import { Link } from "react-router-dom"; 
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { Artikel } from '../data/databerita';
 
 const Berita = () => {
-  const Artikel = [
-    {
-      tittle: "Masjid Al-Anhar Raih Penghargaan di Ajang Takbir Keliling",
-      date: "12 Januari 2025",
-      berita: "Masjid Al-Anhar berhasil meraih juara 1 dalam kategori Lampion dan juara 2 untuk Kostum pada lomba Takbir Keliling yang diselenggarakan oleh PHBI Mergangsan. Prestasi ini menjadi kebanggaan tersendiri bagi jamaah dan pengurus masjid. Acara berlangsung meriah dengan partisipasi masyarakat yang antusias.",
-      path: "/berita1",
-    },
-    {
-      tittle: "Kajian Al-Quran Rutin di Masjid Al-Anhar",
-      date: "13 Januari 2025",
-      berita: "Masjid Al-Anhar mengadakan pengajian rutin berupa kajian Al-Quran untuk surat-surat pendek. Kegiatan ini diadakan setiap dua minggu sekali, tepatnya pada hari Rabu dan Senin setelah salat Isya. Pengajian ini bertujuan untuk memperdalam pemahaman Al-Quran dan mempererat ukhuwah Islamiyah.",
-      path: "/berita2",
-    },
-    {
-      tittle: "Pengajian Bulanan: Tradisi di Masjid Al-Anhar",
-      date: "14 Januari 2025",
-      berita: "Masjid Al-Anhar menggelar pengajian bulanan setiap Selasa pada pekan pertama bulan tersebut. Selain itu, ada juga pengajian khusus pada malam Jumat Kliwon yang diadakan setelah salat Isya. Acara ini dihadiri oleh jamaah dari berbagai kalangan, menambah semarak syiar Islam di lingkungan masjid.",
-      path: "/berita3",
-    },
-  ];
 
   return (
     <div className="flex justify-center items-center bg-gray-100 font-poppins px-2 py-10">
       <div className="w-full max-w-7xl">
         <div className="flex-col w-full p-8 bg-white shadow-lg rounded-lg">
-          <div className="flex justify-between items-center">
-            <h2 className="md:text-3xl text-lg font-bold">
-              Berita Menarik Masjid Al-Anhar
+            <h2 className="md:text-3xl text-lg font-bold mb-1">
+              Seputar Berita Menarik di Masjid Al-Anhar
             </h2>
-          </div>
+            <div className="md:w-40 w-20 h-1 bg-hijau"></div>
         </div>
         <div className="grid md:grid-cols-3 py-10 gap-6">
           {Artikel.map((item, index) => (

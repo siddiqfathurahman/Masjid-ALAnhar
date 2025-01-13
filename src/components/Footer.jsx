@@ -20,7 +20,7 @@ const Footer = () => {
                 {[
                   { name: "Home", link: "/" },
                   { name: "Profil", link: "/profil" },
-                  { name: "Program", link: "/program" },
+                  { name: "Berita", link: "/berita" },
                   { name: "Organisasi", link: "/organisasi" },
                   { name: "Kontak", link: "/kontak" },
                 ].map((item, index) => (
@@ -61,8 +61,8 @@ const Footer = () => {
             <h4 className="font-semibold text-white mb-2">Pengajian</h4>
             <ul className="text-sm text-slate-100 space-y-2">
               {[
-                { name: "Kajian Tafsir Al-Qur'an", link: "/program" },
-                { name: "Pengajian Rutin", link: "/program" },
+                { name: "Kajian Tafsir Al-Qur'an", link: "/berita2" },
+                { name: "Pengajian Rutin", link: "/berita3" },
               ].map((item, index) => (
                 <li key={index}>
                   <Link

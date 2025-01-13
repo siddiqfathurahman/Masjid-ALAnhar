@@ -16,7 +16,7 @@ export default function Home() {
     <Fil />
     <Layanan />
     <Programdakwah />
-    <DonasiInfaq />
+    <DonasiInfaq/>
     <Hadist />
     <Logo />
     </>

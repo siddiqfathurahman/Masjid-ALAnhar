@@ -1,3 +1,4 @@
+import Coment from "../components/ui/ComentNews";
 import ListBerita from "./ListBerita";
 
 const Berita4 = () => {
@@ -28,6 +29,7 @@ const Berita4 = () => {
             <p>
               Program qurban di Masjid Al-Anhar tidak hanya memberikan manfaat materi, tetapi juga mempererat tali silaturahmi di antara jamaah dan masyarakat. Semoga kegiatan ini terus menjadi tradisi yang bermanfaat, serta memperkuat rasa kepedulian sosial di lingkungan sekitar.
             </p>
+            <Coment />
           </div>
         </div>
       </div>

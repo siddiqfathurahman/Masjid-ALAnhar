@@ -22,6 +22,7 @@ import Berita1 from "./News/Berita1";
 import Berita2 from "./News/Berita2";
 import Berita3 from "./News/Berita3";
 import Berita4 from "./News/Berita4";
+import ScrollTop from "./components/ScrollTop";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -38,6 +39,7 @@ export default function App() {
   return (
     <Router>
       <ScrollToTop />
+      <ScrollTop />
       <Routes>
         <Route
           path="/"

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ListBerita = () => {
   return (
-    <div className="flex justify-center items-center bg-gray-100 font-poppins px-2 py-10">
+    <div className="flex justify-center items-center bg-gray-100 font-poppins px-2 py-5">
       <div className="w-full max-w-7xl">
         <div className="flex-col w-full md:p-8 p-4 bg-white shadow-lg rounded-lg">
           <h1 className="md:text-3xl max-w-5xl text-black text-lg font-extrabold mb-1">

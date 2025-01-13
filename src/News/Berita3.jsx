@@ -1,3 +1,4 @@
+import Coment from "../components/ui/ComentNews";
 import ListBerita from "./ListBerita";
 
 const Berita3 = () => {
@@ -25,6 +26,7 @@ const Berita3 = () => {
             <p>
               Dengan pengajian bulanan dan malam Jumat Kliwon, Masjid Al-Anhar berharap dapat terus menjaga tradisi syiar Islam yang telah berjalan selama bertahun-tahun. Kegiatan ini menjadi bukti nyata bahwa masjid tidak hanya sebagai tempat ibadah, tetapi juga pusat pembelajaran dan persatuan umat.
             </p>
+            <Coment />
           </div>
         </div>
       </div>

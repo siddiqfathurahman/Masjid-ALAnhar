@@ -1,3 +1,4 @@
+import Coment from "../components/ui/ComentNews";
 import ListBerita from "./ListBerita";
 
 const Berita1 = () => {
@@ -25,6 +26,7 @@ const Berita1 = () => {
             <p>
               Dengan prestasi yang diraih tahun ini, Masjid Al-Anhar berkomitmen untuk terus berkontribusi dalam kegiatan keagamaan dan sosial. Mereka berharap dapat terus membawa dampak positif bagi masyarakat sekitar melalui berbagai program yang inspiratif dan bermanfaat.
             </p>
+            <Coment />
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 const Logo = () => {
     return (
-        <div className="py-10">
+        <div  className="py-10">
             <h1 className="font-poppins text-3xl font-extrabold text-center text-gray-800">
                 Lembaga Masjid Al-Anhar
             </h1>

@@ -23,9 +23,9 @@ const DonasiInfaq = () => {
   const whatsappNumber = "628112690998"; 
 
   return (
-    <div id="screen-infaq" className="p-8 font-poppins ">
-      <div className="max-w-4xl md:mx-auto -mx-4">
-        <div className="bg-hijau p-6 rounded-lg shadow-lg mb-6">
+    <div  className="p-8 font-poppins ">
+      <div  className="max-w-4xl md:mx-auto -mx-4">
+        <div   id="screen-infaq" className="bg-hijau p-6 rounded-lg shadow-lg mb-6">
           <h1 className="md:text-3xl text-2xl font-bold text-white text-center mb-6">
             Support Kegiatan Dakwah Masjid
           </h1>

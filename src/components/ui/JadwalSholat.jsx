@@ -121,8 +121,8 @@ const JadwalSholat = () => {
             {["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"].map((prayer) => {
               if (prayer !== nextPrayer) {
                 return (
-                  <div key={prayer} className="bg-white text-black rounded-xl shadow-lg p-3 sm:p-4">
-                    <div className="text-base sm:text-lg font-medium">Shalat {prayerNames[prayer]}</div>
+                  <div key={prayer} className="bg-white text-center text-black rounded-xl shadow-lg p-3 sm:p-4">
+                    <div className="text-sm md:text-lg font-medium">Shalat {prayerNames[prayer]}</div>
                     <div className="text-sm sm:text-base">{jadwalSholat[prayer]} WIB</div>
                   </div>
                 );

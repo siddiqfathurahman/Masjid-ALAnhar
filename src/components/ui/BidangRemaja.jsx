@@ -1,7 +1,7 @@
 const Bidang = () => {
   return (
-    <div className="md:px-10 md:pt-20 pt-10 px-3">  
-    <h1 className="text-center mb-10 text-3xl md:text-2xl font-bold">Struktur Pengurus 2022-2026</h1>
+    <div className="md:px-10 bg-white md:p-5 rounded-lg shadow-xl  md:mt-20">  
+    <h1 className="text-center mb-10 text-3xl md:text-2xl font-bold">Struktur Ramah Pengurus 2022-2026</h1>
       <div className="mb-10">
         <div className="flex flex-col justify-center md:gap-10 gap-1 md:flex-row ">
           <ul className="list-none space-y-2 text-lg ">

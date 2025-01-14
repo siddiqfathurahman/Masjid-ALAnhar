@@ -16,7 +16,7 @@ const Aisyiyah = () => {
   ];
 
   return (
-    <div className="font-poppins text-center flex flex-col mb-10 mt-10 px-7">
+    <div className="font-poppins bg-slate-50 text-center flex flex-col mb-10 mt-10 px-7">
       <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold">
        <AnimatedText>AISYIYAH</AnimatedText>
       </h2>

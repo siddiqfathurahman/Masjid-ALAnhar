@@ -1,5 +1,6 @@
 import { Artikel } from '../data/databerita'; 
 import { Link } from "react-router-dom"; 
+import { MdDateRange } from "react-icons/md";
 
 const ListBerita = () => {
   return (
@@ -19,7 +20,7 @@ const ListBerita = () => {
                 >
                   {item.tittle}
                 </Link>
-                <p className="text-sm text-gray-500 mt-2 md:mt-0">{item.date}</p>
+                <p className="text-sm text-gray-500 flex items-center gap-2 mt-2 md:mt-0"><MdDateRange className='text-base'/>{item.date}</p>
               </div>
               <hr className="border-t border-gray-200 my-4" />
             </div>

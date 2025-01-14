@@ -17,7 +17,7 @@ export default function Ramah() {
   ];
 
   return (
-    <div className="bg-gray-50 min-h-screen py-10 px-5 font-poppins">
+    <div className="bg-slate-50 min-h-screen py-10 px-5 font-poppins">
       <header className="text-center mb-10">
         <h2 className="text-3xl md:text-5xl font-extrabold">
         <AnimatedText>RAMAH MERGANGSAN</AnimatedText>

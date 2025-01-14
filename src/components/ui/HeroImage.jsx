@@ -37,7 +37,7 @@ const HeroImage = () => {
               <div className="flex items-center gap-1 text-xs md:text-lg">
                 <Link
                   to={image.path}
-                  className="text-white underline hover:text-blue-400 flex items-center gap-1"
+                  className="text-white hover:underline hover:text-blue-400 flex items-center gap-1"
                 >
                   baca selengkapnya
                   <FaArrowUpRightFromSquare className="inline-block text-xs md:text-sm" />

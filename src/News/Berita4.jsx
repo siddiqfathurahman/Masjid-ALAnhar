@@ -8,9 +8,9 @@ const Berita4 = () => {
         <div className="w-full max-w-7xl">
           <div className="flex-col w-full md:p-8 p-3 bg-white shadow-lg rounded-lg ">
             <h1 className="md:text-4xl max-w-5xl text-hijau text-lg font-extrabold mb-2">
-              Qurban Masjid Al-Anhar: 9 Lembu dan 21 Kambing untuk 1.375 Penerima
+              Qurban Masjid Al-Anhar 1445H 9 Lembu dan 21 Kambing untuk 1.375 Penerima
             </h1>
-            <p className="text-gray-400 mb-5">Sabtu, 29 Juni 2024</p>
+            <p className="text-gray-400 mb-5">Sabtu, 17 Juni 2024</p>
             <p className="mb-4">
               Masjid Al-Anhar sukses melaksanakan program qurban dengan menyembelih 9 lembu dan 21 kambing, yang didistribusikan kepada 1.375 penerima manfaat yang tersebar di 8 RT dan 3 RW. Kegiatan ini melibatkan hampir 200 orang panitia yang bekerja keras untuk memastikan kelancaran proses penyembelihan dan pembagian daging qurban.
             </p>

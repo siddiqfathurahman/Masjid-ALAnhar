@@ -13,7 +13,7 @@ const BidangAisyiyah = () => {
             </ul>
             <ul className="list-none space-y-2 text-lg">
               <li><strong>Sekretaris 2:</strong> Ida Farida, SE</li>
-              <li><strong>Bendahara 1:</strong> Arinamari Rahmawati</li>
+              <li><strong>Bendahara 1:</strong> Andamari Rahmawati</li>
               <li><strong>Bendahara 2:</strong> Afri Biramti</li>
             </ul>
           </div>
@@ -30,10 +30,10 @@ const BidangAisyiyah = () => {
           </div>
   
           <div className="mb:mb-6 mb-1">
-            <h2 className="text-1xl font-bold">MAJELIS DIKDASMGN - PAUD</h2>
+            <h2 className="text-1xl font-bold">MAJELIS DIKDASMEN - PAUD</h2>
             <ul className="list-decimal pl-5">
               <li>Suci Setyaningsih M.Pd</li>
-              <li>Budi Martini</li>
+              <li>Bugi Martini</li>
               <li>Rumiyati</li>
             </ul>
           </div>
@@ -60,12 +60,12 @@ const BidangAisyiyah = () => {
             <h2 className="text-1xl font-bold">MAJELIS KESEHATAN & LINGKINGAN HIDUP</h2>
             <ul className="list-decimal pl-5">
               <li>Dra.Hj Retno Wuri</li>
-              <li>Dra. Rita Indriyati</li>
+              <li>Dra. Rita Indriyati Wuryandari</li>
               <li>Sumiyati</li>
             </ul>
           </div>
           <div className="mb:mb-6 mb-1">
-            <h2 className="text-1xl font-bold">MAJELIS PERIZINAN KADER</h2>
+            <h2 className="text-1xl font-bold">MAJELIS PEMBINAAN KADER</h2>
             <ul className="list-decimal pl-5">
               <li>Hj. Marimi</li>
               <li>Partini</li>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Profil from "./pages/Profil";
@@ -17,15 +17,23 @@ import HeroQuran from "./components/ui/HeroQuran";
 import SurahDetail from "./components/ui/SurahDetail";
 import ErrorPage from "./components/ErrorPage";
 import Dokumentasi from "./components/ui/Dokumentasi";
+import ScrollTop from "./components/ScrollTop";
 import Berita from "./pages/Berita";
 import Berita1 from "./News/Berita1";
 import Berita2 from "./News/Berita2";
 import Berita3 from "./News/Berita3";
 import Berita4 from "./News/Berita4";
-import ScrollTop from "./components/ScrollTop";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
+
+
+  const beritaRoutes = [
+    { path: "/masjid-al-anhar-raih-penghargaan-di-ajang-takbir-keliling", component: Berita1 },
+    { path: "/kajian-al-quran-rutin-di-masjid-al-anhar", component: Berita2 },
+    { path: "/pengajian-bulanan-tradisi-di-masjid-al-anhar", component: Berita3 },
+    { path: "/masjid-al-anhar-berhasil-memperoleh-9-lembu-dan-21-kambing-dalam-qurban-1445h-2024", component: Berita4 },
+  ];
 
   useEffect(() => {
     const timer = setTimeout(() => setIsLoading(false), 3000);
@@ -37,187 +45,33 @@ export default function App() {
   }
 
   return (
-    <Router>
+    <BrowserRouter>
       <ScrollToTop />
       <ScrollTop />
+      <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
+      <Navbar />
       <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
-              <Navbar />
-              <Home />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/profil"
-          element={
-            <>
-              <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
-              <Navbar />
-              <Profil />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/berita"
-          element={
-            <>
-              <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
-              <Navbar />
-              <Berita />
-              <Footer />
-            </>
-          }
-        />
+        <Route path="/" element={<Home />} />
+        <Route path="/profil" element={<Profil />} />
+        <Route path="/berita" element={<Berita />} />
+        <Route path="/kontak" element={<Kontak />} />
+        <Route path="/organisasi/ramah" element={<Ramah />} />
+        <Route path="/organisasi/takmir" element={<Takmir />} />
+        <Route path="/organisasi/tpa" element={<Tpa />} />
+        <Route path="/organisasi/aisyiyah" element={<Aisyiyah />} />
+        <Route path="/al-quran" element={<HeroQuran />} />
+        <Route path="/al-quran/surah/:id" element={<SurahDetail />} />
+        <Route path="/dokumentasi" element={<Dokumentasi />} />
 
-        <Route
-          path="/kontak"
-          element={
-            <>
-              <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
-              <Navbar />
-              <Kontak />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/organisasi/ramah"
-          element={
-            <>
-              <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
-              <Navbar />
-              <Ramah />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/organisasi/takmir"
-          element={
-            <>
-              <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
-              <Navbar />
-              <Takmir />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/organisasi/tpa"
-          element={
-            <>
-              <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
-              <Navbar />
-              <Tpa />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/organisasi/aisyiyah"
-          element={
-            <>
-              <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
-              <Navbar />
-              <Aisyiyah />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/al-quran"
-          element={
-            <>
-              <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
-              <Navbar />
-              <HeroQuran />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/al-quran/surah/:id"
-          element={
-            <>
-              <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
-              <Navbar />
-              <SurahDetail />
-              <Footer />
-            </>
-          }
-          
-        />
-
-        <Route 
-          path="/dokumentasi"
-          element={
-            <>
-              <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
-              <Navbar />
-              <Dokumentasi />
-              <Footer />
-            </>
-          }
-        />
-
-        <Route 
-          path="/berita1"
-          element={
-            <>
-              <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
-              <Navbar />
-              <Berita1 />
-              <Footer />
-            </>
-          }
-        />
-
-        <Route 
-          path="/berita2"
-          element={
-            <>
-              <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
-              <Navbar />
-              <Berita2 />
-              <Footer />
-            </>
-          }
-        />
-
-        <Route 
-          path="/berita3"
-          element={
-            <>
-              <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
-              <Navbar />
-              <Berita3 />
-              <Footer />
-            </>
-          }
-        />
-
-        <Route 
-          path="/berita4"
-          element={
-            <>
-              <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
-              <Navbar />
-              <Berita4 />
-              <Footer />
-            </>
-          }
-        />
-
+ 
+        {beritaRoutes.map(({ path, component: Component }, index) => (
+          <Route key={index} path={path} element={<Component />} />
+        ))}
 
 
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-    </Router>
+      <Footer />
+    </BrowserRouter>
   );
 }

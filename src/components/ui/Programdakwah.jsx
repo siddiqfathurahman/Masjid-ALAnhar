@@ -7,7 +7,7 @@ const Programdakwah = () => {
     <h1 className="text-3xl font-extrabold">Kegiatan Dakwah</h1>
     <div className="flex flex-col md:flex-row gap-10 md:gap-32 mt-7 items-center">
       <div className="flex flex-col items-center">
-        <img src="/kajian.jpg" alt="pengajian" className="md:w-96 w-72 max-w-md h-auto rounded-2xl" />
+        <img src="/posterpengajian.png" alt="pengajian" className="md:w-96 w-72 max-w-md h-auto rounded-2xl" />
         <p className="md:max-w-md pt-3 text-left">
           Kegiatan pengajian rutin diadakan setiap akhir bulan pada hari Selasa. Acara ini bertujuan untuk
           mempererat ukhuwah Islamiyah dan meningkatkan pemahaman keagamaan bagi seluruh jamaah.

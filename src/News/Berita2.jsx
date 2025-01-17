@@ -8,7 +8,7 @@ const Berita2 = () => {
     <>
       <div className="flex justify-center items-center bg-gray-100 font-poppins px-2 pt-10">
         <div className="w-full max-w-7xl">
-          <div className="flex-col w-full md:p-8 p-3 bg-white shadow-lg rounded-lg">
+          <div className=" w-full md:p-8 p-3 bg-white shadow-lg rounded-lg">
             <h1 className="md:text-4xl max-w-5xl text-hijau text-lg font-extrabold mb-2">
               Kajian Surah Pendek Al-Quran Rutin di Masjid Al-Anhar
             </h1>
@@ -31,6 +31,9 @@ const Berita2 = () => {
             <p>
               Dengan terselenggaranya kajian ini secara rutin, Masjid Al-Anhar berharap dapat terus mendorong semangat masyarakat untuk mendalami Al-Quran. Kegiatan ini juga diharapkan mampu menjadi salah satu media untuk memperkuat iman dan mempererat persaudaraan di tengah-tengah jamaah.
             </p>
+            <div className="pt-5">
+              <img src="/dakwah2.jpeg" alt="" className="md:w-96 w-52 h-auto rounded-lg"/>
+            </div>
             <Coment />
           </div>
         </div>

@@ -7,12 +7,7 @@ import BidangAisyiyah from '../components/ui/BidangAisyiyah';
 const Aisyiyah = () => {
 
   const images = [
-    { id: 1, src: "/bg.JPG", title: "aisyiyah al-anhar" },
-    { id: 2, src: "/bg.JPG", title: "aisyiyah al-anhar"  },
-    { id: 3, src: "/bg.JPG", title: "aisyiyah al-anhar"  },
-    { id: 4, src: "/bg.JPG", title: "aisyiyah al-anhar" },
-    { id: 5, src: "/bg.JPG", title: "aisyiyah al-anhar"  },
-    { id: 6, src: "/bg.JPG", title: "aisyiyah al-anhar"  },
+    { id: 1, src: "/aisyiyah1.jpeg", title: "aisyiyah al-anhar" }
   ];
 
   return (

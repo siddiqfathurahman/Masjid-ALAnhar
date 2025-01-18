@@ -10,6 +10,18 @@ const Tpa = () => {
     { id: 4, src: "/tpa4.jpeg", title: "tpa al-anhar" },
   ];
 
+  const data = [
+    { no: 1, name: "Sodara Hamzah", role: "Pengajar" },
+    { no: 2, name: "Sodara Yudha", role: "Pengajar" },
+    { no: 3, name: "Sodari Tika", role: "Pengajar" },
+    { no: 4, name: "Ustaz Ummi Ibrohim", role: "Pengajar" },
+    { no: 5, name: "Ibu Bambang", role: "Pengajar" },
+    { no: 6, name: "Sodari Ria", role: "Pengajar" },
+    { no: 7, name: "Sodari Gina", role: "Pengajar" },
+    { no: 8, name: "Sodari Khan", role: "Pengajar" },
+    { no: 9, name: "Ibu Yanton", role: "Pengajar" },
+  ];
+
   return (
     <div className="font-poppins text-center flex flex-col mb-10 mt-10 px-7">
       <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold">
@@ -44,16 +56,6 @@ const Tpa = () => {
       </div>
 
 
-      <div>
-        <h2 className="mt-8 md:text-3xl text-2xl font-bold text-left">Pengajar dan Pendamping</h2>
-        <ul className="list-decimal list-inside pl-1 text-left pt-4">
-          {['Sodara Hamzah', 'Sodara Yudha', 'Sodari Tika', 'Ustaz Ummi Ibrohim', 'Ibu Bambang', 'Sodari Ria', 'Sodari Gina', 'Sodari Khan', 'Ibu Yanton'].map((name, index) => (
-            <li key={index} className="pl-1 pt-2">
-              {name}
-            </li>
-          ))}
-        </ul>
-      </div>
 
       <div className="pt-10">
         <h1 className="text-3xl font-bold text-center">Jadwal Belajar</h1>
@@ -83,6 +85,30 @@ const Tpa = () => {
           <button className="bg-green-500 text-white px-4 py-2 rounded-lg mt-4">Info Pendaftaran</button>
         </div>
       </div>
+
+      <div className="container mx-auto py-8">
+      <h1 className="text-2xl font-bold mb-6 text-center">Daftar Pengajar dan Pendamping</h1>
+      <div className="overflow-x-auto">
+        <table className="table-auto w-full border-collapse border border-gray-300">
+          <thead>
+            <tr className="bg-gray-200">
+              <th className="border border-gray-300 px-4 py-2 text-center">No</th>
+              <th className="border border-gray-300 px-4 py-2 text-center">Nama</th>
+              <th className="border border-gray-300 px-4 py-2 text-center">Keterangan</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.map((item) => (
+              <tr key={item.no} className="hover:bg-gray-100">
+                <td className="border border-gray-300 px-4 py-2">{item.no}</td>
+                <td className="border border-gray-300 px-4 py-2">{item.name}</td>
+                <td className="border border-gray-300 px-4 py-2">{item.role}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
 
       <Gallery
         title="Galeri Tpa"

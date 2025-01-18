@@ -46,19 +46,19 @@ const Aisyiyah = () => {
 
       <div>
         <h2 className="mt-8 text-3xl font-bold text-left">Program & Kegiatan</h2>
-        <p className="pt-5 text-left">
+        <p className="pt-5 text-left max-w-4xl">
           Aisyiyah menyelenggarakan berbagai program yang berkontribusi pada pemberdayaan perempuan dan masyarakat.
           Berikut adalah beberapa program utama yang dijalankan:
         </p>
         <ol className="list-decimal list-inside pl-1 text-left">
           {[
-            'Pemberdayaan ekonomi perempuan melalui pelatihan keterampilan dan kewirausahaan.',
-            'Pendidikan anak usia dini (PAUD) untuk mempersiapkan generasi penerus yang cerdas dan berakhlak.',
+            'Penguatan Dakwah dan Tarjih Aisyiyah',
+            'Pengembangan Pendidikan Anak Usia Dini Berbasis Islam',
             'Layanan kesehatan melalui klinik dan posyandu Aisyiyah.',
             'Kajian keislaman dan penguatan nilai-nilai spiritual untuk perempuan.',
             'Gerakan sosial untuk membantu masyarakat terdampak bencana.',
-            'Program literasi dan pemberantasan buta huruf.',
-            'Pelatihan kepemimpinan perempuan dalam organisasi dan masyarakat.',
+            'Pengkaderan dan Peningkatan Kompetensi Perempuan Aisyiyah',
+            'Aisyiyah Peduli Kesehatan dan Lingkungan',
           ].map((item, index) => (
             <li key={index} className="pl-2 pt-2">
               {item}

@@ -14,7 +14,8 @@ const ProfilMasjid = () => {
       Nama <span className="font-bold">"Al-Anhar"</span>, yang berarti <span className="font-bold">"sungai-sungai"</span> dalam bahasa Arab, terinspirasi dari gambaran surga dalam Al-Qur'an. Nama ini mencerminkan harapan agar Masjid Al-Anhar menjadi sumber kedamaian dan keberkahan, layaknya sungai yang mengalir membawa kehidupan. Dengan semangat tersebut, masjid ini berkomitmen untuk terus mengalirkan kebaikan bagi umat dan masyarakat sekitar.
       </p>
       <Sejarah />
-      <h2 className="mt-8 text-3xl font-bold text-left">Pengurus Harian</h2>
+      <h2 className="mt-8 text-3xl font-bold text-center">Pengurus Harian Masjid Al-Anhar</h2>
+      <div className="w-20 h-1 bg-hijau rounded-xl mx-auto mt-3"></div>
       <table className="min-w-full mt-4 table-auto border-collapse border-2 border-gray-300">
   <thead>
     <tr className="bg-white">
@@ -36,11 +37,12 @@ const ProfilMasjid = () => {
       { nama: "Citra Lestari", jabatan: "Korbid Pendidikan" },
       { nama: "Rina Permata", jabatan: "Korbid Soskes" }
       // {item.nama}
+      // {item.jabatan}
     ].map((item, index) => (
       <tr key={index} className="border-b">
         <td className="px-4 py-2 text-center border-2">{index + 1}</td>
         <td className="px-4 py-2 text-left border-2">-</td>
-        <td className="px-4 py-2 text-left border-2">{item.jabatan}</td>
+        <td className="px-4 py-2 text-left border-2">-</td>
       </tr>
     ))}
   </tbody>

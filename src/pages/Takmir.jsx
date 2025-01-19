@@ -72,11 +72,12 @@ const Takmir = () => {
       { nama: "Citra Lestari", jabatan: "Koordinator Acara" },
       { nama: "Rina Permata", jabatan: "Koordinator Humas" },
       // {item.nama}
+      // {item.jabatan}
     ].map((item, index) => (
       <tr key={index} className="border-b">
         <td className="px-4 py-2 text-center border-2">{index + 1}</td>
         <td className="px-4 py-2 text-left border-2">-</td>    
-        <td className="px-4 py-2 text-left border-2">{item.jabatan}</td>
+        <td className="px-4 py-2 text-left border-2">-</td>
       </tr>
     ))}
   </tbody>

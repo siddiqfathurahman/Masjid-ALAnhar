@@ -10,6 +10,9 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         amiri: ["Amiri", "serif"],
       },
+      screens: {
+        'custom': '1000px',
+      },
       colors: {
         hijau: "#06623B", 
         lemon: "#F6F578", 

@@ -41,7 +41,7 @@ const Layanan = () => {
       <h1 className="text-2xl md:text-4xl font-extrabold text-left sm:text-center">
       Fasilitas Masjid
       </h1>
-      <div className="w-28 h-1 bg-hijau rounded-xl md:mx-auto mt-2"></div>
+      <div className="w-20 h-1 bg-hijau rounded-xl md:mx-auto mt-2"></div>
 
       <p className="text-xl max-w-4xl mt-3 mx-auto text-left sm:text-center">
         Masjid Al-Anhar menyediakan berbagai layanan untuk mendukung kebutuhan ibadah dan kegiatan sosial umat. Kami berkomitmen untuk menciptakan lingkungan yang nyaman dan aman bagi seluruh jamaah.
@@ -67,7 +67,7 @@ const Layanan = () => {
           </Slider>
         </div>
 
-        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 mx-20 justify-items-center">
+        <div className="hidden md:grid md:grid-cols-2 lg:space-y-3 lg:grid-cols-4 mx-20 justify-items-center">
           {layananData.map((layanan) => (
             <div key={layanan.id} className="relative group">
               <div className="md:w-[200px] md:h-[250px] w-[170px] h-[250px] bg-gray-300 rounded-lg overflow-hidden">

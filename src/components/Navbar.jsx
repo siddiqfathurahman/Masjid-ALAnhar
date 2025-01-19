@@ -24,7 +24,7 @@ export default function Navbar() {
             <Link to="/">Home</Link>
           </li>
           <li className={`hover:text-lemon cursor-pointer ${isActive('/profil')}`}>
-            <Link to="/profil">Profil Masjid</Link>
+            <Link to="/profil-masjid-alanhar">Profil Masjid</Link>
           </li>
           <li className={`hover:text-lemon cursor-pointer ${isActive('/berita')}`}>
             <Link to="/berita">Berita</Link>
@@ -107,7 +107,7 @@ export default function Navbar() {
             <Link to="/">Home</Link>
           </li>
           <li className={`hover:text-green-800 cursor-pointer ${isActive('/profil')}`} onClick={toggleMenu}>
-            <Link to="/profil">Profil Masjid</Link>
+            <Link to="/profil-masjid-alanhar">Profil Masjid</Link>
           </li>
           <li className={`hover:text-green-800 cursor-pointer ${isActive('/berita')}`} onClick={toggleMenu}>
             <Link to="/berita">Berita</Link>

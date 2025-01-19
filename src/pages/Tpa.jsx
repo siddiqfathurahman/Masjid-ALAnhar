@@ -91,18 +91,18 @@ const Tpa = () => {
       <div className="overflow-x-auto">
         <table className="table-auto w-full border-collapse border border-gray-300">
           <thead>
-            <tr className="bg-gray-200">
-              <th className="border border-gray-300 px-4 py-2 text-center">No</th>
-              <th className="border border-gray-300 px-4 py-2 text-center">Nama</th>
-              <th className="border border-gray-300 px-4 py-2 text-center">Keterangan</th>
+            <tr className="bg-white">
+              <th className="px-4 py-2 text-center border-2er">No</th>
+              <th className="px-4 py-2 text-center border-2">Nama</th>
+              <th className="px-4 py-2 text-center border-2">Keterangan</th>
             </tr>
           </thead>
           <tbody>
             {data.map((item) => (
-              <tr key={item.no} className="hover:bg-gray-100">
-                <td className="border border-gray-300 px-4 py-2">{item.no}</td>
-                <td className="border border-gray-300 px-4 py-2">{item.name}</td>
-                <td className="border border-gray-300 px-4 py-2">{item.role}</td>
+              <tr key={item.no} className="border-b">
+                <td className="px-4 py-2 text-center border-2">{item.no}</td>
+                <td className="px-4 py-2 text-left border-2">{item.name}</td>
+                <td className="px-4 py-2 text-left border-2">{item.role}</td>
               </tr>
             ))}
           </tbody>

@@ -8,9 +8,9 @@ const Takmir = () => {
       <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold">
       <AnimatedText>TAKMIR AL-ANHAR</AnimatedText>
       </h2>
-      <p className="px-5 text-lg md:text-xl max-w-4xl md:max-w-3xl lg:max-w-4xl mt-2 md:mt-3 mx-auto">
+      <p className=" text-lg md:text-xl max-w-6xl md:max-w-3xl lg:max-w-4xl mt-2 md:mt-3 mx-auto">
 
-      Takmir masjid adalah organisasi yang bertugas mengelola dan mengembangkan kegiatan masjid, mencakup ibadah, sosial, dan pendidikan. Takmir memastikan masjid berfungsi optimal sebagai pusat ibadah, pembinaan umat, dan pemberdayaan masyarakat melalui program seperti pengajian, bimbingan Al-Quran, serta kegiatan sosial yang mendukung kemakmuran masjid dan kesejahteraan umat Islam.
+      Takmir Masjid adalah organisasi yang mengelola dan mengembangkan masjid sebagai pusat ibadah, pembinaan umat, dan pemberdayaan masyarakat. Melalui program seperti pengajian, bimbingan Al-Quran, dan kegiatan sosial, takmir memastikan masjid berfungsi optimal untuk kemakmuran umat dan kesejahteraan bersama.
       </p>
 
       <div className="mt-8 px-5 flex flex-col md:flex-row text-left">
@@ -50,7 +50,7 @@ const Takmir = () => {
       </ol>
       </div>
       
-      <h2 className="mt-14 text-3xl font-bold text-left">Pengurus Takmir Periode 2022 - 2026</h2>
+      <h2 className="mt-14 text-3xl font-bold text-center">Pengurus Takmir Periode 2022 - 2026</h2>
       <table className="min-w-full mt-4 table-auto border-collapse border-2 border-gray-300">
   <thead>
     <tr className="bg-white">
@@ -68,14 +68,15 @@ const Takmir = () => {
       { nama: "Nurul Huda", jabatan: "Anggota 1" },
       { nama: "Farida Amalia", jabatan: "Anggota 2" },
       { nama: "Arif Setiawan", jabatan: "Koordinator Program" },
-      { nama: "Budi Santoso", jabatan: "Koordinator Logistik" },
+      { nama: "Budi Santoso", jabatan: "Koordinator Logistik" }, 
       { nama: "Citra Lestari", jabatan: "Koordinator Acara" },
       { nama: "Rina Permata", jabatan: "Koordinator Humas" },
+      // {item.nama}
     ].map((item, index) => (
       <tr key={index} className="border-b">
         <td className="px-4 py-2 text-center border-2">{index + 1}</td>
-        <td className="px-4 py-2 text-center border-2">{item.nama}</td>
-        <td className="px-4 py-2 text-center border-2">{item.jabatan}</td>
+        <td className="px-4 py-2 text-left border-2">-</td>    
+        <td className="px-4 py-2 text-left border-2">{item.jabatan}</td>
       </tr>
     ))}
   </tbody>

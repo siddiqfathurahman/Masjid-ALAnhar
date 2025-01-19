@@ -25,21 +25,22 @@ const ProfilMasjid = () => {
   </thead>
   <tbody>
     {[
-      { nama: "Fatur Rahman", jabatan: "Ketua" },
+      { nama: "Fatur Rahman", jabatan: "Ketua Umum" },
       { nama: "Ahmad Zaki", jabatan: "Wakil Ketua" },
       { nama: "Siti Aisyah", jabatan: "Sekretaris" },
       { nama: "Rudi Hartono", jabatan: "Bendahara" },
-      { nama: "Nurul Huda", jabatan: "Anggota 1" },
-      { nama: "Farida Amalia", jabatan: "Anggota 2" },
-      { nama: "Arif Setiawan", jabatan: "Koordinator Program" },
-      { nama: "Budi Santoso", jabatan: "Koordinator Logistik" },
-      { nama: "Citra Lestari", jabatan: "Koordinator Acara" },
-      { nama: "Rina Permata", jabatan: "Koordinator Humas" },
+      { nama: "Nurul Huda", jabatan: "Sekretaris II" },
+      { nama: "Farida Amalia", jabatan: "Bendahara II" },
+      { nama: "Arif Setiawan", jabatan: "Korbid Ibadah" },
+      { nama: "Budi Santoso", jabatan: "Korbid Sarpras" },
+      { nama: "Citra Lestari", jabatan: "Korbid Pendidikan" },
+      { nama: "Rina Permata", jabatan: "Korbid Soskes" }
+      // {item.nama}
     ].map((item, index) => (
       <tr key={index} className="border-b">
         <td className="px-4 py-2 text-center border-2">{index + 1}</td>
-        <td className="px-4 py-2 text-center border-2">{item.nama}</td>
-        <td className="px-4 py-2 text-center border-2">{item.jabatan}</td>
+        <td className="px-4 py-2 text-left border-2">-</td>
+        <td className="px-4 py-2 text-left border-2">{item.jabatan}</td>
       </tr>
     ))}
   </tbody>

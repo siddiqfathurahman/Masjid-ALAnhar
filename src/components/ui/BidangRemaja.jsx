@@ -1,20 +1,20 @@
 const Bidang = () => {
   return (
-    <div className="md:px-10 bg-white md:p-5 rounded-lg shadow-xl  md:mt-20">  
-    <h1 className="text-center mb-10 text-3xl md:text-2xl font-bold">Struktur Ramah Pengurus 2022-2026</h1>
+    <div className="md:px-10 md:mt-20 md:p-5 p-2 rounded-lg shadow-xl bg-white mt-10 px-2"> 
+    <h1 className="text-center mb-10 text-2xl md:text-3xl font-bold">Struktur Ramah periode 2022-2026</h1>
       <div className="mb-10">
         <div className="flex flex-col justify-center md:gap-10 gap-1 md:flex-row ">
           <ul className="list-none space-y-2 text-lg ">
-            <li><strong>Ketua:</strong> Nama Ketua</li>
-            <li><strong>Wakil:</strong> Nama Wakil</li>
-            <li><strong>Sekretaris 1:</strong> Nama Sekretaris 1</li>
+            <li><strong>Ketua:</strong> Muh Royhan Kholiq</li>
+            <li><strong>Wakil:</strong> Leyfi Muflif</li>
+            <li><strong>Sekretaris 1:</strong> Queenneza Clara N.S</li>
           </ul>
 
 
           <ul className="list-none space-y-2 text-lg">
-            <li><strong>Sekretaris 2:</strong> Nama Sekretaris 2</li>
-            <li><strong>Bendahara 1:</strong> Nama Bendahara 1</li>
-            <li><strong>Bendahara 2:</strong> Nama Bendahara 2</li>
+            <li><strong>Sekretaris 2:</strong> Rizky  Nur K</li>
+            <li><strong>Bendahara 1:</strong> Naufal Daniswara</li>
+            <li><strong>Bendahara 2:</strong> Nayla Najwa Putri R</li>
           </ul>
         </div>
       </div>
@@ -24,7 +24,7 @@ const Bidang = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="mb-6">
           <h2 className="text-2xl font-bold">BIDANG HUMAS</h2>
-          <p><strong>Ketua Bidang:</strong> Fulvian Aldha Pandya S.</p>
+          <p><strong>Ketua Bidang:</strong> Fulvian Aldha P.S</p>
           <p><strong>Anggota:</strong></p>
           <ul className="list-decimal pl-5">
             <li>Al Daffa Saputra</li>

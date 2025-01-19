@@ -6,7 +6,7 @@ const Layanan = () => {
   const layananData = [
     { id: 1, title: "Fasilitas air minum gratis, bersih, dan sehat.", image: "/dispenser.jpeg" },
     { id: 2, title: "Tempat ibadah nyaman dengan pendingin ruangan", image: "/ac.jpeg" },
-    { id: 3, title: "Tempat wudhu bersih dan mudah diakses", image: "/tempatwudhu.jpeg" },
+    { id: 3, title: "Tempat wudhu terpisah bersih dan mudah diakses", image: "/tempatwudhu.jpeg" },
     { id: 4, title: "Tersedia Al-Qur'an untuk mendukung kegiatan ibadah", image: "/etalasequran.jpeg" },
   ];
 
@@ -39,8 +39,10 @@ const Layanan = () => {
   return (
     <div className="text-center mt-20 font-poppins mb-10 px-4 md:px-0">
       <h1 className="text-2xl md:text-4xl font-extrabold text-left sm:text-center">
-        Fasilitas Masjid
+      Fasilitas Masjid
       </h1>
+      <div className="w-28 h-1 bg-hijau rounded-xl md:mx-auto mt-2"></div>
+
       <p className="text-xl max-w-4xl mt-3 mx-auto text-left sm:text-center">
         Masjid Al-Anhar menyediakan berbagai layanan untuk mendukung kebutuhan ibadah dan kegiatan sosial umat. Kami berkomitmen untuk menciptakan lingkungan yang nyaman dan aman bagi seluruh jamaah.
       </p>

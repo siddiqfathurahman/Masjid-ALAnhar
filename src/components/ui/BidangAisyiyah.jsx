@@ -59,8 +59,8 @@ const BidangAisyiyah = () => {
           <div className="mb:mb-6 mb-1">
             <h2 className="text-1xl font-bold">MAJELIS KESEHATAN & LINGKINGAN HIDUP</h2>
             <ul className="list-decimal pl-5">
-              <li>Dra.Hj Retno Wuri</li>
-              <li>Dra. Rita Indriyati Wuryandari</li>
+              <li>Dra.Hj Retno Wuri Wuryandari</li>
+              <li>Dra. Rita Indriyati </li>
               <li>Sumiyati</li>
             </ul>
           </div>

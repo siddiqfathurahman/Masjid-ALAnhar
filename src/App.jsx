@@ -52,7 +52,7 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/profil" element={<Profil />} />
+        <Route path="/profil-masjid-alanhar" element={<Profil />} />
         <Route path="/berita" element={<Berita />} />
         <Route path="/kontak" element={<Kontak />} />
         <Route path="/organisasi/ramah" element={<Ramah />} />

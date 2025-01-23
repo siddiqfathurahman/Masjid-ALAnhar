@@ -10,9 +10,9 @@ function SurahDetail() {
   const [surah, setSurah] = useState(null);
   const [loading, setLoading] = useState(true);
   const [modalOpen, setModalOpen] = useState(false);
-  const [searchModalOpen, setSearchModalOpen] = useState(false); // Modal pencarian
-  const [searchQuery, setSearchQuery] = useState(""); // Input pencarian
-  const [filteredVerses, setFilteredVerses] = useState([]); // Hasil filter
+  const [searchModalOpen, setSearchModalOpen] = useState(false); 
+  const [searchQuery, setSearchQuery] = useState("");
+  const [filteredVerses, setFilteredVerses] = useState([]); 
   const [arabicSize, setArabicSize] = useState(24);
   const [latinSize, setLatinSize] = useState(16);
   const [showLatin, setShowLatin] = useState(true);
@@ -113,7 +113,7 @@ function SurahDetail() {
             setShowTranslation={setShowTranslation}
           />
 
-          {/* Modal Pencarian */}
+    
           {searchModalOpen && (
           <div className="fixed inset-0 bg-black bg-opacity-20 flex justify-center items-center z-[9999]">
             <div className="bg-white p-5 rounded-lg text-center shadow-lg max-w-md w-60">

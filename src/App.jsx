@@ -23,9 +23,14 @@ import Berita1 from "./News/Berita1";
 import Berita2 from "./News/Berita2";
 import Berita3 from "./News/Berita3";
 import Berita4 from "./News/Berita4";
+import { db } from "./firebase"; 
+import { doc, getDoc, updateDoc } from "firebase/firestore";
+import AnalyticsTracker from "./AnalyticsTracker";
+
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const [visitorCount, setVisitorCount] = useState(0);
 
 
   const beritaRoutes = [
@@ -34,6 +39,33 @@ export default function App() {
     { path: "/pengajian-bulanan-tradisi-di-masjid-al-anhar", component: Berita3 },
     { path: "/masjid-al-anhar-berhasil-memperoleh-9-lembu-dan-21-kambing-dalam-qurban-1445h-2024", component: Berita4 },
   ];
+
+  useEffect(() => {
+    const updateVisitorCount = async () => {
+      try {
+        const docRef = doc(db, "visits", "counter"); // Nama koleksi: visits, dokumen: counter
+        const docSnap = await getDoc(docRef);
+
+        if (docSnap.exists()) {
+          const currentCount = docSnap.data().count;
+
+          // Update Firestore dengan menambah 1
+          await updateDoc(docRef, {
+            count: currentCount + 1,
+          });
+
+          // Set state untuk menampilkan jumlah pengunjung
+          setVisitorCount(currentCount + 1);
+        } else {
+          console.error("No such document!");
+        }
+      } catch (error) {
+        console.error("Error updating visitor count:", error);
+      }
+    };
+
+    updateVisitorCount();
+  }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => setIsLoading(false), 3000);
@@ -46,6 +78,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
+    <AnalyticsTracker />
       <ScrollToTop />
       <ScrollTop />
       <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
@@ -72,6 +105,10 @@ export default function App() {
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
+      <div className="font-poppins text-center bg-hijau py-4 text-white">
+        <p>Jumlah pengunjung: {visitorCount}</p>
+      </div>
+      
     </BrowserRouter>
   );
 }

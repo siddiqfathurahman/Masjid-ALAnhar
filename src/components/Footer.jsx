@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-hijau py-10 font-poppins relative">
+    <footer className="bg-hijau pt-10 font-poppins relative">
       <div className="container mx-auto px-5 relative z-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
           <div className="order-1 md:order-1">

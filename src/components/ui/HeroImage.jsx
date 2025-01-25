@@ -34,13 +34,13 @@ const HeroImage = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
             <div className="absolute md:bottom-6 bottom-4 md:left-7 left-4 pr-7 text-white text-xs sm:text-lg max-w-8xl md:text-xl lg:text-4xl font-semibold">
               <p>{image.berita}</p>
-              <div className="flex items-center gap-1 text-xs md:text-lg">
+              <div className="flex items-center gap-1 text-xs md:text-sm">
                 <Link
                   to={image.path}
                   className="text-white hover:underline hover:text-blue-400 flex items-center gap-1"
                 >
-                  baca selengkapnya
-                  <FaArrowUpRightFromSquare className="inline-block text-xs md:text-sm" />
+                  Baca Selengkapnya
+                  <FaArrowUpRightFromSquare className="inline-block " size={10} />
                 </Link>
               </div>
             </div>

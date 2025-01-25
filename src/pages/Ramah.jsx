@@ -31,7 +31,7 @@ export default function Ramah() {
       </header>
 
       <div className="md:px-10 px-3">
-        <h1 className="text-3xl font-extrabold mb-3">Tentang Kami</h1>
+        <h1 className="md:text-3xl text-2xl font-extrabold mb-3">Tentang Kami</h1>
         <p className="indent-8">
           Remaja Masjid Al-Anhar adalah pemuda & pemudi yang berdedikasi untuk menyelenggarakan kegiatan keagamaan,
           sosial, dan pendidikan. Dengan semangat kebersamaan, kami bertujuan untuk menciptakan generasi muda yang
@@ -41,7 +41,7 @@ export default function Ramah() {
       </div>
 
       <div className="md:px-10 pt-10 px-3">
-        <h1 className="text-3xl font-extrabold mb-3">Program Kerja</h1>
+        <h1 className="md:text-3xl text-2xl  font-extrabold mb-3">Program Kerja</h1>
         <ol className="list-decimal list-inside pl-1 text-left">
           <li className="pt-2">Bakti sosial dan santunan masyarakat.</li>
           <li className="pt-2">Menjadikan Masjid sebagai Pusat Aktivitas Remaja.</li>

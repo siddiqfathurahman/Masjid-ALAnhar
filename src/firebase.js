@@ -4,13 +4,13 @@ import { getAnalytics } from 'firebase/analytics'; // Tambahkan ini
 
 // Konfigurasi Firebase
 const firebaseConfig = {
-    apiKey: "AIzaSyC-RjMXafWhh0FgtcF-lOs1irtQIKNymeg",
-    authDomain: "masjid-al-anhar.firebaseapp.com",
-    projectId: "masjid-al-anhar",
-    storageBucket: "masjid-al-anhar.firebasestorage.app",
-    messagingSenderId: "385768567230",
-    appId: "1:385768567230:web:1bc0914394b0e3ed0689ef",
-    measurementId: "G-SQGPEM0QE4",
+    apiKey: "AIzaSyAbJoYYWtxXXFEROqIPVyQOkCciExOlRPg",
+    authDomain: "masjid-al-anhar1.firebaseapp.com",
+    projectId: "masjid-al-anhar1",
+    storageBucket: "masjid-al-anhar1.firebasestorage.app",
+    messagingSenderId: "502689758574",
+    appId: "1:502689758574:web:f01a41a5ff19e90664d57f",
+    measurementId: "G-5Z9BMM5W4R"
 };
 
 // Inisialisasi Firebase

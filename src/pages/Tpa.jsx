@@ -33,7 +33,7 @@ const Tpa = () => {
       </p>
 
       <div>
-        <h2 className="mt-8 text-3xl font-bold text-left">Program dan Kegiatan</h2>
+        <h2 className="mt-8 md:text-3xl text-2xl font-bold text-left">Program dan Kegiatan</h2>
         <p className="pt-5 text-left">
           Taman Pendidikan Al-Qur'an (TPA) Masjid Al-Anhar menyelenggarakan berbagai program untuk mendukung
           pembelajaran Al-Qur'an dan penanaman nilai-nilai Islami. Berikut adalah 7 program utama yang diadakan:

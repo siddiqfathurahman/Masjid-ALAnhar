@@ -31,7 +31,7 @@ const Takmir = () => {
       </div>
 
       <div>
-      <h2 className="mt-8 text-3xl font-bold text-left">Program Masjid</h2>
+      <h2 className="mt-8 md:text-3xl text-2xl font-bold text-left">Program Masjid</h2>
       <p className="pt-5 text-left">
         Masjid Al-Anhar mengadakan berbagai program untuk mendukung kegiatan ibadah, pendidikan, dan sosial masyarakat. Berikut adalah 10 program utama Masjid Al-Anhar:
       </p>
@@ -50,7 +50,7 @@ const Takmir = () => {
       </ol>
       </div>
       
-      <h2 className="mt-14 text-3xl font-bold text-center">Pengurus Takmir Periode 2022 - 2026</h2>
+      <h2 className="mt-14 md:text-3xl text-2xl font-bold text-center">Pengurus Takmir Periode 2022 - 2026</h2>
       <table className="min-w-full mt-4 table-auto border-collapse border-2 border-gray-300">
   <thead>
     <tr className="bg-white">

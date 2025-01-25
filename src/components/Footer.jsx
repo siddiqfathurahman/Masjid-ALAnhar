@@ -36,7 +36,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold text-white mb-2">Organisasi</h4>
+              <h4 className="font-semibold text-white mb-2">Lembaga</h4>
               <ul className="text-sm text-slate-100 space-y-2">
                 {[
                   { name: "Ramah", link: "/organisasi/ramah" },

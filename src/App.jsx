@@ -23,15 +23,14 @@ import Berita1 from "./News/Berita1";
 import Berita2 from "./News/Berita2";
 import Berita3 from "./News/Berita3";
 import Berita4 from "./News/Berita4";
-import { db } from "./firebase"; 
+import { db } from "./firebase";
 import { doc, getDoc, updateDoc } from "firebase/firestore";
 import AnalyticsTracker from "./AnalyticsTracker";
-
+import { FaUser } from "react-icons/fa6";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [visitorCount, setVisitorCount] = useState(0);
-
 
   const beritaRoutes = [
     { path: "/masjid-al-anhar-raih-penghargaan-di-ajang-takbir-keliling", component: Berita1 },
@@ -43,18 +42,16 @@ export default function App() {
   useEffect(() => {
     const updateVisitorCount = async () => {
       try {
-        const docRef = doc(db, "visits", "counter"); // Nama koleksi: visits, dokumen: counter
+        const docRef = doc(db, "visits", "counter");
         const docSnap = await getDoc(docRef);
 
         if (docSnap.exists()) {
           const currentCount = docSnap.data().count;
 
-          // Update Firestore dengan menambah 1
           await updateDoc(docRef, {
             count: currentCount + 1,
           });
 
-          // Set state untuk menampilkan jumlah pengunjung
           setVisitorCount(currentCount + 1);
         } else {
           console.error("No such document!");
@@ -67,10 +64,12 @@ export default function App() {
     updateVisitorCount();
   }, []);
 
+
   useEffect(() => {
     const timer = setTimeout(() => setIsLoading(false), 3000);
     return () => clearTimeout(timer);
   }, []);
+
 
   if (isLoading) {
     return <LoadingScreen />;
@@ -78,7 +77,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
-    <AnalyticsTracker />
+      <AnalyticsTracker />
       <ScrollToTop />
       <ScrollTop />
       <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
@@ -96,19 +95,19 @@ export default function App() {
         <Route path="/al-quran/surah/:id" element={<SurahDetail />} />
         <Route path="/dokumentasi" element={<Dokumentasi />} />
 
- 
         {beritaRoutes.map(({ path, component: Component }, index) => (
           <Route key={index} path={path} element={<Component />} />
         ))}
 
-
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
-      <div className="font-poppins text-center bg-hijau py-4 text-white">
-        <p>Jumlah pengunjung: {visitorCount}</p>
+      <div className="font-poppins flex items-center justify-center text-center bg-hijau py-6 text-white">
+        <div className="flex items-center space-x-2">
+          <FaUser />
+          <span>{visitorCount}</span>
+        </div>
       </div>
-      
     </BrowserRouter>
   );
 }

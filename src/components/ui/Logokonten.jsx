@@ -12,10 +12,10 @@ const Logo = () => {
 
     return (
         <div className="py-10">
-            <h1 className="font-poppins text-3xl font-extrabold text-center text-gray-800">
+            <h1 className="font-poppins md:text-3xl text-2xl font-extrabold text-center text-gray-800">
                 Lembaga Masjid Al-Anhar
             </h1>
-            <div className="flex justify-center gap-5 flex-wrap mt-5">
+            <div className="flex justify-center gap-2 md:gap-5 flex-wrap mt-5">
                 {Lembaga.map((logo, index) => (
                     <img
                         key={index}

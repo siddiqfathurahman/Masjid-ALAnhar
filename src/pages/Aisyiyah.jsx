@@ -45,7 +45,7 @@ const Aisyiyah = () => {
 
 
       <div>
-        <h2 className="mt-8 text-3xl font-bold text-left">Program & Kegiatan</h2>
+        <h2 className="mt-8 md:text-3xl text-2xl font-bold text-left">Program & Kegiatan</h2>
         <p className="pt-5 text-left max-w-4xl">
           Aisyiyah menyelenggarakan berbagai program yang berkontribusi pada pemberdayaan perempuan dan masyarakat.
           Berikut adalah beberapa program utama yang dijalankan:

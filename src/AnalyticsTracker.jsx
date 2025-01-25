@@ -7,10 +7,10 @@ export default function AnalyticsTracker() {
   const location = useLocation();
 
   useEffect(() => {
-    // Log setiap kali route berubah
+    // Pastikan logEvent dipanggil setiap kali route berubah
     logEvent(analytics, "page_view", {
-      page_path: location.pathname,
-      page_title: document.title,
+      page_path: location.pathname, // Path halaman
+      page_title: document.title,  // Judul halaman
     });
   }, [location]);
 

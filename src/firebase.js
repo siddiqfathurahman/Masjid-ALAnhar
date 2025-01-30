@@ -1,23 +1,19 @@
-import { initializeApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore';
-import { getAnalytics } from 'firebase/analytics'; // Tambahkan ini
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { getAnalytics } from "firebase/analytics";
 
-// Konfigurasi Firebase
 const firebaseConfig = {
-    apiKey: "AIzaSyAbJoYYWtxXXFEROqIPVyQOkCciExOlRPg",
-    authDomain: "masjid-al-anhar1.firebaseapp.com",
-    projectId: "masjid-al-anhar1",
-    storageBucket: "masjid-al-anhar1.firebasestorage.app",
-    messagingSenderId: "502689758574",
-    appId: "1:502689758574:web:f01a41a5ff19e90664d57f",
-    measurementId: "G-5Z9BMM5W4R"
+    apiKey: import.meta.env.VITE_API_KEY,
+    authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_APP_ID,
+    measurementId: import.meta.env.VITE_MEASUREMENT_ID
 };
 
-// Inisialisasi Firebase
 const app = initializeApp(firebaseConfig);
 
-// Inisialisasi Firestore
 export const db = getFirestore(app);
 
-// Inisialisasi Analytics
-export const analytics = getAnalytics(app); 
+export const analytics = getAnalytics(app);

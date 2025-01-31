@@ -18,9 +18,8 @@ const Footer = () => {
               <ul className="text-sm text-slate-100 space-y-2">
                 {[
                   { name: "Home", link: "/" },
-                  { name: "Profil", link: "/profil" },
+                  { name: "Profil", link: "/profil-masjid-alanhar" },
                   { name: "Berita", link: "/berita" },
-                  { name: "Organisasi", link: "/organisasi" },
                   { name: "Kontak", link: "/kontak" },
                 ].map((item, index) => (
                   <li key={index}>
@@ -60,8 +59,8 @@ const Footer = () => {
             <h4 className="font-semibold text-white mb-2">Pengajian</h4>
             <ul className="text-sm text-slate-100 space-y-2">
               {[
-                { name: "Kajian Tafsir Al-Qur'an", link: "/berita2" },
-                { name: "Pengajian Rutin", link: "/berita3" },
+                { name: "Kajian Tafsir Al-Qur'an", link: "/kajian-al-quran-rutin-di-masjid-al-anhar" },
+                { name: "Pengajian Rutin", link: "/pengajian-bulanan-tradisi-di-masjid-al-anhar" },
               ].map((item, index) => (
                 <li key={index}>
                   <Link

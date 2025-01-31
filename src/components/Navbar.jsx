@@ -105,13 +105,13 @@ export default function Navbar() {
       <button onClick={toggleMenu} className="text-black text-xl">&times;</button>
     </div>
     <ul className="flex flex-col space-y-6 p-6 text-black">
-      <li className={`hover:text-green-800 cursor-pointer ${isActive('/')}`} onClick={toggleMenu}>
+      <li className={`hover:text-green-800 cursor-pointer ('/')}`} onClick={toggleMenu}>
         <Link to="/" className="text-sm md:text-base">Home</Link>
       </li>
-      <li className={`hover:text-green-800 cursor-pointer ${isActive('/profil')}`} onClick={toggleMenu}>
+      <li className={`hover:text-green-800 cursor-pointer '/profil')}`} onClick={toggleMenu}>
         <Link to="/profil-masjid-alanhar" className="text-sm md:text-base">Profil Masjid</Link>
       </li>
-      <li className={`hover:text-green-800 cursor-pointer ${isActive('/berita')}`} onClick={toggleMenu}>
+      <li className={`hover:text-green-800 cursor-pointer ('/berita')}`} onClick={toggleMenu}>
         <Link to="/berita" className="text-sm md:text-base">Berita</Link>
       </li>
       <li className="cursor-pointer">
@@ -150,11 +150,11 @@ export default function Navbar() {
           </ul>
         )}
       </li>
-      <li className={`hover:text-green-800 cursor-pointer ${isActive('/kontak')}`} onClick={toggleMenu}>
+      <li className={`hover:text-green-800 cursor-pointer ('/kontak')}`} onClick={toggleMenu}>
         <Link to="/kontak" className="text-sm md:text-base">Kontak</Link>
       </li>
       <li
-        className={`cursor-pointer rounded-lg px-2 py-1 w-24 transition duration-200 bg-hijau text-white ${isActive('/al-quran')}`}
+        className={`cursor-pointer rounded-lg px-2 py-1 w-24 transition duration-200 bg-hijau text-white ('/al-quran')}`} onClick={toggleMenu}
       >
         <Link to="/al-quran" className="text-sm md:text-base">Al-Qur'an</Link>
       </li>

@@ -10,7 +10,7 @@ export default function Navbar() {
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
   const closeDropdown = () => setIsDropdownOpen(false);
 
-  const isActive = (path) => (location.pathname === path ? 'border-b-2 border-white' : '');
+  const isActive = (path) => (location.pathname === path ? 'border-b-2 border-lemon' : '');
 
   return (
 <nav className="bg-hijau px-2 w-full z-10 font-poppins font-medium">

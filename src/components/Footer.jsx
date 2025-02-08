@@ -14,7 +14,7 @@ const Footer = () => {
 
           <div className="grid grid-cols-2 gap-10 order-2 md:order-2">
             <div>
-              <h4 className="font-semibold text-white mb-2">Menu</h4>
+              <h4 className="font-semibold text-white mb-2">Navigasi</h4>
               <ul className="text-sm text-slate-100 space-y-2">
                 {[
                   { name: "Home", link: "/" },

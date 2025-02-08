@@ -32,10 +32,12 @@ const DonasiInfaq = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
             <div className="col-span-1 text-center mb-1">
-              <img
-                src="/bsi.png"
-                alt="Bank BSI"
-                className="md:w-full rounded-lg h-auto"
+            <img
+              src="/bsi.png"
+              alt="Bank BSI"
+              width="300"  
+              height="150" 
+              className="md:w-full rounded-lg h-auto"
               />
             </div>
 
@@ -61,7 +63,7 @@ const DonasiInfaq = () => {
                   href={`https://wa.me/${whatsappNumber}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="md:text-2xl text-sm py-1 px-2 font-semibold rounded-lg ml-3 bg-green-600 text-white flex items-center"
+                  className="md:text-2xl text-sm py-1 px-2 font-semibold rounded-lg ml-3 bg-green-700 text-white flex items-center"
                 >
                   <AiOutlineWhatsApp className="mr-2" />
                   Konfirmasi

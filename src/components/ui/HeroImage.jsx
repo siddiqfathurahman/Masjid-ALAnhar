@@ -12,9 +12,8 @@ const HeroImage = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
+    accessibility: true,
   };
-
-
 
   return (
     <div className="relative w-full font-poppins">
@@ -23,6 +22,8 @@ const HeroImage = () => {
           <div
             key={index}
             className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden group"
+            aria-hidden="false"
+            tabIndex={0}
           >
             <div className="w-full h-full">
               <img

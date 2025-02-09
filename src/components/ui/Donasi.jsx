@@ -33,7 +33,7 @@ const DonasiInfaq = () => {
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
             <div className="col-span-1 text-center mb-1">
             <img
-              src="/bsi.png"
+              src="/bsi.webp"
               alt="Bank BSI"
               width="300"  
               height="150" 

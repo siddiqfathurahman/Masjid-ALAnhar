@@ -27,7 +27,7 @@ export const Artikel = [
 
   export const images = [
     {
-      src: "/ramah3.jpeg",
+      src: "/ramah3.webp",
       alt: "Masjid 1",
       berita:
         "Masjid Al-Anhar Mendapatkan juara 1 Kategori Lampion dan juara 2 Kostum pada takbir keliling yang diselenggarakan oleh PHBI MERGANGSAN.",
@@ -35,7 +35,7 @@ export const Artikel = [
       path: "/masjid-al-anhar-raih-penghargaan-di-ajang-takbir-keliling",
     },
     {
-      src: "/dakwah1.jpeg",
+      src: "/dakwah1.webp",
       alt: "Masjid 2",
       berita:
         "Kegiatan Rutin Pengajian Kajian Al-Quran surat pendek setiap 2 Minggu sekali pada hari Rabu & Senin Ba'da Isya.",
@@ -43,14 +43,14 @@ export const Artikel = [
       path: "/kajian-al-quran-rutin-di-masjid-al-anhar",
     },
     {
-      src: "/dakwah2.jpeg",
+      src: "/dakwah2.webp",
       alt: "Masjid 3",
       berita: "Pengajian bulanan diadakan setiap Selasa pada pekan pertama setiap bulan dan pada malam Jumat Kliwon setelah salat Isya",
       tanggal: "Kamis, 19 Desember 2024",
       path: "/pengajian-bulanan-tradisi-di-masjid-al-anhar",
     },
     {
-        src: "/qurban1445h.JPG",
+        src: "/qurban1445h.webp",
         alt: "Masjid 4",
         berita: "Pada perayaan Idul Adha 1445 H, Masjid Al-Anhar berhasil memperoleh 9 ekor lembu dan 21 ekor kambing untuk disembelih sebagai bagian dari ibadah qurban.",
         tanggal: "Senin, 17 Juni 2024",

@@ -4,10 +4,10 @@ import AnimatedText from '../components/ui/AnimatedText';
 const Tpa = () => {
 
   const images = [
-    { id: 1, src: "/tpa1.jpeg", title: "tpa al-anhar" },
-    { id: 2, src: "/tpa2.jpeg", title: "tpa al-anhar" },
-    { id: 3, src: "/tpa3.jpeg", title: "tpa al-anhar" },
-    { id: 4, src: "/tpa4.jpeg", title: "tpa al-anhar" },
+    { id: 1, src: "/tpa1.webp", title: "tpa al-anhar" },
+    { id: 2, src: "/tpa2.webp", title: "tpa al-anhar" },
+    { id: 3, src: "/tpa3.webp", title: "tpa al-anhar" },
+    { id: 4, src: "/tpa4.webp", title: "tpa al-anhar" },
   ];
 
   const data = [

@@ -14,7 +14,7 @@ const LoadingScreen = ({ onLoaded }) => {
       <div className="text-center">
         <div>
           <img
-            src="/logopolos.png"
+            src="/logopolos.webp"
             alt="Logo"
             className="w-40 mx-auto"
           />

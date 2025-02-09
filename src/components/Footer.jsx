@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-5 relative z-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
           <div className="order-1 md:order-1">
-            <img src="/logo.png" alt="logo" className="h-20" />
+            <img src="/logo.webp" alt="logo" className="h-20" />
             <p className="text-sm text-white">
               Mari bersama-sama memakmurkan Masjid Al-Anhar melalui doa, donasi, dan partisipasi aktif dalam program-program kami. Bergabunglah dalam perjalanan menuju keberkahan.
             </p>

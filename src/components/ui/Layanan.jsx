@@ -4,10 +4,10 @@ import Slider from "react-slick";
 
 const Layanan = () => {
   const layananData = [
-    { id: 1, title: "Fasilitas air minum gratis, bersih, dan sehat.", image: "/dispenser.jpeg" },
-    { id: 2, title: "Tempat ibadah nyaman dengan pendingin ruangan", image: "/ac.jpeg" },
-    { id: 3, title: "Tempat wudhu terpisah bersih dan mudah diakses", image: "/tempatwudhu.jpeg" },
-    { id: 4, title: "Tersedia Al-Qur'an untuk mendukung kegiatan ibadah", image: "/etalasequran.jpeg" },
+    { id: 1, title: "Fasilitas air minum gratis, bersih, dan sehat.", image: "/dispenser.webp" },
+    { id: 2, title: "Tempat ibadah nyaman dengan pendingin ruangan", image: "/ac.webp" },
+    { id: 3, title: "Tempat wudhu terpisah bersih dan mudah diakses", image: "/tempatwudhu.webp" },
+    { id: 4, title: "Tersedia Al-Qur'an untuk mendukung kegiatan ibadah", image: "/etalasequran.webp" },
   ];
 
   const settings = {

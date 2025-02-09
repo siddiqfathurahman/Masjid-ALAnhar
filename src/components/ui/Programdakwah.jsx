@@ -8,7 +8,7 @@ const Programdakwah = () => {
        
         <div className="flex flex-col items-center max-w-sm md:max-w-md">
           <img
-            src="/posterpengajian.png"
+            src="/posterpengajian.webp"
             alt="pengajian"
             className="w-full h-auto rounded-2xl shadow-md"
           />
@@ -21,7 +21,7 @@ const Programdakwah = () => {
         
         <div className="flex flex-col items-center max-w-sm md:max-w-md">
           <img
-            src="/kajian.jpg"
+            src="/kajian.webp"
             alt="kajian"
             className="w-full h-auto rounded-2xl shadow-md"
           />

@@ -4,10 +4,10 @@ const Logo = () => {
     const navigate = useNavigate();
 
     const Lembaga = [
-        { image: "/muhammadiyah.png", tittle: "logo muhammadiyah", route:"/organisasi/aisyiyah" },
-        { image: "/takmir.png", tittle: "logo takmir masjid al-anhar", route:"/organisasi/takmir" },
-        { image: "/rmh.png", tittle: "logo remaja masjid al-anhar", route:"/organisasi/ramah" },
-        { image: "/tpa.png", tittle: "logo tpa masjid al-anhar", route:"/organisasi/tpa" },
+        { image: "/muhammadiyah.webp", tittle: "logo muhammadiyah", route:"/organisasi/aisyiyah" },
+        { image: "/takmir.webp", tittle: "logo takmir masjid al-anhar", route:"/organisasi/takmir" },
+        { image: "/rmh.webp", tittle: "logo remaja masjid al-anhar", route:"/organisasi/ramah" },
+        { image: "/tpa.webp", tittle: "logo tpa masjid al-anhar", route:"/organisasi/tpa" },
     ];
 
     return (

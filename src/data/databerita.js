@@ -27,7 +27,7 @@ export const Artikel = [
 
   export const images = [
     {
-      src: "/ramah3.webp",
+      src: "/ramah3.avif",
       alt: "Masjid 1",
       berita:
         "Masjid Al-Anhar Mendapatkan juara 1 Kategori Lampion dan juara 2 Kostum pada takbir keliling yang diselenggarakan oleh PHBI MERGANGSAN.",

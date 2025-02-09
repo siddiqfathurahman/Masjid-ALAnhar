@@ -10,7 +10,7 @@ export default function Ramah() {
   const images = [
     { id: 1, src: "/ramah5.webp", title: "ramah mergangsan" },
     { id: 2, src: "/ramah2.webp", title: "ramah mergangsan" },
-    { id: 3, src: "/ramah3.webp", title: "ramah mergangsan" },
+    { id: 3, src: "/ramah3.avif", title: "ramah mergangsan" },
     { id: 4, src: "/ramah4.webp", title: "ramah mergangsan" },
     { id: 5, src: "/ramah1.webp", title: "ramah mergangsan" },
     { id: 6, src: "/ramah6.webp", title: "ramah mergangsan" },

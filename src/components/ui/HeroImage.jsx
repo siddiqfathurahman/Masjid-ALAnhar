@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { images } from '../../data/databerita';
 
 const HeroImage = () => {
+  useEffect(() => {
+    // Preload the image that affects LCP
+    const link = document.createElement('link');
+    link.rel = 'preload';
+    link.href = '/ramah3.avif'; // Path of the LCP image
+    link.as = 'image';
+    link.type = 'image/avif';
+    document.head.appendChild(link);
+
+    return () => {
+      // Clean up the preload link when the component unmounts
+      document.head.removeChild(link);
+    };
+  }, []);
+
   const settings = {
     infinite: true,
     speed: 500,
@@ -30,6 +45,9 @@ const HeroImage = () => {
                 className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
                 src={image.src}
                 alt={image.alt}
+                width="100%" 
+                height="auto" 
+                loading="lazy" 
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>

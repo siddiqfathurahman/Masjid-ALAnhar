@@ -17,7 +17,14 @@ export default function Navbar() {
     <nav className="bg-hijau px-2 w-full z-10 font-poppins font-medium">
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-white text-2xl font-bold">
-          <img src="/logo.webp" alt="Logo" className="lg:w-44 md:w-36 w-28" />
+        <img 
+          src="/logo.webp" 
+          alt="Logo" 
+          className="lg:w-44 md:w-36 w-28"
+          width="200" 
+          height="100"
+        />
+
         </div>
 
         <ul className="hidden lg:flex items-center text-white space-x-6">

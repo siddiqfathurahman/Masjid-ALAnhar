@@ -11,6 +11,9 @@ const Programdakwah = () => {
             src="/posterpengajian.webp"
             alt="pengajian"
             className="w-full h-auto rounded-2xl shadow-md"
+            width="500" // Menambahkan width eksplisit
+            height="300" // Menambahkan height eksplisit
+            loading="lazy" // Lazy load untuk gambar ini
           />
           <p className="text-sm md:text-base pt-3 text-gray-700 text-left">
             Kegiatan pengajian rutin diadakan setiap akhir bulan pada hari Selasa. Acara ini bertujuan
@@ -24,6 +27,9 @@ const Programdakwah = () => {
             src="/kajian.webp"
             alt="kajian"
             className="w-full h-auto rounded-2xl shadow-md"
+            width="500" // Menambahkan width eksplisit
+            height="300" // Menambahkan height eksplisit
+            loading="lazy" // Lazy load untuk gambar ini
           />
           <p className="text-sm md:text-base pt-3 text-gray-700 text-left">
             Kajian tafsir Al-Qur'an diadakan setiap dua minggu sekali, pada hari Rabu. Program ini

@@ -1,5 +1,6 @@
 import Coment from "../components/ui/ComentNews";
 import ListBerita from "./ListBerita";
+import { Link } from "react-router-dom";
 
 const Ramadhan1446 = () => {
   return (
@@ -110,9 +111,9 @@ const Ramadhan1446 = () => {
             <table className="w-full border-collapse border border-gray-300 mt-4">
               <thead>
                 <tr className="bg-hijau text-white">
-                  <th className="border border-black px-4 py-2">No</th>
-                  <th className="border border-black px-4 py-2">Kegiatan</th>
-                  <th className="border border-black px-4 py-2">Tanggal</th>
+                  <th className="border border-slate-400 px-4 py-2">No</th>
+                  <th className="border border-slate-400 px-4 py-2">Kegiatan</th>
+                  <th className="border border-slate-400 px-4 py-2">Tanggal</th>
                 </tr>
               </thead>
               <tbody>
@@ -147,13 +148,13 @@ const Ramadhan1446 = () => {
                   { no: 12, kegiatan: "Takbiran", tanggal: "30 Maret" },
                 ].map((item) => (
                   <tr key={item.no} className="odd:bg-white even:bg-gray-100">
-                    <td className="border border-black px-4 py-2 text-center">
+                    <td className="border border-slate-400 px-4 py-2 text-center">
                       {item.no}
                     </td>
-                    <td className="border border-black px-4 py-2">
+                    <td className="border border-slate-400 px-4 py-2">
                       {item.kegiatan}
                     </td>
-                    <td className="border border-black px-4 py-2">
+                    <td className="border border-slate-400 px-4 py-2">
                       {item.tanggal}
                     </td>
                   </tr>
@@ -163,8 +164,10 @@ const Ramadhan1446 = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 md:pt-7 pt-5 md:px-3 text-center gap-4">
                 <a href="/.pdf" download className="bg-green-600 text-white px-4 py-2 rounded-lg text-1xl font-semibold">Jadwal Imam</a>
                 <a href="/.pdf" download className="bg-green-600 text-white px-4 py-2 rounded-lg text-1xl font-semibold">Jadwal Kajian</a>
-                <a className="bg-green-600 text-white px-4 py-2 rounded-lg text-1xl font-semibold">Jadwal Remaja</a>
-                <a className="bg-green-600 text-white px-4 py-2 rounded-lg text-1xl font-semibold">Jadwal Mc</a>
+                <Link to="/ramadhan1446h/jadwalremaja" className="bg-green-600 text-white px-4 py-2 rounded-lg text-1xl font-semibold">
+                  Jadwal Remaja
+                </Link>
+                <a href="/.pdf" download className="bg-green-600 text-white px-4 py-2 rounded-lg text-1xl font-semibold">Jadwal Mc</a>
             </div>
             <p className="mb-4 mt-4">
               Dengan berbagai amalan yang dilakukan, Ramadhan menjadi waktu

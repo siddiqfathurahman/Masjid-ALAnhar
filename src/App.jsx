@@ -28,6 +28,7 @@ import { doc, getDoc, updateDoc } from "firebase/firestore";
 import AnalyticsTracker from "./AnalyticsTracker";
 import { FaUser } from "react-icons/fa6";
 import Ramadhan1446 from "./News/Ramadhan1446";
+import JadwalRemaja from "./components/ui/JadwalRemaja";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -96,6 +97,7 @@ export default function App() {
         <Route path="/al-quran/surah/:id" element={<SurahDetail />} />
         <Route path="/dokumentasi" element={<Dokumentasi />} />
         <Route path="/ramadhan1446h" element={<Ramadhan1446 />} />
+        <Route path="/ramadhan1446h/jadwalremaja" element={<JadwalRemaja />} />
 
         {beritaRoutes.map(({ path, component: Component }, index) => (
           <Route key={index} path={path} element={<Component />} />

@@ -1,4 +1,10 @@
 export const Artikel = [
+  {
+    tittle: "Ramadhan 1446H: Bulan Suci Penuh Berkah",
+    date: "Maret 2025",
+    berita: "ramadhan di masjid al-anhar",
+    path: "/ramadhan1446h",
+  },
     {
       tittle: "Masjid Al-Anhar Raih Penghargaan di Ajang Takbir Keliling",
       date: "10 April 2025",

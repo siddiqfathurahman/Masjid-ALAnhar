@@ -14,97 +14,72 @@ const Ramadhan1446 = () => {
             </h1>
             <p className="text-gray-400 mb-5">Maret - April 2025 / 1446H</p>
             <p className="mb-4">
-              Ramadhan adalah bulan kesembilan dalam kalender Hijriyah yang
-              memiliki makna istimewa bagi umat Islam di seluruh dunia. Bulan
-              ini dikenal sebagai bulan penuh keberkahan, ampunan, dan rahmat
-              dari Allah SWT. Selama bulan Ramadhan, umat Islam diwajibkan untuk
-              berpuasa dari fajar hingga matahari terbenam sebagai bentuk ibadah
-              dan pengendalian diri.
+              Ramadhan adalah bulan istimewa yang dinanti-nantikan oleh seluruh
+              umat Islam di dunia. Di bulan ini, setiap amal kebaikan
+              dilipatgandakan pahalanya, pintu surga dibuka, dan pintu neraka
+              ditutup. Bagi umat Muslim, Ramadhan menjadi momen terbaik untuk
+              membersihkan hati, memperkuat ibadah, dan memperbaiki hubungan
+              dengan Allah SWT serta sesama manusia.
             </p>
+
+            <p className="mb-4">
+              Kewajiban utama di bulan Ramadhan adalah menjalankan ibadah puasa,
+              yang tidak hanya menahan diri dari makan dan minum, tetapi juga
+              menjaga ucapan, pandangan, serta perilaku agar tetap sesuai dengan
+              ajaran Islam. Selain itu, amalan sunnah seperti shalat tarawih,
+              membaca Al-Qur'an, serta bersedekah menjadi amalan utama yang
+              sangat dianjurkan selama bulan suci ini.
+            </p>
+
             <h2 className="text-xl font-semibold mt-4 mb-2">
-              Struktur Panitia Ramadhan 1446H Masjid Al-Anhar
+              Keutamaan dan Hikmah Ramadhan
             </h2>
             <p className="mb-4">
-              <ul className="list-disc ml-6 mt-2">
-                <li>
-                  <span className="font-semibold">Ketua:</span> Raditya Ala
-                  Alston
-                </li>
-                <li>
-                  <span className="font-semibold">Sekretaris:</span>
-                  <ul className="list-disc ml-6">
-                    <li>Royhan Kholiq</li>
-                    <li>Siddiq Fathurahman</li>
-                  </ul>
-                </li>
-                <li>
-                  <span className="font-semibold">Bendahara Panrom:</span> Danis
-                </li>
-              </ul>
+              Ramadhan memberikan banyak manfaat baik secara spiritual maupun
+              sosial. Beberapa keutamaan dan hikmah Ramadhan antara lain:
             </p>
+            <ul className="list-disc ml-6 mb-4">
+              <li>
+                <span className="font-semibold">Pengampunan Dosa:</span> Allah
+                SWT menjanjikan pengampunan dosa bagi mereka yang berpuasa
+                dengan penuh keimanan dan mengharapkan ridha-Nya.
+              </li>
+              <li>
+                <span className="font-semibold">Pelatihan Kesabaran:</span>{" "}
+                Puasa melatih kita untuk lebih sabar, mengendalikan hawa nafsu,
+                dan meningkatkan disiplin diri.
+              </li>
+              <li>
+                <span className="font-semibold">Meningkatkan Empati:</span>{" "}
+                Dengan berpuasa, kita bisa merasakan bagaimana rasanya lapar dan
+                haus, sehingga lebih peduli terhadap orang-orang yang kurang
+                mampu.
+              </li>
+              <li>
+                <span className="font-semibold">Peningkatan Ibadah:</span>{" "}
+                Ramadhan menjadi bulan yang penuh semangat untuk memperbanyak
+                ibadah, seperti tadarus Al-Qur'an, shalat malam, dan
+                memperbanyak doa.
+              </li>
+            </ul>
+
             <h2 className="text-xl font-semibold mt-4 mb-2">
-              Koordinasi Kegiatan
+              Kegiatan Ramadhan di Masjid Al-Anhar
             </h2>
             <p className="mb-4">
-              <ul className="list-disc ml-6 mt-2">
-                <li>
-                  <span className="font-semibold">Koordinasi Takjil:</span>{" "}
-                  Terlampir di bawah
-                </li>
-                <li>
-                  <span className="font-semibold">
-                    Koordinasi Tarawih Anak-anak:
-                  </span>{" "}
-                  Evant, Kevin
-                </li>
-                <li>
-                  <span className="font-semibold">Pj Nuzulul Quran:</span> Ketua
-                </li>
-                <li>
-                  <span className="font-semibold">Tadarus Bapak-Bapak:</span>{" "}
-                  Pak Rustam
-                </li>
-                <li>
-                  <span className="font-semibold">Tadarus Ibu-Ibu:</span> Ibu
-                  Azizah
-                </li>
-              </ul>
+              Masjid Al-Anhar telah menyiapkan berbagai kegiatan yang bertujuan
+              untuk menyemarakkan bulan Ramadhan sekaligus mempererat tali
+              silaturahmi di antara jamaah. Beberapa kegiatan yang telah
+              direncanakan meliputi:
             </p>
-            <h2 className="text-xl font-semibold mt-4 mb-2">Lainnya</h2>
             <p className="mb-4">
-              <ul className="list-disc ml-6 mt-2">
-                <li>
-                  <span className="font-semibold">Koordinator Zakat:</span>{" "}
-                  Royhan
-                </li>
-                <li>
-                  <span className="font-semibold">Humas:</span> Terlampir
-                </li>
-                <li>
-                  <span className="font-semibold">Dokumentasi:</span> Lintang,
-                  Kevin
-                </li>
-                <li>
-                  <span className="font-semibold">Pj Song-Song Ramadhan:</span>{" "}
-                  Ketua
-                </li>
-              </ul>
+              Setiap harinya, tersedia <span className="font-semibold">200 porsi takjil </span> 
+              untuk berbuka puasa. Selain itu, untuk menambah kenyamanan saat tadarus dan tarawih, 
+              juga disediakan <span className="font-semibold"> 30 snack basah</span> dan  
+              <span className="font-semibold"> 50 snack kering</span>. Semoga semakin menambah 
+              semangat dalam beribadah.
             </p>
-            <h2 className="text-xl font-semibold mt-4 mb-2">
-              Urutan penyedia Takjil dan Jaburan
-            </h2>
-            <p className="mb-4">
-              <ul className="list-disc ml-6 mt-2">
-                <li>
-                  <span className="font-semibold">Takjil:</span> RW 12, RW 11,
-                  RW 13
-                </li>
-                <li>
-                  <span className="font-semibold">Jaburan:</span> RW 13, RW 12,
-                  RW 11
-                </li>
-              </ul>
-            </p>
+
             <h2 className="text-xl font-semibold mt-4 mb-2 text-center">
               Kegiatan Ramadhan 1446H
             </h2>
@@ -112,7 +87,9 @@ const Ramadhan1446 = () => {
               <thead>
                 <tr className="bg-hijau text-white">
                   <th className="border border-slate-400 px-4 py-2">No</th>
-                  <th className="border border-slate-400 px-4 py-2">Kegiatan</th>
+                  <th className="border border-slate-400 px-4 py-2">
+                    Kegiatan
+                  </th>
                   <th className="border border-slate-400 px-4 py-2">Tanggal</th>
                 </tr>
               </thead>
@@ -130,13 +107,13 @@ const Ramadhan1446 = () => {
                   },
                   {
                     no: 3,
-                    kegiatan: "Bersih bersih masjid",
+                    kegiatan: "Bersih-bersih masjid",
                     tanggal: "23 Februari",
                   },
                   { no: 4, kegiatan: "Takjilan", tanggal: "Selama Ramadhan" },
                   { no: 5, kegiatan: "Tarawih", tanggal: "Selama Ramadhan" },
                   { no: 6, kegiatan: "Tadarus", tanggal: "Selama Ramadhan" },
-                  { no: 7, kegiatan: "Nuzul Quran", tanggal: "17 Maret" },
+                  { no: 7, kegiatan: "Nuzulul Quran", tanggal: "17 Maret" },
                   { no: 8, kegiatan: "Khataman", tanggal: "25 Maret" },
                   {
                     no: 9,
@@ -161,14 +138,46 @@ const Ramadhan1446 = () => {
                 ))}
               </tbody>
             </table>
-            <div className="grid grid-cols-2 md:grid-cols-4 md:pt-7 pt-5 md:px-3 text-center gap-4">
-                <a href="/.pdf" download className="bg-green-600 text-white px-4 py-2 rounded-lg text-1xl font-semibold">Jadwal Imam</a>
-                <a href="/.pdf" download className="bg-green-600 text-white px-4 py-2 rounded-lg text-1xl font-semibold">Jadwal Kajian</a>
-                <Link to="/ramadhan1446h/jadwalremaja" className="bg-green-600 text-white px-4 py-2 rounded-lg text-1xl font-semibold">
-                  Jadwal Remaja
-                </Link>
-                <a href="/.pdf" download className="bg-green-600 text-white px-4 py-2 rounded-lg text-1xl font-semibold">Jadwal Mc</a>
+
+            <div className="flex justify-center mt-6">
+              <Link
+                to="/ramadhan1446h/strukturpanrom1446h"
+                className="bg-hijau text-white px-6 py-3 rounded-lg text-lg font-semibold transition duration-300"
+              >
+                Struktur Panitia Ramadhan
+              </Link>
             </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 md:pt-7 pt-5 md:px-3 text-center gap-4">
+              <a
+                href="/.pdf"
+                download
+                className="bg-green-600 text-white px-4 py-3 rounded-lg md:text-1xl text-xs font-semibold"
+              >
+                Jadwal Imam
+              </a>
+              <a
+                href="/.pdf"
+                download
+                className="bg-green-600 text-white px-4 py-3 rounded-lg md:text-1xl text-xs font-semibold"
+              >
+                Jadwal Kajian Sore
+              </a>
+              <Link
+                to="/ramadhan1446h/jadwalremaja"
+                className="bg-green-600 text-white px-4 py-3 rounded-lg md:text-1xl text-xs font-semibold"
+              >
+                Jadwal Remaja
+              </Link>
+              <a
+                href="/jadwal-mc-subuh-tarawih-remaja.pdf"
+                download
+                className="bg-green-600 text-white px-4 py-3 rounded-lg md:text-1xl text-xs font-semibold"
+              >
+                Jadwal MC Remaja
+              </a>
+            </div>
+
             <p className="mb-4 mt-4">
               Dengan berbagai amalan yang dilakukan, Ramadhan menjadi waktu
               terbaik bagi umat Islam untuk meningkatkan kualitas iman dan
@@ -176,6 +185,7 @@ const Ramadhan1446 = () => {
               Ramadhan dengan penuh keikhlasan dan meraih keberkahan yang
               berlimpah.
             </p>
+
             <Coment />
           </div>
         </div>

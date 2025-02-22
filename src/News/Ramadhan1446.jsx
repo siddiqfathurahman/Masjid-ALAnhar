@@ -73,7 +73,7 @@ const Ramadhan1446 = () => {
               direncanakan meliputi:
             </p>
             <p className="mb-4">
-              Setiap harinya, tersedia <span className="font-semibold">200 porsi takjil </span> 
+              Setiap harinya Masjid Al-Anhar Menyediakan <span className="font-semibold">200 porsi takjil </span> 
               untuk berbuka puasa. Selain itu, untuk menambah kenyamanan saat tadarus dan tarawih, 
               juga disediakan <span className="font-semibold"> 30 snack basah</span> dan  
               <span className="font-semibold"> 50 snack kering</span>. Semoga semakin menambah 

@@ -40,6 +40,14 @@ export const Artikel = [
 // data untuk page hero image
 export const images = [
   {
+    src: "/ramadhan1446hh.jpg",
+    alt: "ramadhan1446h",
+    berita:
+      "Ramadhan 1446H Hadir Membawa Berkah dan Kesempatan Meraih Kedekatan dengan Allah SWT",
+    tanggal: "Maret 2025.",
+    path: "/ramadhan1446h",
+  },
+  {
     src: "/ramah3.avif",
     alt: "Masjid 1",
     berita:

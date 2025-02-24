@@ -9,9 +9,9 @@ const HeroImage = () => {
     // Preload the image that affects LCP
     const link = document.createElement('link');
     link.rel = 'preload';
-    link.href = '/ramah3.avif'; // Path of the LCP image
+    link.href = '/ramadhan1446hh.jpg'; // Path of the LCP image
     link.as = 'image';
-    link.type = 'image/avif';
+    link.type = 'image/jpg';
     document.head.appendChild(link);
 
     return () => {

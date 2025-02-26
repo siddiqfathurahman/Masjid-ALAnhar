@@ -150,14 +150,14 @@ const Ramadhan1446 = () => {
 
             <div className="grid grid-cols-2 md:grid-cols-4 md:pt-7 pt-5 md:px-3 text-center gap-4">
               <a
-                href="/.pdf"
+                href="/jadwal-imam-1446h.pdf"
                 download
                 className="bg-green-600 text-white px-4 py-3 rounded-lg md:text-1xl text-xs font-semibold"
               >
                 Jadwal Imam
               </a>
               <a
-                href="/.pdf"
+                href="/jadwal-kultum-takjilan.pdf"
                 download
                 className="bg-green-600 text-white px-4 py-3 rounded-lg md:text-1xl text-xs font-semibold"
               >

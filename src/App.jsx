@@ -23,13 +23,15 @@ import Berita1 from "./News/Berita1";
 import Berita2 from "./News/Berita2";
 import Berita3 from "./News/Berita3";
 import Berita4 from "./News/Berita4";
+import Ramadhan1446 from "./News/Berita5";
+import Berita6 from "./News/Berita6";
 import { db } from "./firebase";
 import { doc, getDoc, updateDoc } from "firebase/firestore";
 import AnalyticsTracker from "./AnalyticsTracker";
 import { FaUser } from "react-icons/fa6";
-import Ramadhan1446 from "./News/Ramadhan1446";
 import JadwalRemaja from "./components/ui/news/JadwalRemaja";
 import Strukturpanrom from "./components/ui/news/StrukturPanrom";
+import Berita5 from "./News/Berita5";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -40,6 +42,10 @@ export default function App() {
     { path: "/kajian-al-quran-rutin-di-masjid-al-anhar", component: Berita2 },
     { path: "/pengajian-bulanan-tradisi-di-masjid-al-anhar", component: Berita3 },
     { path: "/masjid-al-anhar-berhasil-memperoleh-9-lembu-dan-21-kambing-dalam-qurban-1445h-2024", component: Berita4 },
+    { path: "/pengajian-song-song-ramadhan1446h&dongenganak", component: Berita6 },
+    { path: "/ramadhan1446h", component: Berita5 },
+    { path: "/ramadhan1446h/strukturpanrom1446h", component: Strukturpanrom },
+    { path: "/ramadhan1446h/jadwalremaja", component: JadwalRemaja },
   ];
 
   useEffect(() => {
@@ -113,9 +119,7 @@ export default function App() {
         <Route path="/al-quran" element={<HeroQuran />} />
         <Route path="/al-quran/surah/:id" element={<SurahDetail />} />
         <Route path="/dokumentasi" element={<Dokumentasi />} />
-        <Route path="/ramadhan1446h" element={<Ramadhan1446 />} />
-        <Route path="/ramadhan1446h/strukturpanrom1446h" element={<Strukturpanrom />} />
-        <Route path="/ramadhan1446h/jadwalremaja" element={<JadwalRemaja />} />
+
 
         {beritaRoutes.map(({ path, component: Component }, index) => (
           <Route key={index} path={path} element={<Component />} />

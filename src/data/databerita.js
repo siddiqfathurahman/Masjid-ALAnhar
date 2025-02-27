@@ -8,6 +8,13 @@ export const Artikel = [
     path: "/ramadhan1446h",
   },
   {
+    tittle: "Pengajian Songsong Ramadan 1446H: Persiapan Spiritual Menjelang Bulan Suci",
+    date: "23 Februari 2025",
+    berita:
+      "Masjid Al-Anhar mengadakan pengajian spesial dalam rangka menyongsong bulan suci Ramadan. Pengajian ini dibagi menjadi dua sesi, yaitu untuk bapak-bapak dan ibu-ibu yang diisi oleh Ustaz Dwi Yunianto dengan tema 'Jika Tahun Ini Merupakan Ramadan Terakhirku', serta pengajian anak-anak yang dipandu oleh Kak Untung dengan sesi dongeng islami. Sebagai penutup, anak-anak akan mengikuti sesi kado silang dengan harga Rp3.000 untuk menumbuhkan semangat berbagi dan kebersamaan.",
+    path: "/pengajian-song-song-ramadhan1446h&dongenganak",
+  },
+  {
     tittle: "Masjid Al-Anhar Raih Penghargaan di Ajang Takbir Keliling",
     date: "10 April 2025",
     berita:
@@ -46,6 +53,14 @@ export const images = [
       "Ramadhan 1446H Hadir Membawa Berkah dan Kesempatan Meraih Kedekatan dengan Allah SWT",
     tanggal: "Maret 2025.",
     path: "/ramadhan1446h",
+  },
+  {
+    src: "/song-song-anak.webp",
+    alt: "ramadhan1446h",
+    berita:
+      "Menyambut Ramadan dengan Ilmu dan Kebersamaan dalam Pengajian Spesial di Masjid Al-Anhar",
+    tanggal: "23 Februari 2025.",
+    path: "/pengajian-song-song-ramadhan1446h&dongenganak",
   },
   {
     src: "/ramah3.avif",

@@ -2,7 +2,7 @@ import Coment from "../components/ui/ComentNews";
 import ListBerita from "./ListBerita";
 import { Link } from "react-router-dom";
 
-const Ramadhan1446 = () => {
+const Berita5 = () => {
   return (
     <>
       <div className="flex justify-center items-center bg-gray-100 font-poppins px-2 pt-10">
@@ -195,4 +195,4 @@ const Ramadhan1446 = () => {
   );
 };
 
-export default Ramadhan1446;
+export default Berita5;

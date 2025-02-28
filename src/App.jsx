@@ -105,7 +105,7 @@ export default function App() {
       <AnalyticsTracker />
       <ScrollToTop />
       <ScrollTop />
-      <RunningText text="Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
+      <RunningText text="Marhaban Ya Ramadhan Selamat Menunaikan Ibadah Puasa 1446H Selamat datang di website Masjid Al-Anhar Keparakan kidul MG/1234 Kec. Mergangsan, Kota Yogyakarta, Daerah Istimewa Yogyakarta" />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

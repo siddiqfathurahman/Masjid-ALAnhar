@@ -23,6 +23,25 @@ const dokumentasiItems = [
         badge: "Foto",
         badgeColor: "bg-blue-400",
     },
+    {
+        href: "https://drive.google.com/drive/folders/1mu-OrhASjBwWSHZxHXLZ5u_I1lu_SBpY?usp=sharing",
+        label: "TAKBIRAN 1446H/2025",
+        badge: "Foto",
+        badgeColor: "bg-blue-400",
+    },
+    {
+        href: "https://drive.google.com/drive/folders/1-0RsXhn939R9J3sqVDyYD1QOC_BKEyrI",
+        label: "TAKBIRAN 1446H/2025",
+        badge: "Foto & Video",
+        badgeColor: "bg-blue-400",
+    },
+    {
+        href: "https://drive.google.com/drive/folders/1DBwJJDZlhOJiCVHvevx7Cnk3_3ZeSpDl",
+        label: "TAKBIRAN 1446H/2025",
+        badge: "Video",
+        badgeColor: "bg-red-400",
+    },
+
 ];
 
 const Dokumentasi = () => {

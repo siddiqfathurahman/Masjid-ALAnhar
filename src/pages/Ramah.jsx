@@ -53,11 +53,9 @@ export default function Ramah() {
         </ol>
       </div>
 
-    
-    
       <Bidang />
       <Gallery
-        title="Galeri"
+        title="Galeri Remaja Masjid Al-Anhar"
         images={images}
         imageStyle="rounded-lg shadow-lg"
       />

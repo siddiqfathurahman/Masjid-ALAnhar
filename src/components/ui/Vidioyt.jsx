@@ -1,8 +1,18 @@
 const Vidio = () => {
   const videoData = [
     {
+      link: "https://www.youtube.com/embed/1cY4-GfCK8I",
+      title: "TAKBIR KELILING MASJID AL-ANHAR 1446H / 2025",
+      date: "18 April 2025"
+    },
+    {
+      link: "https://www.youtube.com/embed/oSFRoOa8jCc",
+      title: "PERSIAPAN TAKBIR KELILING MASJID AL-ANHAR 1446H / 2025",
+      date: "18 April 2025"
+    },
+    {
       link: "https://www.youtube.com/embed/9JxctSJK_Us",
-      title: "Takbiran Masjid Al-Anhar 1444H / 2023",
+      title: "Takbiran Masjid Al-Anhar 1444H / 2023", 
       date: "1 Tahun yang lalu"
     },
     {

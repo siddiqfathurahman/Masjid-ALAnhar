@@ -21,7 +21,7 @@ const Logo = () => {
                         <img
                             src={logo.image}
                             alt={logo.tittle}
-                            className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain hover:scale-110 transition-transform duration-200"
+                            className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 cursor-pointer object-contain hover:scale-110 transition-transform duration-200"
                             onClick={() => navigate(logo.route)}
                             width="160" height="160"
                             loading="lazy"

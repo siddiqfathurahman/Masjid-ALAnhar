@@ -1,24 +1,10 @@
-import React, { useEffect } from "react";
+
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { images } from '../../data/databerita';
 
 const HeroImage = () => {
-  useEffect(() => {
-    // Preload the image that affects LCP
-    const link = document.createElement('link');
-    link.rel = 'preload';
-    link.href = '/ramadhan1446hh.jpg'; // Path of the LCP image
-    link.as = 'image';
-    link.type = 'image/jpg';
-    document.head.appendChild(link);
-
-    return () => {
-      // Clean up the preload link when the component unmounts
-      document.head.removeChild(link);
-    };
-  }, []);
 
   const settings = {
     infinite: true,
@@ -56,7 +42,7 @@ const HeroImage = () => {
               <div className="flex items-center gap-1 text-xs md:text-sm">
                 <Link
                   to={image.path}
-                  className="text-white hover:underline hover:text-blue-400 flex items-center gap-1"
+                  className="text-white hover:underline hover:text-blue-400 flex items-center pt-2 gap-1"
                 >
                   Baca Selengkapnya
                   <FaArrowUpRightFromSquare className="inline-block " size={10} />

@@ -23,7 +23,6 @@ import Berita1 from "./News/Berita1";
 import Berita2 from "./News/Berita2";
 import Berita3 from "./News/Berita3";
 import Berita4 from "./News/Berita4";
-import Ramadhan1446 from "./News/Berita5";
 import Berita6 from "./News/Berita6";
 import { db } from "./firebase";
 import { doc, getDoc, updateDoc } from "firebase/firestore";
@@ -32,6 +31,8 @@ import { FaUser } from "react-icons/fa6";
 import JadwalRemaja from "./components/ui/news/JadwalRemaja";
 import Strukturpanrom from "./components/ui/news/StrukturPanrom";
 import Berita5 from "./News/Berita5";
+import Berita7 from "./News/Berita7";
+
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -44,6 +45,7 @@ export default function App() {
     { path: "/masjid-al-anhar-berhasil-memperoleh-9-lembu-dan-21-kambing-dalam-qurban-1445h-2024", component: Berita4 },
     { path: "/pengajian-song-song-ramadhan1446h&dongenganak", component: Berita6 },
     { path: "/ramadhan1446h", component: Berita5 },
+    { path: "/takbir-keliling-1446h", component: Berita7 },
     { path: "/ramadhan1446h/strukturpanrom1446h", component: Strukturpanrom },
     { path: "/ramadhan1446h/jadwalremaja", component: JadwalRemaja },
   ];

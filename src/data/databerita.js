@@ -1,6 +1,13 @@
 // data untuk page berita
 export const Artikel = [
   {
+    tittle: "Masjid Al-Anhar Semarakkan Takbiran 1446 H di GTNB#7: Gema Takbir Njeron Benteng",
+    date: "30 Maret 2025",
+    berita:
+      "Masjid Al-Anhar turut memeriahkan GTNB#7 (Gema Takbir Njeron Benteng) dalam rangka takbiran Idulfitri 1446 H di Alun-Alun Kidul, Yogyakarta. Dengan lantunan takbir rombongan Masjid Al-Anhar ikut menyemarakkan malam kemenangan dalam suasana penuh kebersamaan dan syiar Islam.",
+    path: "/takbir-keliling-1446h",
+  },
+  {
     tittle: "Ramadhan 1446H: Bulan Suci Penuh Berkah",
     date: "Maret 2025",
     berita:
@@ -46,6 +53,14 @@ export const Artikel = [
 
 // data untuk page hero image
 export const images = [
+  {
+    src: "/takbir1446h.webp",
+    alt: "takbir-keliling-1446h",
+    berita:
+      "Masjid Al-Anhar Semarakkan Takbiran 1446 H di GTNB#7: Gema Takbir Njeron Benteng",
+    tanggal: "30 Maret 2025.",
+    path: "/takbir-keliling-1446h",
+  },
   {
     src: "/ramadhan1446hh.jpg",
     alt: "ramadhan1446h",
